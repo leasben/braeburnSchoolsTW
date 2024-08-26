@@ -94,12 +94,12 @@ h6 {
       url("../src/fonts/Poppins-Bold.woff") format(woff);
 }
 
-.carousel-cell {
+/* .carousel-cell {
     overflow: hidden;
     width: 100%;
     margin-right: 10;
     counter-increment: gallery-cell;
-  }
+  } */
 
   .flickity-page-dots {
     display: none;
@@ -173,6 +173,7 @@ h6 {
 }
 
 .carousel-cell {
+  position: relative;
   width: 100%;
   height: auto;
   margin-right: 0;
@@ -285,6 +286,119 @@ h6 {
 }
 
 
+/* CIRCLES ACTIVITIES */
+.banner-circles {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.bike-image img,
+.walking-image img,
+.doggie-image img {
+  width: 180px;
+  height: 180px;
+  border: 6px solid #93CC58;
+  border-radius: 50%;
+  padding: 30px;
+  background-color: #fff;
+  position: absolute;
+  top: -63%;
+  z-index: 1;
+}
+
+.bike-title p,
+.walking-title p,
+.doggies-title p {
+  text-align: center;
+  margin-top: 80%;
+}
+
+.bike-image img {
+  transition: transform 0.3s ease;
+}
+
+.bike-title p {
+  transition: color 0.3s ease;
+  color: var(--text-color);
+}
+
+.mountain-biking:hover .bike-image img {
+  transform: scale(1.1); /* Zoom in effect */
+  fill: var(--footer-bg); /* Change color to green */
+}
+
+.mountain-biking:hover .bike-title p {
+  color: var(--footer-bg);
+}
+
+.walking-image img {
+  transition: transform 0.3s ease;
+}
+
+.walking-title p {
+  transition: color 0.3s ease;
+  color: var(--text-color);
+}
+
+.walking:hover .walking-image img {
+  transform: scale(1.1);
+}
+
+.walking:hover .walking-image img path {
+  fill: var(--footer-bg);
+}
+
+.walking:hover .walking-title p {
+  color: var(--footer-bg);
+}
+
+.doggie-image img {
+  transition: transform 0.3s ease;
+}
+
+.doggies-title p {
+  transition: color 0.3s ease;
+  color: var(--text-color);
+}
+
+.doggie-trails:hover .doggie-image img {
+  transform: scale(1.1);
+}
+
+.doggie-trails:hover .doggie-image img path {
+  fill: var(--footer-bg);
+}
+
+.doggie-trails:hover .doggies-title p {
+  color: var(--footer-bg);
+}
+ 
+@media (max-width: 768px) {
+  .banner-circles {
+    flex-direction: column;
+  }
+  .bike-image img,
+  .walking-image img,
+  .doggie-image img {
+    position: static; /* Resetting position */
+  }
+  .bike-image img {
+    margin-top: 10%;
+  }
+  .bike-title,
+  .walking-title,
+  .doggies-title {
+    margin: 10% 0;
+  }
+  .bike-title p,
+  .walking-title p,
+  .doggies-title p {
+    margin-top: 20%;
+  }
+}
 
 
 
