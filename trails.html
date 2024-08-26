@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Thaba Trails - Trails</title>
+  </head>
+  <body>
+  <!-- NAV BAR -->
+  <section class="main-menu bg-white">
+    <nav class="navbar">
+    <div class="nav-section flex items-center justify-between absolute w-full pr-3 left-0">
+       <!-- LOGO -->
+       <div class="pt-0">
+           <a href="/">
+               <img src="images/thaba-trails-logo.svg" alt="Logo">
+           </a>
+       </div>
+    
+       <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
+       <button class="hamburger hamburger--stand is-active lg:hidden" type="button" id="hamburger_toggle">
+           <span class="hamburger-box">
+               <span class="hamburger-inner"></span>
+           </span>
+       </button>
+    
+       <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
+       <div class="hidden lg:flex  flex-wrap md:items-center md:space-x-7 uppercase font-poppins-light text-white text-xl">
+           <li class="menu-items hover:text-indigo"><a href="/activities.html">Activities</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/trails.html">Trails</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/#upcoming-events">Upcoming Events</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/#visit-our-shop">Visit Our Shop</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/#our-cafe">Cafe</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/#our-wild-life">Wildlife</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/about.html">About</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/contact-us.html">Contact us</a></li>
+       </div>
+    </div>
+    
+    <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
+    <div id="mobile_menu" class="absolute w-full space-y-8 pl-3 uppercase font-semibold font-poppins-light text-lg z-10 text-white text-left py-6 bg-green bg-opacity-50 top-20 lg:hidden">
+      <li class="menu-items hover:text-indigo"><a href="/activities.html">Activities</a></li>
+      <li class="menu-items hover:text-indigo"><a href="/activities.html">Activities</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/trails.html">Trails</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/#upcoming-events">Upcoming Events</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/#visit-our-shop">Visit Our Shop</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/#our-cafe">Cafe</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/#our-wild-life">Wildlife</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/about.html">About</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/contact-us.html">Contact us</a></li>
+    </div>
+    </nav>
+    </section>
+
+
+<!-- SLIDESHOW DESKTOP AND LARGER DEVICE-->
+<section class="main-slideshow relative">
+    <div class="background-image">
+        <img src="images/trails-banner-main.jpg" alt="trails-home-banner">
+    </div>
+</section>
+
+<!-- TRAILS HEADING -->
+ <section class="trails-heading">
+<div class="flex items-center justify-center py-6 bg-peach">
+    <img src="images/white-ring.svg" class="w-9" alt="ring">
+    <h2 class="font-poppins-bold text-white text-2xl uppercase px-4">Trails on offer</h2>
+    <img src="images/white-ring.svg" class="w-9" alt="ring">
+  </div>
+</section>
+
+
+<!-- ABOUT TRAILS SECTION -->
+ <div class="trails-text px-4 my-8">
+    <h2 class="font-poppins-bold text-peach text-2xl">Mountain biking - 10km, 25km, and 40km</h2>
+    <p class="font-poppins-light text-darkGrey trext-base pr-[15%] py-8">Lorem ipsum dolor sit amet consectetur adipiscing elit, nunc parturient diam taciti mollis ligula tempus ut, nec ad class potenti dignissim non. Enim dignissim lacus integer quam viverra ultricies potenti habitant placerat, egestas mattis fames vestibulum blandit tincidunt eget molestie. Vestibulum cubilia conubia ante sagittis augue</p>
+    <h2 class="font-poppins-bold text-peach text-2xl">Walking, running, and hiking - 5km and 10km</h2>
+    <p class="font-poppins-light text-darkGrey trext-base pr-[15%] py-8">Montes posuere sem fermentum vestibulum sapien placerat, odio taciti hac platea at nec, euismod aliquam himenaeos vehicula eleifend. Cubilia feugiat risus diam interdum enim quis per, lobortis habitant nullam varius habitasse magna nunc gravida, platea praesent in integer sed rutrum. In mi condimentum pellentesque</p>
+    <h2 class="font-poppins-bold text-peach text-2xl">Thaba Paws Dog trail - 2km and 5km</h2>
+    <p class="font-poppins-light text-darkGrey trext-base pr-[15%] py-8">Placerat a integer proin pellentesque commodo natoque taciti tortor luctus ac, aptent lacinia cursus fringilla urna odio rutrum potenti semper senectus, tristique pulvinar torquent laoreet ultrices porta montes massa suspendisse. Maecenas fermentum diam natoque dictumst sociosqu dui neque turpis urna a, interdum blandit sollicitudin integer suspendisse risus hac convallis dapibus</p>
+    <div class="features">
+        <p class="font-poppins-bold text-xl text-darkGrey pb-4">Key Feature:</p>
+        <ul>
+            <li class="text-darkGrey text-base"><span class="font-poppins-bold">Lorem ipsum:</span> bulum sapien placerat, odio taciti</li>
+            <li class="text-darkGrey text-base py-3"><span class="font-poppins-bold">Cubilia feugiat:</span> risus hac convallis dapibus</li>
+            <li class="text-darkGrey text-base"><span class="font-poppins-bold">In mi condimentum:</span>urna odio rutrum potenti semper senectus, tristique</li>
+        </ul>
+    </div>
+ </div>
+
+
+ <!-- THABA TRAILS HEADING SECTION -->
+  <section class="thaba-trails">
+
+    <!-- slider -->
+    <div class="carousel container mx-auto w-[70%]" data-flickity='{ "autoPlay": 1800, "pauseAutoPlayOnHover": false }'>
+      <div class="carousel-cell">
+      <img src="images/home-banner.png" alt="banner-1">
+      </div>
+      <div class="carousel-cell">
+      <img src="images/home-banner.png" alt="banner-2">
+      </div>
+      </div>
+  </section>
+
+  <!-- PURCHASE A PERMIT -->
+  <section class="purchase-permit">
+    <div class="flex items-center justify-center py-8 bg-peach">
+        <h2 class="font-poppins-bold text-white text-2xl uppercase px-4">Purchase a Permit</h2>
+      </div>
+    </section>
+
+<!-- PERMITS CARDS -->
+ <div class="permit-cards grid grid-cols-1 gap-12 md:gap-12 my-12 px-10 md:grid-cols-3">
+    <div class="border-4 rounded-2xl border-peach px-8 pb-4">
+        <img src="images/cycling-permit.svg" class="w-60 h-60 mx-auto" alt="cycling">
+        <h2 class="font-poppins-bold text-2xl text-peach text-center py-4">Cycling Permit</h2>
+        <ul class="font-poppins-light text-darkGrey text-base text-center">
+            <li>Day Permit</li>
+            <li class="pb-4">R70 per person</li>
+            <li class="h-[2px] bg-darkGrey mx-7"></li>
+            <li class="pt-4">10 Entries</li>
+            <li class="pb-4">R500 per person</li>
+            <li class="h-[2px] bg-darkGrey mx-7"></li>
+            <li class="pt-4">20 Entries</li>
+            <li class="pb-4">R700 per person</li>
+            <li class="h-[2px] bg-darkGrey mx-7"></li>
+            <li class="pt-4">Annual Permit</li>
+            <li class="pb-4">R2000 per person</li>
+        </hr>
+        </ul>
+    </div>
+    <div class="border-4 rounded-2xl border-peach px-8 pb-4">
+        <img src="images/walking-permit.svg" class="w-60 h-60 mx-auto" alt="cycling">
+        <h2 class="font-poppins-bold text-2xl text-peach text-center py-4">Walking, Running and Hiking Permit</h2>
+        <ul class="font-poppins-light text-darkGrey text-base text-center">
+            <li>Day Permit</li>
+            <li class="pb-4">R40 per person</li>
+            <li class="h-[2px] bg-darkGrey mx-7"></li>
+            <li class="pt-4">10 Entries</li>
+            <li class="pb-4">R300 per person</li>
+            <li class="h-[2px] bg-darkGrey mx-7"></li>
+        </hr>
+        </ul>
+    </div>
+    <div class="border-4 rounded-2xl border-peach px-8 pb-4">
+        <img src="images/doggie-permit.svg" class="w-60 h-60 mx-auto" alt="cycling">
+        <h2 class="font-poppins-bold text-2xl text-peach text-center py-4">Doggie Permit</h2>
+        <ul class="font-poppins-light text-darkGrey text-base text-center">
+            <li>Day Permit</li>
+            <li class="pb-4">R40 per person</li>
+            <li class="h-[2px] bg-darkGrey mx-7"></li>
+            <li class="pt-4">10 Entries</li>
+            <li class="pb-4">R300 per person</li>
+            <li class="h-[2px] bg-darkGrey mx-7"></li>
+        </hr>
+        </ul>
+    </div>
+ </div>
+     <!-- TRAIL RULES -->
+  <section class="purchase-permit">
+    <div class="flex items-center justify-center py-8 bg-peach">
+        <h2 class="font-poppins-bold text-white text-2xl uppercase px-4">Trail Rules and Etiquette</h2>
+      </div>
+      <div class="rules pl-8 pr-[15%]">
+      <h2 class="font-poppins-bold text-2xl text-peach py-4">Eco Park Trails</h2>
+      <ul>
+        <ol>Lorem ipsum dolor sit</ol>
+        <ol>Lorem ipsum dolor sit</ol>
+        <ol>Lorem ipsum dolor sit</ol>
+      </ul>
+      <h2 class="font-poppins-bold text-2xl text-peach py-4">Thaba Paws Dog park</h2>
+      <ul>
+        <ol>Lorem ipsum dolor sit</ol>
+        <ol>Lorem ipsum dolor sit</ol>
+        <ol>Lorem ipsum dolor sit</ol>
+      </ul>
+      <h2  class="font-poppins-bold text-2xl text-peach py-4">Disclaimer</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius facere odio vitae distinctio repellendus commodi eos inventore, omnis unde Magna eu gravida velit cum dictum aliquet inceptos turpis bibendum purus vulputate molestie semper, suscipit libero nisi litora posuere leo rhoncus himenaeos cubilia habitant mi. Rutrum dis phasellus iaculis dignissim nibh litora accumsan ridiculus ornare, nulla suspendisse eleifend mattis himenaeos quam platea cursus tempor, feugiat posuere pulvinar pretium congue justo ultrices massa, laoree aperiam.</p>
+    </div>
+    </section>
+
+
+
+ <!-- BOTTOM FOOTER -->
+ <section class="bottom-footer border-t-4 border-t-peach mt-5">
+  <div class="heading">
+    <h2 class="font-poppins-bold text-xl text-peach pt-5">Contact Us</h2>
+  </div>
+  <div class="footer-details grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="column-1 grid grid-cols-1 md:grid-cols-[35%_auto] gap-5">
+          <ul class="space-y-3">
+              <li class="flex items-center">
+                  <img src="images/mobile.svg" class="w-6 h-6" alt="mobile">
+                  <div class="mobile pl-4">
+                      <a href="tel:+27123456789">+27 12 345 6789</a>
+                  </div>
+              </li>
+              <li class="flex items-center">
+                  <img src="images/landline-head.svg" class="w-6 h-6" alt="Landline">
+                  <div class="landline pl-4">
+                      <a href="tel:0112346789">011 234 6789</a>
+                  </div>
+              </li>
+              <li class="flex items-center">
+                  <img src="images/envelope.svg" class="w-6 h-6" alt="envelope">
+                  <div class="envelope pl-4">
+                      <a href="mailto:test@example.com">test@example.com</a>
+                  </div>
+              </li>          
+              <li class="hover:text-peach"><a href="#">Home</a></li>
+              <li class="hover:text-peach"><a href="#">Activities</a></li>
+              <li class="hover:text-peach"><a href="#">Trails</a></li>
+              <li class="hover:text-peach"><a href="#">Upcoming Events</a></li>
+              <li class="hover:text-peach"><a href="#">About</a></li>
+              <li class="hover:text-peach"><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="column-2">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.866769541325!2d18.478399781327035!3d-33.893084951241356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5f17b746b741%3A0x397047102170f866!2sPower%20of%209!5e0!3m2!1sen!2sza!4v1724165213519!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+      </div>
+   <!-- FORM -->
+   <div class="contact-form pl-0 lg:pl-20">
+    <div class="pr-6">
+      <div class="w-full">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <input
+              class="px-3 py-2 mt-1 text-sm w-full border border-1 rounded-none"
+              type="text"
+              placeholder="First Name"
+            />
+          </div>
+          <div>
+            <input
+              class="px-3 py-2 text-sm mt-1 w-full border border-1 rounded-none"
+              type="text"
+              placeholder="Last Name"
+            />
+          </div>
+          <div>
+            <input
+              class="px-3 py-2 text-sm w-full border border-1 rounded-none"
+              type="email"
+              placeholder="Email"
+            />
+          </div>
+          <div>
+            <input
+              class="px-3 py-2 text-sm w-full border border-1 rounded-none"
+              type="text"
+              placeholder="Phone Number"
+            />
+          </div>
+        </div>
+        <div class="mt-5">
+          <div>
+            <textarea
+              class="border rounded-none border-1 px-3 py-2 mt-1 mb-5 text-sm w-full"
+              rows="4"
+              placeholder="Message"
+            ></textarea>
+          </div>
+        </div>
+          <button class="submit bttn font-poppins-light px-4"> Submit
+          </button>
+      </div>
+    </div>
+  </div>  
+  </div>
+</section>
+
+<!-- TRADEMARK FOOTER SECTION -->
+<section class="trademark bg-peach py-4 mt-5">
+  <div class="footer-trademark text-center">
+    <h2 class="font-poppins-light text-white text-sm">© Thaba Trails 2024 | By 
+      <a href="https://powerof9.co.za" target="_blank" class="font-poppins-light text-sm text-white hover:underline">Power of 9</a>
+    </h2>
+  </div>
+</section>
+
+
+  <!-- FLICKITY JS -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+crossorigin="anonymous">
+</script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

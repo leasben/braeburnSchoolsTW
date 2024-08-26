@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Thaba Trails - Contact Us</title>
+  </head>
+  <body>
+  <!-- NAV BAR -->
+  <section class="main-menu bg-white">
+    <nav class="navbar">
+    <div class="nav-section flex items-center justify-between absolute w-full pr-3 left-0">
+       <!-- LOGO -->
+       <div class="pt-0">
+           <a href="/">
+               <img src="images/thaba-trails-logo.svg" alt="Logo">
+           </a>
+       </div>
+    
+       <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
+       <button class="hamburger hamburger--stand is-active lg:hidden" type="button" id="hamburger_toggle">
+           <span class="hamburger-box">
+               <span class="hamburger-inner"></span>
+           </span>
+       </button>
+    
+       <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
+       <div class="hidden lg:flex  flex-wrap md:items-center md:space-x-7 uppercase font-poppins-light text-white text-xl">
+           <li class="menu-items hover:text-indigo"><a href="/activities.html">Activities</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/trails.html">Trails</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/#upcoming-events">Upcoming Events</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/#visit-our-shop">Visit Our Shop</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/#our-cafe">Cafe</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/#our-wild-life">Wildlife</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/about.html">About</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/contact-us.html">Contact us</a></li>
+       </div>
+    </div>
+    
+    <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
+    <div id="mobile_menu" class="absolute w-full space-y-8 pl-3 uppercase font-semibold font-poppins-light text-lg z-10 text-white text-left py-6 bg-green bg-opacity-50 top-20 lg:hidden">
+      <li class="menu-items hover:text-indigo"><a href="/activities.html">Activities</a></li>
+      <li class="menu-items hover:text-indigo"><a href="/activities.html">Activities</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/trails.html">Trails</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/#upcoming-events">Upcoming Events</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/#visit-our-shop">Visit Our Shop</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/#our-cafe">Cafe</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/#our-wild-life">Wildlife</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/about.html">About</a></li>
+           <li class="menu-items hover:text-indigo"><a href="/contact-us.html">Contact us</a></li>
+    </div>
+    </nav>
+    </section>
+
+
+<!-- TOP SECTION-->
+<section class="contact">
+    <main><div class="xl:h-32 lg:h-40 sm:h-32 h-28 bg-peach"></div>
+        <div class="md:text-center bg-peach py-8">
+          <div class="container text-white">
+            
+        <h2 class="uppercase md:text-3xl text-2xl flex justify-center gap-8 text-white">Contact Us</h2>  </div>
+        </div>
+    </main>
+</section>
+
+<!-- OPERATING HOURS -->
+
+<section class="operating">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pt-20 pb-14">
+            <div class="container mx-auto">
+                <div class="overflow-x-auto">
+                    <table class="min-w-full">
+                        <thead class="bg-gray-50">
+                          <h2 class="font-poppins-bold text-2xl text-peach pb-10 px-5">Operating Hours</h2>
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xl font-poppins-bold uppercase tracking-wider"></th>
+                                <th class="px-6 py-3 text-left text-xl font-poppins-bold text-peach tracking-wider">Shop</th>
+                                <th class="px-6 py-3 text-left text-xl font-poppins-bold text-peach tracking-wider">Trail</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white">
+                            <!-- Row 1 -->
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-base font-medium text-gray-500">Monday</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-base text-red-700">Closed</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-base text-red-700">Closed</td>
+                            </tr>
+                            <!-- Row 2 -->
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-base font-medium text-gray-500">Tusday</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-base text-gray-500">7am - 5pm</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-base text-gray-500">7am - 5pm</td>
+                            </tr>
+                            <!-- Row 3 -->
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-base font-medium text-gray-500">Wednesday</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-base text-gray-500">7am - 5pm</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-base text-gray-500">7am - 5pm</td>
+                            </tr>
+                            <!-- Row 4 -->
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-base font-medium text-gray-500">Thursday</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-base text-gray-500">7am - 5pm</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-base text-gray-500">7am - 5pm</td>
+                            </tr>
+                            <!-- Row 5 -->
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-base font-medium text-gray-500">Friday</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-base text-gray-500">7am - 5pm</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-base text-gray-500">7am - 5pm</td>
+                            </tr>
+                            <!-- Row 6 -->
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-base font-medium text-gray-500">Saturday</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-base text-gray-500">7am - 1pm</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-base text-gray-500">7am - 1pm</td>
+                            </tr>
+                            <!-- Row 7 -->
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-base font-medium text-gray-500">Sunday</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-base text-gray-500">7am - 1pm</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-base text-gray-500">7am - 1pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="info-details">
+                  <p class="font-poppins-light text-base text-gray-500 px-6">Public Holidays - same as weekends</p>
+                  <p class="font-poppins-light text-base text-gray-500 px-6 pt-4">Closed on New Year, Easter and Christmas</p>
+                </div>
+            </div>
+
+               <!-- MAP SECTION -->
+               <div class="contact-details px-6 md:px-24 container mx-auto">
+                <h2  class="font-poppins-bold text-2xl text-peach pb-10">Contact Us</h2>
+                <div class="flex flex-col gap-5">
+                  <ul class="space-y-3">
+                      <li class="flex items-center">
+                          <img src="images/mobile-phone-green.svg" class="w-6 h-6" alt="mobile">
+                          <div class="mobile pl-4 font-poppins-light text-darkGrey">
+                              <a href="tel:+27123456789">+27 12 345 6789</a>
+                          </div>
+                      </li>
+                      <li class="flex items-center">
+                          <img src="images/landline-green.svg" class="w-6 h-6" alt="Landline">
+                          <div class="landline pl-4 py-3 font-poppins-light text-darkGrey">
+                              <a href="tel:0112346789">011 234 6789</a>
+                          </div>
+                      </li>
+                      <li class="flex items-center">
+                          <img src="images/envelope-green.svg" class="w-6 h-6" alt="envelope">
+                          <div class="envelope pl-4 font-poppins-light text-darkGrey">
+                              <a href="mailto:test@example.com">test@example.com</a>
+                          </div>
+                      </li>          
+                  </ul>
+                  <div class="column-2">
+                    <div class="map-container rounded-3xl">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.866769541325!2d18.478399781327035!3d-33.893084951241356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5f17b746b741%3A0x397047102170f866!2sPower%20of%209!5e0!3m2!1sen!2sza!4v1724165213519!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+              </div>
+            </div>   
+    </div>
+</section>
+
+  <!-- PURCHASE A PERMIT -->
+  <section class="purchase-permit">
+    <div class="flex items-center justify-center py-8">
+        <h2 class="font-poppins-bold text-peach text-2xl uppercase">Buy Permits</h2>
+      </div>
+    </section>
+
+<!-- BUY PERMITS CARDS -->
+ <div class="permit-card grid grid-cols-1 gap-12 md:gap-12 my-12 px-10 md:grid-cols-3 relative">
+  <div class="buy-card-permits bg-peach"></div>
+    <div class="border-4 rounded-2xl border-peach px-8 pb-4 bg-white">
+        <img src="images/cycling-permit.svg" class="w-60 h-60 mx-auto" alt="cycling">
+        <h2 class="font-poppins-bold text-2xl text-peach text-center py-4">Cycling Permit</h2>
+        <ul class="font-poppins-light text-darkGrey text-base text-center">
+            <li>Day Permit</li>
+            <li class="pb-4">R70 per person</li>
+            <li class="h-[2px] bg-darkGrey mx-7"></li>
+            <li class="pt-4">10 Entries</li>
+            <li class="pb-4">R500 per person</li>
+            <li class="h-[2px] bg-darkGrey mx-7"></li>
+            <li class="pt-4">20 Entries</li>
+            <li class="pb-4">R700 per person</li>
+            <li class="h-[2px] bg-darkGrey mx-7"></li>
+            <li class="pt-4">Annual Permit</li>
+            <li class="pb-4">R2000 per person</li>
+        </hr>
+        </ul>
+    </div>
+    <div class="border-4 rounded-2xl border-peach px-8 pb-4 bg-white">
+        <img src="images/walking-permit.svg" class="w-60 h-60 mx-auto" alt="cycling">
+        <h2 class="font-poppins-bold text-2xl text-peach text-center py-4">Walking, Running and Hiking Permit</h2>
+        <ul class="font-poppins-light text-darkGrey text-base text-center">
+            <li>Day Permit</li>
+            <li class="pb-4">R40 per person</li>
+            <li class="h-[2px] bg-darkGrey mx-7"></li>
+            <li class="pt-4">10 Entries</li>
+            <li class="pb-4">R300 per person</li>
+            <li class="h-[2px] bg-darkGrey mx-7"></li>
+        </hr>
+        </ul>
+    </div>
+    <div class="border-4 rounded-2xl border-peach px-8 pb-4 bg-white">
+        <img src="images/doggie-permit.svg" class="w-60 h-60 mx-auto" alt="cycling">
+        <h2 class="font-poppins-bold text-2xl text-peach text-center py-4">Doggie Permit</h2>
+        <ul class="font-poppins-light text-darkGrey text-base text-center">
+            <li>Day Permit</li>
+            <li class="pb-4">R40 per person</li>
+            <li class="h-[2px] bg-darkGrey mx-7"></li>
+            <li class="pt-4">10 Entries</li>
+            <li class="pb-4">R300 per person</li>
+            <li class="h-[2px] bg-darkGrey mx-7"></li>
+        </hr>
+        </ul>
+    </div>
+ </div>
+
+ <!-- BOTTOM FOOTER -->
+ <section class="bottom-footer mt-20">
+    <!-- FORM -->
+    <div class="pr-6 pt-20 md:pt-0">
+      <div class="w-full">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <input
+              class="px-3 py-2 mt-1 text-sm w-full border border-1 rounded-none"
+              type="text"
+              placeholder="First Name"
+            />
+          </div>
+          <div>
+            <input
+              class="px-3 py-2 text-sm mt-1 w-full border border-1 rounded-none"
+              type="text"
+              placeholder="Last Name"
+            />
+          </div>
+          <div>
+            <input
+              class="px-3 py-2 text-sm w-full border border-1 rounded-none"
+              type="email"
+              placeholder="Email"
+            />
+          </div>
+          <div>
+            <input
+              class="px-3 py-2 text-sm w-full border border-1 rounded-none"
+              type="text"
+              placeholder="Phone Number"
+            />
+          </div>
+        </div>
+        <div class="mt-5">
+          <div>
+            <textarea
+              class="border rounded-none border-1 px-3 py-2 mt-1 mb-5 text-sm w-full"
+              rows="4"
+              placeholder="Message"
+            ></textarea>
+          </div>
+        </div>
+          <button class="submit bttn font-poppins-light px-4"> Submit
+          </button>
+      </div>
+    </div>  
+</section>
+
+<!-- TRADEMARK FOOTER SECTION -->
+<section class="trademark bg-peach py-4 mt-5">
+  <div class="footer-trademark text-center">
+    <h2 class="font-poppins-light text-white text-sm">© Thaba Trails 2024 | By 
+      <a href="https://powerof9.co.za" target="_blank" class="font-poppins-light text-sm text-white hover:underline">Power of 9</a>
+    </h2>
+  </div>
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+crossorigin="anonymous">
+</script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
