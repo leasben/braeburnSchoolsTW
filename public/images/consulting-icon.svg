@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 137px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 15.35px;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(-15.85 -124.16)"><tspan x="0" y="0">4. speech bubbles</tspan></text>
+  <g>
+    <g>
+      <path class="cls-2" d="M381.72,549.01l177.51.45c59.98.11,108.36,35.34,107.81,78.49l-1.2,92.91c-.57,44.29-50.69,79.96-112.25,79.91l-55.47.15"/>
+      <polyline class="cls-2" points="514.01 800.92 480.26 879.94 443.45 800.39 185.74 800.39"/>
+    </g>
+    <g>
+      <path class="cls-2" d="M672.58,517.19h-179.76c-55.52-.11-100.3-34.75-99.78-77.19l1.11-91.37c.53-43.56,46.91-78.63,103.9-78.58l396.21.4"/>
+      <polyline class="cls-2" points="658.79 518.26 702.28 597.8 741.52 518.26"/>
+    </g>
+  </g>
+</svg>

@@ -6,17 +6,17 @@
     <link rel="stylesheet" href="/src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <title>Thaba Trails - Home</title>
+    <title>Shannon - Home</title>
   </head>
   <body>
   <!-- NAV BAR -->
-  <section class="main-menu bg-white">
-<nav class="navbar">
-<div class="nav-section flex items-center justify-between absolute w-full pr-3 left-0">
+  <section class="main-menu">
+<nav class="navbar border-b-blue border-b-4">
+<div class="nav-section flex items-center justify-between container mx-auto">
    <!-- LOGO -->
    <div class="pt-0">
        <a href="/">
-           <img src="images/thaba-trails-logo.svg" alt="Logo">
+           <img src="images/shannon_logo.svg" alt="Logo">
        </a>
    </div>
 
@@ -28,451 +28,58 @@
    </button>
 
    <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
-   <div class="hidden lg:flex  flex-wrap md:items-center md:space-x-7 uppercase font-poppins-light text-white text-xl">
-       <li class="menu-items hover:text-indigo"><a href="/activities.html">Activities</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/trails.html">Trails</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/#upcoming-events">Upcoming Events</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/#visit-our-shop">Visit Our Shop</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/#our-cafe">Cafe</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/#our-wild-life">Wildlife</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/about.html">About</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/contact-us.html">Contact us</a></li>
+   <div class="hidden lg:flex  md:items-center md:space-x-20 uppercase font-poppins-light text-blue text-xl">
+       <li class="menu-items hover:text-indigo"><a href="/activities.html">About</a></li>
+       <li class="menu-items hover:text-indigo"><a href="/trails.html">Services</a></li>
+       <li class="menu-items hover:text-indigo"><a href="/#upcoming-events">Sectors</a></li>
+       <li class="menu-items hover:text-indigo"><a href="/#visit-our-shop">Articles</a></li>
+       <li class="menu-items hover:text-indigo"><a href="/#our-cafe">Contact</a></li>
    </div>
+   <!-- linkedin icon -->
+    <div class="socila-icon w-12 h-12">
+      <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52">
+        <g id="Group_97" data-name="Group 97" transform="translate(-1652 -155)">
+          <path id="Icon_corebrands-linkedin-in" data-name="Icon corebrands-linkedin-in" d="M9.3,31.5H2.771V10.469H9.3ZM6.032,7.6A3.8,3.8,0,1,1,9.814,3.782,3.814,3.814,0,0,1,6.032,7.6ZM33.743,31.5H27.227V21.263c0-2.44-.049-5.569-3.4-5.569-3.4,0-3.916,2.65-3.916,5.393V31.5H13.392V10.469h6.263v2.869h.091a6.861,6.861,0,0,1,6.178-3.4c6.609,0,7.824,4.353,7.824,10.006V31.5Z" transform="translate(1660.5 165.25)" fill="#08522d"/>
+          <g id="Rectangle_78" data-name="Rectangle 78" transform="translate(1652 155)" fill="none" stroke="#08522d" stroke-width="3">
+            <rect width="53" height="52" rx="13" stroke="none"/>
+            <rect x="1.5" y="1.5" width="50" height="49" rx="11.5" fill="none"/>
+          </g>
+        </g>
+      </svg>
+    </div>
 </div>
 
 <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
-<div id="mobile_menu" class="absolute w-full space-y-8 pl-3 uppercase font-semibold font-poppins-light text-lg z-10 text-white text-left py-6 bg-green bg-opacity-50 top-20 lg:hidden">
-  <li class="menu-items hover:text-indigo"><a href="/activities.html">Activities</a></li>
-  <li class="menu-items hover:text-indigo"><a href="/activities.html">Activities</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/trails.html">Trails</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/#upcoming-events">Upcoming Events</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/#visit-our-shop">Visit Our Shop</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/#our-cafe">Cafe</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/#our-wild-life">Wildlife</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/about.html">About</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/contact-us.html">Contact us</a></li>
+<div id="mobile_menu" class="w-full space-y-8 pl-3 uppercase font-semibold font-poppins-light text-lg z-10 text-white text-left py-6 bg-blue top-20 lg:hidden">
+  <li class="menu-items hover:text-indigo"><a href="/activities.html">About</a></li>
+       <li class="menu-items hover:text-indigo"><a href="/trails.html">Services</a></li>
+       <li class="menu-items hover:text-indigo"><a href="/#upcoming-events">Sectors</a></li>
+       <li class="menu-items hover:text-indigo"><a href="/#visit-our-shop">Articles</a></li>
+       <li class="menu-items hover:text-indigo"><a href="/#our-cafe">Contact</a></li> 
 </div>
 </nav>
 </section>
 
 <!-- SLIDESHOW DESKTOP AND LARGER DEVICE-->
 <section class="main-slideshow relative">
-<div class="carousel hidden md:block" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false }'>
+<!-- <div class="carousel hidden md:block" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false }'>
 <div class="carousel-cell">
 <img src="images/home-banner.png" alt="banner-1">
 </div>
 <div class="carousel-cell">
 <img src="images/home-banner.png" alt="banner-2">
 </div>
-</div>
+</div> -->
 <!-- SLIDESHOW MOBILE DEVICES -->
-<div class="carousel block md:hidden" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false }'>
+<!-- <div class="carousel block md:hidden" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false }'>
 <div class="carousel-cell">
 <img src="images/mobile-activities-banner-1.jpg" alt="banner-1">
 </div>
 <div class="carousel-cell">
 <img src="images/mobile-activities-banner-2.jpg" alt="banner-2">
 </div>
-</div>
+</div> -->
 </section>
-
-<!-- CIRCLES -->
-<section class="circles">
-  <div class="banner-circles">
-    <div class="mountain-biking">
-      <div class="bike-image">
-        <a href="#"><img src="images/bicycle.svg" alt="Bike"></a>
-      </div>
-      <div class="bike-title">
-        <p>Mountain Biking</p>
-      </div>
-    </div>
-    <div class="walking">
-      <div class="walking-image">
-        <a href="#"><img src="images/person-running.svg" alt="running"></a>
-      </div>
-      <div class="walking-title">
-        <p>Walking, Running <br>& Hiking Trails</p>
-      </div>
-    </div>
-    <div class="doggie-trails">
-      <div class="doggie-image">
-        <a href="#"><img src="images/person-with-dog.svg"  alt="Doggie Trails"></a>
-      </div>
-      <div class="doggies-title">
-        <p>Doggie Trails</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<!-- ABOUT SECTION -->
- <section class="about-section">
-  <div class="grid grid-cols-1 gap-6 md:gap-16 md:grid-cols-2 ">
-    <div class="about-col-1 pl-24 pr-20 bg-grey pb-8">
-  <h2 class="font-poppins-bold text-3xl text-peach pt-12">About Thaba Trails </h2>
-  <p class="font-poppins-light text-base pt-3">Lorem ipsum dolor sit amet consectetur adipiscing elit, mattis cras nunc et imperdiet metus, risus auctor platea augue mi lacus. Turpis varius laoreet sed tortor eleifend dapibus fringilla mattis, feugiat metus rutrum velit massa fermentum aliquet, hendrerit hac rhoncus dis suscipit erat ligula. Himenaeos habitasse sodales libero cubilia justo porttitor turpis sagittis molestie vulputate, nisi viverra sociis praesent ornare nostra dapibus orci dignissim, senectus suspendisse scelerisque tortor aliquam nam nisl conubia ultricies
-
-    Fames gravida justo volutpat sociis cum euismod cubilia diam morbi, urna viverra nullam magnis cursus purus ornare nascetur, luctus nec massa placerat pellentesque pretium ligula dapibus. A urna sapien cum litora montes donec fames sollicitudin lobortis aptent, commodo dapibus
-  </p>
- <a href="/about.html"> <button class="bttn font-poppins-light"> View More
-  </button></a>
-</div>
-
-<div class="about-col-2 pl-20 md:pl-0">
-  <div class="row-1 grid grid-cols-1 gap-10 pt-12 mb-12 md:grid-cols-2 md:gap-20">
-  <div class="shop-hours">
-    <h3 class="font-poppins-bold text-base text-peach pb-3">Shop Operating Hours</h3>
-    <p>Monday: Closed</p>
-    <p>Tuesday-Friday: 7am - 5pm</p>
-    <p>Saturday - Sunday: 6am - 1pm</p>
-    <p>Public Holidays: Same as Weekends</p>
-    <p>Closed on New Year, easter and Christmas</p>
-  </div>
-  <div class="trail-hours">
-    <h3 class="font-poppins-bold text-base text-peach pb-3">Trail Operating Hours</h3>
-    <p>Monday: Closed</p>
-    <p>Tuesday-Friday: 7am - 5pm</p>
-    <p>Saturday - Sunday: 6am - 1pm</p>
-    <p>Public Holidays: Same as Weekends</p>
-    <p>Closed on New Year, easter and Christmas</p>
-  </div>
-</div>
-
-<div class="row-2 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-20">
-  <div class="buy-permits">
-  <h3 class="font-poppins-bold text-base text-peach pb-3">Buy Permits</h3>
-  <p>Walking, Running and Hiking Permit</p>
-  <p>Day Permit</p>
-  <p>R40 per Permit</p>
-  <p>10  Entries</p>
-  <p>R300 per person</p>
-  <h3>Location</h3>
-  <p>Thaba Lifestyle Center</p>
-   <p>101 Klipriver Road</p> 
-   <p> Mulbarton</p>
-</div>
-<div class="cycling-permits">
-  <h3 class="font-poppins-bold text-base text-peach pb-3">Cycling Permits</h3>
-  <p>Day Permit</p>
-  <p>R70 per Permit</p>
-  <p>10  Entries</p>
-  <p>R500 per person</p>
-  <p>20 Entries</p>
-  <p>R700 per person</p>
-  <p>Annual Permit</p>
-  <p>R2000 per person</p>
-</div>
-</div>
-</div>
-</div>
- </section>
-
- <!-- THABA TRAILS HEADING SECTION -->
-  <section class="trails">
-    <div class="flex items-center justify-center h-12 bg-peach">
-      <img src="images/white-ring.svg" class="w-9" alt="ring">
-      <h2 class="font-poppins-bold text-white text-2xl uppercase px-4">Trails</h2>
-      <img src="images/white-ring.svg" class="w-9" alt="ring">
-    </div>
-
-    <!-- slider -->
-    <div class="carousel container mx-auto w-[70%]" data-flickity='{ "autoPlay": 1800, "pauseAutoPlayOnHover": false }'>
-      <div class="carousel-cell">
-      <img src="images/home-banner.png" alt="banner-1">
-      </div>
-      <div class="carousel-cell">
-      <img src="images/home-banner.png" alt="banner-2">
-      </div>
-      </div>
-     <a href="/trails.html"> <button class="trails bttn font-poppins-light mx-auto px-4"> View More
-      </button></a>
-  </section>
-
-
-  <!-- SHOPS SERVICES -->
-  <section class="shop-services" id="visit-our-shop">
-    <div class="visit-shop grid grid-cols-1 border-t-4 border-b-4 border-t-peach border-b-peach mt-8 md:grid-cols-2">
-      <!-- First Row (Shop) -->
-      <div class="shop gallery order-1 md:order-none">
-        <div class="shop-col-1">
-          <!-- Flickity HTML init -->
-          <div class="carousel-shop carousel-main-shop" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false }'>
-            <div class="carousel-cell">
-              <img src="images/shop-g1.png" alt="shop">
-            </div>
-            <div class="carousel-cell">
-              <img src="images/shop-g2.jpg" alt="shop">
-            </div>
-            <div class="carousel-cell">
-              <img src="images/shop-g3.jpg" alt="shop">
-            </div>
-          </div>
-          <div class="carousel-shop carousel-nav-shop" data-flickity='{ "asNavFor": ".carousel-main-shop", "contain": true, "pageDots": false, "prevNextButtons": false }'>
-            <div class="carousel-cell">
-              <img src="images/shop-g1.png" alt="shop">
-            </div>
-            <div class="carousel-cell">
-              <img src="images/shop-g2.jpg" alt="shop">
-            </div>
-            <div class="carousel-cell">
-              <img src="images/shop-g3.jpg" alt="shop">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="shop-heading flex flex-col justify-center bg-grey pl-9 pr-16 order-2 md:order-none">
-        <h2 class="font-poppins-bold text-3xl uppercase text-peach">Visit Our Shop</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit conubia justo curabitur, nulla ultriciesparturient nec, dui curabitur vulputate tempor dis ultrices accumsan</p><br>
-        <p>This nulla ultricies porttitor luctus cursus interdum eleifend mattis commodo nisl, habitasse fames enim dapibus maecenas non vel diam dis. Ullamcorper imperdiet tellus massa nostra</p>
-      </div>
-      
-      <!-- Second Row (Cafe) -->
-      <div class="cafe-heading flex flex-col justify-center pl-9 mr-11 order-4 md:order-none" id="our-cafe">
-        <h2 class="font-poppins-bold text-3xl uppercase text-peach">Cafe</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit conubia justo curabitur, nulla ultriciesparturient nec, dui curabitur vulputate tempor dis ultrices accumsan</p><br>
-        <p>This nulla ultricies porttitor luctus cursus interdum eleifend mattis commodo nisl, habitasse fames enim dapibus maecenas non vel diam dis. Ullamcorper imperdiet tellus massa nostra</p>
-      </div>
-      <div class="cafe gallery order-3 md:order-none">
-        <div class="cafe-col-1 pl:0 md:pl-20">
-          <!-- Flickity HTML init -->
-          <div class="carousel-cafe carousel-main-cafe" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false }'>
-            <div class="carousel-cell">
-              <img src="images/cafe-g1.png" alt="cafe">
-            </div>
-            <div class="carousel-cell">
-              <img src="images/cafe-g2.jpg" alt="cafe">
-            </div>
-            <div class="carousel-cell">
-              <img src="images/cafe-g3.jpg" alt="cafe">
-            </div>
-          </div>
-          <div class="carousel-cafe carousel-nav-cafe" data-flickity='{ "asNavFor": ".carousel-main-cafe", "contain": true, "pageDots": false, "prevNextButtons": false }'>
-            <div class="carousel-cell">
-              <img src="images/cafe-g1.png" alt="cafe">
-            </div>
-            <div class="carousel-cell">
-              <img src="images/cafe-g2.jpg" alt="cafe">
-            </div>
-            <div class="carousel-cell">
-              <img src="images/cafe-g3.jpg" alt="cafe">
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Third Row (Wildlife) -->
-      <div class="wildlife gallery order-5 md:order-none" id="our-wild-life">
-        <div class="wildlife-col-1">
-          <!-- Flickity HTML init -->
-          <div class="carousel-wildlife carousel-main-wildlife" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false }'>
-            <div class="carousel-cell">
-              <img src="images/wildlife-g2.jpg" alt="wildlife">
-            </div>
-            <div class="carousel-cell">
-              <img src="images/wildlife-g3.jpg" alt="wildlife">
-            </div>
-            <div class="carousel-cell">
-              <img src="images/wildlife-g3.jpg" alt="wildlife">
-            </div>
-          </div>
-          <div class="carousel-wildlife carousel-nav-wildlife" data-flickity='{ "asNavFor": ".carousel-main-wildlife", "contain": true, "pageDots": false, "prevNextButtons": false }'>
-            <div class="carousel-cell">
-              <img src="images/wildlife-g2.jpg" alt="wildlife">
-            </div>
-            <div class="carousel-cell">
-              <img src="images/wildlife-g3.jpg" alt="wildlife">
-            </div>
-            <div class="carousel-cell">
-              <img src="images/wildlife-g3.jpg" alt="wildlife">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="wildlife-heading flex flex-col justify-center pl-9 pr-16 bg-grey order-6 md:order-none">
-        <h2 class="font-poppins-bold text-3xl uppercase text-peach">Wildlife</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit conubia justo curabitur, nulla ultriciesparturient nec, dui curabitur vulputate tempor dis ultrices accumsan</p><br>
-        <p>This nulla ultricies porttitor luctus cursus interdum eleifend mattis commodo nisl, habitasse fames enim dapibus maecenas non vel diam dis. Ullamcorper imperdiet tellus massa nostra</p>
-      </div>
-    </div>
-  </section>
-  
-
-
-<!-- UPCOMING EVENTS -->
- <section class="upcoming-events" id="upcoming-events">
-  <div class="flex items-center justify-center h-12 pt-8">
-    <img src="images/green-ring.svg" class="w-9" alt="ring">
-    <h2 class="font-poppins-bold text-peach text-2xl uppercase px-4">Upcoming Events</h2>
-    <img src="images/green-ring.svg" class="w-9" alt="ring">
-  </div>
-  <div class="cards grid grid-cols-1 gap-14 md:gap-12 text-white px-8 md:px-10 py-10 md:grid-cols-3">
-    <div class="card-1 shadow-2xl">
-      <div class="card-image">
-        <img src="images/events-1.png" alt="events">
-      </div>
-      <div class="card-details bg-peach pb-5 pl-7 pr-3 pt-4">
-      <div class="card-title">
-        <h2 class="text-2xl font-poppins-medium">Lorem ipsum dolor.</h2>
-      </div>
-      <div class="card-date">
-        <p class="font-poppins-light text-base">20 March 2023</p>
-      </div>
-      <div class="card-text">
-        <p class="font-poppins-light text-base py-8">Lorem ipsum dolor sit amet consectetur adipiscing elit posuere, tortor habitant cubilia velit dictumst etiam faucibus, vulputate morbi erat ligula fermentum orci hac. Egestas dictum senectus ullamcorper dignissim</p>
-      </div>
-      <div class="card-button">
-         Enter Now
-      </div>
-    </div>
-    </div>
-    <div class="card-2 shadow-2xl">
-      <div class="card-image">
-        <img src="images/events-2.png" alt="events">
-      </div>
-      <div class="card-details bg-peach pb-5 pl-7 pr-3 pt-4">
-      <div class="card-title">
-        <h2 class="text-2xl font-poppins-medium">Lorem ipsum dolor.</h2>
-      </div>
-      <div class="card-date">
-        <p class="font-poppins-light text-base">20 December 2023</p>
-      </div>
-      <div class="card-text">
-        <p class="font-poppins-light text-base py-8">Lorem ipsum dolor sit amet consectetur adipiscing elit posuere, tortor habitant cubilia velit dictumst etiam faucibus, vulputate morbi erat ligula fermentum orci hac. Egestas dictum senectus ullamcorper dignissim</p>
-      </div>
-      <div class="card-button">
-         Enter Now
-      </div>
-    </div>
-    </div>
-    <div class="card-3 shadow-2xl">
-      <div class="card-image">
-        <img src="images/events-3.png" alt="events">
-      </div>
-      <div class="card-details bg-peach pb-5 pl-7 pr-3 pt-4">
-      <div class="card-title">
-        <h2 class="text-2xl font-poppins-medium">Lorem ipsum dolor.</h2>
-      </div>
-      <div class="card-date">
-        <p class="font-poppins-light text-base">17 April 2023</p>
-      </div>
-      <div class="card-text">
-        <p class="font-poppins-light text-base py-8">Lorem ipsum dolor sit amet consectetur adipiscing elit posuere, tortor habitant cubilia velit dictumst etiam faucibus, vulputate morbi erat ligula fermentum orci hac. Egestas dictum senectus ullamcorper dignissim</p>
-      </div>
-      <div class="card-button">
-         Enter Now
-      </div>
-    </div>
-    </div>
-  </div>
- </section>
-
- <!-- BOTTOM FOOTER -->
- <section class="bottom-footer border-t-4 border-t-peach mt-5">
-  <div class="heading">
-    <h2 class="font-poppins-bold text-xl text-peach pt-5">Contact Us</h2>
-  </div>
-  <div class="footer-details grid grid-cols-1 lg:grid-cols-2 gap-8">
-      <div class="column-1 grid grid-cols-1 md:grid-cols-[35%_auto] gap-5">
-          <ul class="space-y-3">
-              <li class="flex items-center">
-                  <img src="images/mobile.svg" class="w-6 h-6" alt="mobile">
-                  <div class="mobile pl-4">
-                      <a href="tel:+27123456789">+27 12 345 6789</a>
-                  </div>
-              </li>
-              <li class="flex items-center">
-                  <img src="images/landline-head.svg" class="w-6 h-6" alt="Landline">
-                  <div class="landline pl-4">
-                      <a href="tel:0112346789">011 234 6789</a>
-                  </div>
-              </li>
-              <li class="flex items-center">
-                  <img src="images/envelope.svg" class="w-6 h-6" alt="envelope">
-                  <div class="envelope pl-4">
-                      <a href="mailto:test@example.com">test@example.com</a>
-                  </div>
-              </li>          
-              <li class="hover:text-peach"><a href="#">Home</a></li>
-              <li class="hover:text-peach"><a href="#">Activities</a></li>
-              <li class="hover:text-peach"><a href="#">Trails</a></li>
-              <li class="hover:text-peach"><a href="#">Upcoming Events</a></li>
-              <li class="hover:text-peach"><a href="#">About</a></li>
-              <li class="hover:text-peach"><a href="#">Contact Us</a></li>
-          </ul>
-          <div class="column-2">
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.866769541325!2d18.478399781327035!3d-33.893084951241356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5f17b746b741%3A0x397047102170f866!2sPower%20of%209!5e0!3m2!1sen!2sza!4v1724165213519!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-        
-      </div>
-   <!-- FORM -->
-   <div class="contact-form pl-0 lg:pl-20">
-    <div class="pr-6">
-      <div class="w-full">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          <div>
-            <input
-              class="px-3 py-2 mt-1 text-sm w-full border border-1 rounded-none"
-              type="text"
-              placeholder="First Name"
-            />
-          </div>
-          <div>
-            <input
-              class="px-3 py-2 text-sm mt-1 w-full border border-1 rounded-none"
-              type="text"
-              placeholder="Last Name"
-            />
-          </div>
-          <div>
-            <input
-              class="px-3 py-2 text-sm w-full border border-1 rounded-none"
-              type="email"
-              placeholder="Email"
-            />
-          </div>
-          <div>
-            <input
-              class="px-3 py-2 text-sm w-full border border-1 rounded-none"
-              type="text"
-              placeholder="Phone Number"
-            />
-          </div>
-        </div>
-        <div class="mt-5">
-          <div>
-            <textarea
-              class="border rounded-none border-1 px-3 py-2 mt-1 mb-5 text-sm w-full"
-              rows="4"
-              placeholder="Message"
-            ></textarea>
-          </div>
-        </div>
-          <button class="submit bttn font-poppins-light px-4"> Submit
-          </button>
-      </div>
-    </div>
-  </div>  
-  </div>
-</section>
-
-<!-- TRADEMARK FOOTER SECTION -->
-<section class="trademark bg-peach py-4 mt-5">
-  <div class="footer-trademark text-center">
-    <h2 class="font-poppins-light text-white text-sm">© Thaba Trails 2024 | By 
-      <a href="https://powerof9.co.za" target="_blank" class="font-poppins-light text-sm text-white hover:underline">Power of 9</a>
-    </h2>
-  </div>
-</section>
-
-
-  <!-- FLICKITY JS -->
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
 integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="

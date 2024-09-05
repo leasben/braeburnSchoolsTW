@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="Layer_1">
+      <g>
+        <g id="Group_7">
+          <g id="Rectangle_10">
+            <path class="cls-2" d="M45,58.8H15c-8.3,0-15-6.7-15-15v-27.7C0,7.9,6.7,1.2,15,1.2h30c8.3,0,15,6.7,15,15v27.7c0,8.3-6.7,15-15,15ZM15,4.6c-6.4,0-11.5,5.2-11.5,11.5v27.7c0,6.4,5.2,11.5,11.5,11.5h30c6.4,0,11.5-5.2,11.5-11.5v-27.7c0-6.4-5.2-11.5-11.5-11.5H15Z"/>
+          </g>
+        </g>
+        <g id="social-linkedin-outline">
+          <path id="Path_1" class="cls-1" d="M21.1,45.5v-20.7h-6.7v20.7h6.7ZM18.1,21.6c2.2,0,3.6-1.6,3.6-3.6,0-2-1.4-3.6-3.6-3.6s-3.6,1.6-3.6,3.6,1.4,3.6,3.5,3.6h0Z"/>
+          <path id="Path_2" class="cls-1" d="M37.8,24.3c-3.5,0-5,2-6,3.4v-2.9h-6.7v20.7h6.7v-11.8c0-.6,0-1.1.2-1.6.5-1.2,1.6-2.5,3.4-2.5s3.4,1.9,3.4,4.6v11.3h6.7v-12.1c0-6.2-3.3-9.1-7.7-9.1Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

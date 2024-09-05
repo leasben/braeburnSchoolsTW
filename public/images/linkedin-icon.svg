@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="51" viewBox="0 0 52 51">
+  <g id="Group_7" data-name="Group 7" transform="translate(-1734 -80)">
+    <g id="Rectangle_10" data-name="Rectangle 10" transform="translate(1734 81)" fill="none" stroke="#08522d" stroke-width="3">
+      <rect width="52" height="50" rx="13" stroke="none"/>
+      <rect x="1.5" y="1.5" width="49" height="47" rx="11.5" fill="none"/>
+    </g>
+    <text id="in" transform="translate(1761 119)" fill="#08522d" font-size="40" font-family="CenturyGothic, Century Gothic"><tspan x="-16.201" y="0">in</tspan></text>
+  </g>
+</svg>
