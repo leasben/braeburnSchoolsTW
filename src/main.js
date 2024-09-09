@@ -1,5 +1,6 @@
 /* import './style.css'; */
 import Flickity from 'flickity';
+import flickityFade from 'flickity-fade';
 
 //Hamburger Toggle menu
 jQuery(function ($) {

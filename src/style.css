@@ -10,6 +10,7 @@
   --blue: #08265a;
   --green: #07522c;
   --black: #000;
+  --bg-grey: #d0d0d04f;
  
 }
 
@@ -28,7 +29,7 @@ a {
   text-decoration: none;
   transition: color 0.3s;
 }
-
+  
 li {
   list-style: none;
 }
@@ -92,6 +93,11 @@ h6 {
       url("../src/fonts/Poppins-Bold.woff") format(woff);
 }
 
+.logo img {
+  width: 300px;
+  aspect-ratio: 420 / 200;
+}
+
 .profile-icon img {
   width: 225px;
 }
@@ -149,6 +155,16 @@ button {
  button:hover::before {
   transform: translate3d(100%, 0, 0);
  }
+
+
+ .carousel-cell {
+  width: 100%;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+
 
  
 

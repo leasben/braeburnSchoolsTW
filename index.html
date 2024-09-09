@@ -14,9 +14,9 @@
 <nav class="navbar border-b-blue border-b-4">
 <div class="nav-section flex items-center mx-10">
    <!-- LOGO -->
-   <div class="pt-0">
+   <div class=" logo pt-0">
        <a href="/">
-           <img src="images/shannon_logo.svg" alt="Logo">
+           <img src="images/shannon_logo.svg" alt="Shannon Logo" width="400" height="200">
        </a>
    </div>
 
@@ -27,49 +27,50 @@
        </span>
    </button>
 
-   <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
-   <div class="hidden lg:flex  md:items-center gap-12 ml-auto mr-10 uppercase font-poppins-light text-blue text-xl">
-       <li class="menu-items hover:text-indigo"><a href="#">About</a></li>
-       <li class="menu-items hover:text-indigo"><a href="#">Services</a></li>
-       <li class="menu-items hover:text-indigo"><a href="#">Sectors</a></li>
-       <li class="menu-items hover:text-indigo"><a href="#">Articles</a></li>
-       <li class="menu-items hover:text-indigo"><a href="#">Contact</a></li>
-   </div>
+ <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
+<div class="hidden lg:flex md:items-center lg:gap-24 md:gap-12 ml-auto mr-10 uppercase font-poppins-light text-blue text-xl">
+  <ul class="flex space-x-20">
+    <li class="menu-items hover:text-green"><a href="#">About</a></li>
+    <li class="menu-items hover:text-green"><a href="#">Services</a></li>
+    <li class="menu-items hover:text-green"><a href="#">Sectors</a></li>
+    <li class="menu-items hover:text-green"><a href="#">Articles</a></li>
+    <li class="menu-items hover:text-green"><a href="#">Contact</a></li>
+  </ul>
+</div>
+
    <!-- linkedin icon -->
-    <div class="socila-icon w-12 h-12">
-      <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52">
-        <g id="Group_97" data-name="Group 97" transform="translate(-1652 -155)">
-          <path id="Icon_corebrands-linkedin-in" data-name="Icon corebrands-linkedin-in" d="M9.3,31.5H2.771V10.469H9.3ZM6.032,7.6A3.8,3.8,0,1,1,9.814,3.782,3.814,3.814,0,0,1,6.032,7.6ZM33.743,31.5H27.227V21.263c0-2.44-.049-5.569-3.4-5.569-3.4,0-3.916,2.65-3.916,5.393V31.5H13.392V10.469h6.263v2.869h.091a6.861,6.861,0,0,1,6.178-3.4c6.609,0,7.824,4.353,7.824,10.006V31.5Z" transform="translate(1660.5 165.25)" fill="#08522d"/>
-          <g id="Rectangle_78" data-name="Rectangle 78" transform="translate(1652 155)" fill="none" stroke="#08522d" stroke-width="3">
-            <rect width="53" height="52" rx="13" stroke="none"/>
-            <rect x="1.5" y="1.5" width="50" height="49" rx="11.5" fill="none"/>
-          </g>
-        </g>
-      </svg>
-    </div>
+   <div class="social-icon w-[36px] transition-transform duration-300 ease-in-out transform hover:scale-110 hover:fill-red-500">
+    <a href="https://linkedin.com" target="_blank">
+      <img src="images/icon-linkedin.svg" alt="" class="transition-colors duration-300 ease-in-out hover:fill-red-500">
+    </a>
+  </div>
+  
 </div>
 
 <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
-<div id="mobile_menu" class="w-full space-y-8 uppercase font-semibold font-poppins-light text-lg z-10 text-white text-left py-6 bg-blue top-20 lg:hidden">
+<div id="mobile_menu" class="w-full space-y-20 uppercase font-semibold font-poppins-light text-lg z-10 text-white text-left py-6 bg-blue top-20 lg:hidden">
+ <ul class="space-y-8">
   <li class="menu-items hover:text-indigo"><a href="#">About</a></li>
        <li class="menu-items hover:text-indigo"><a href="#">Services</a></li>
        <li class="menu-items hover:text-indigo"><a href="#">Sectors</a></li>
        <li class="menu-items hover:text-indigo"><a href="#">Articles</a></li>
        <li class="menu-items hover:text-indigo"><a href="#">Contact</a></li>
+      </ul>
+  
 </div>
 </nav>
 </section>
  
 <!-- HOME SLIDER SECTION -->
- <section class="home-slider">
-  <div class="grid grid-cols-2">
+ <section class="home-slider my-8">
+  <div class="grid grid-cols-1 md:grid-cols-2">
     <div class="slider-section">
-      <div class="carousel" data-flickity='{"autoPlay": 5000, "pageDots": false, "prevNextButtons": false, "fade": true, "imagesLoaded": true}'>
+      <div class="carousel" data-flickity='{"autoPlay": 2000, "pageDots": false, "prevNextButtons": false, "fade": true, "imagesLoaded": true}'>
       <div class="carousel-cell">
-          <img src="images/renewable-1.jpg" class="carousel-cell-image rounded-tr-[120px] rounded-br-[120px] lazyload visi" alt=""/>
+          <img src="images/renewable-1.jpg" class="carousel-cell-image md:rounded-tr-[120px] md:rounded-br-[120px] lazyload visi" alt=""/>
       </div>
       <div class="carousel-cell">
-        <img src="images/renewable-2.jpg" class="carousel-cell-image rounded-tr-[120px] rounded-br-[120px] lazyload visi" alt=""/>
+        <img src="images/renewable-2.jpg" class="carousel-cell-image md:rounded-tr-[120px] md:rounded-br-[120px] lazyload visi" alt=""/>
     </div>
   </div>
     </div>
@@ -85,7 +86,7 @@
  <!-- About Section -->
 
  <section class="about-section py-8">
-  <div class="about flex flex-row items-center justify-between gap-6 text-center container mx-auto w-[65%]">
+  <div class="about flex flex-col md:flex-row items-center justify-between gap-6 text-center container mx-auto w-[65%]">
     <div class="profile-icon">
       <a href="#">
         <img src="images/profile.png" alt="icon-about">
@@ -116,11 +117,11 @@
  <!-- SERVICES SECTION -->
 
  <section class="services my-5">
-  <div class="services-section grid grid-cols-2 gap-3 container mx-auto">
+  <div class="services-section grid grid-cols-1 md:grid-cols-2 container mx-auto">
     <div class="services-image">
-      <img src="images/services-featured.jpg" alt="services-featured" class="rounded-tl-[120px] rounded-bl-[120px]">
+      <img src="images/services-featured.jpg" alt="services-featured" class="md:rounded-tl-[120px] md:rounded-bl-[120px]">
     </div>
-    <div class="sevices-catergories flex items-center">
+    <div class="sevices-catergories flex flex-1 items-center shadow-custom-inset bg-bgGrey pl-5 md:mr-[-18%]">
       <div class="services-title">
         <h2 class="text-3xl uppercase text-blue font-poppins-medium pb-5">Services</h2>
       <div class="services-items">
@@ -168,7 +169,10 @@
 
  <!-- ARTICLES -->
   <section class="articles">
-    <div class="container mx-auto grid grid-cols-2 gap-24 p-14 shadow-2xl">
+    <div class="articles-heading">
+      <h2 class="text-blue font-poppins-medium text-3xl uppercase text-center py-9">Articles</h2>
+    </div>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 p-12 shadow-custom-inset-2 bg-lightGrey rounded-3xl">
       <div class="col-1 p-10 border-2 border-green rounded-[40px] shadow-2xl">
         <img src="images/articles-icon.svg" alt="">
         <h3 class="font-poppins-regular text-3xl text-blue pt-7">Post 1</h3>

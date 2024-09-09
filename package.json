@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "flickity": "^3.0.0",
+    "flickity-fade": "^2.0.0",
     "hamburgers": "^1.2.1",
     "vite-plugin-purgecss": "^0.2.12"
   },
