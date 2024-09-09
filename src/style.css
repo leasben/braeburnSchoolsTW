@@ -90,6 +90,10 @@ h6 {
       url("../src/fonts/Poppins-Bold.woff") format(woff);
 }
 
+.profile-icon img {
+  width: 225px;
+}
+
 
 
  

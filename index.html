@@ -12,7 +12,7 @@
   <!-- NAV BAR -->
   <section class="main-menu">
 <nav class="navbar border-b-blue border-b-4">
-<div class="nav-section flex items-center justify-between container mx-auto">
+<div class="nav-section flex items-center mx-10">
    <!-- LOGO -->
    <div class="pt-0">
        <a href="/">
@@ -28,12 +28,12 @@
    </button>
 
    <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
-   <div class="hidden lg:flex  md:items-center md:space-x-20 uppercase font-poppins-light text-blue text-xl">
-       <li class="menu-items hover:text-indigo"><a href="/activities.html">About</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/trails.html">Services</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/#upcoming-events">Sectors</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/#visit-our-shop">Articles</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/#our-cafe">Contact</a></li>
+   <div class="hidden lg:flex  md:items-center gap-12 ml-auto mr-10 uppercase font-poppins-light text-blue text-xl">
+       <li class="menu-items hover:text-indigo"><a href="#">About</a></li>
+       <li class="menu-items hover:text-indigo"><a href="#">Services</a></li>
+       <li class="menu-items hover:text-indigo"><a href="#">Sectors</a></li>
+       <li class="menu-items hover:text-indigo"><a href="#">Articles</a></li>
+       <li class="menu-items hover:text-indigo"><a href="#">Contact</a></li>
    </div>
    <!-- linkedin icon -->
     <div class="socila-icon w-12 h-12">
@@ -50,36 +50,68 @@
 </div>
 
 <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
-<div id="mobile_menu" class="w-full space-y-8 pl-3 uppercase font-semibold font-poppins-light text-lg z-10 text-white text-left py-6 bg-blue top-20 lg:hidden">
-  <li class="menu-items hover:text-indigo"><a href="/activities.html">About</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/trails.html">Services</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/#upcoming-events">Sectors</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/#visit-our-shop">Articles</a></li>
-       <li class="menu-items hover:text-indigo"><a href="/#our-cafe">Contact</a></li> 
+<div id="mobile_menu" class="w-full space-y-8 uppercase font-semibold font-poppins-light text-lg z-10 text-white text-left py-6 bg-blue top-20 lg:hidden">
+  <li class="menu-items hover:text-indigo"><a href="#">About</a></li>
+       <li class="menu-items hover:text-indigo"><a href="#">Services</a></li>
+       <li class="menu-items hover:text-indigo"><a href="#">Sectors</a></li>
+       <li class="menu-items hover:text-indigo"><a href="#">Articles</a></li>
+       <li class="menu-items hover:text-indigo"><a href="#">Contact</a></li>
 </div>
 </nav>
 </section>
+ 
+<!-- HOME SLIDER SECTION -->
+ <section class="home-slider">
+  <div class="grid grid-cols-2 gap-10">
+    <div class="slider-section">
+      <div class="carousel" data-flickity='{"autoPlay": 5000, "pageDots": false, "prevNextButtons": false, "fade": true, "imagesLoaded": true}'>
+      <div class="carousel-cell">
+          <img src="images/renewable-1.jpg" class="carousel-cell-image rounded-tr-[120px] rounded-br-[120px] lazyload visi" alt=""/>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/renewable-2.jpg" class="carousel-cell-image rounded-tr-[120px] rounded-br-[120px] lazyload visi" alt=""/>
+    </div>
+  </div>
+    </div>
+    <div class="text-section">
+      <div class="heading flex flex-col justify-center">
+        <h2 class="text-2xl font-poppins-medium text-green">Slider-heading</h2>
+        <p class="text-xl font-poppins-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus minima ipsum nesciunt, nobis alias vitae numquam quia laudantium! Ratione, ea?</p>
+      </div>
+    </div>
+  </div>
+ </section>
 
-<!-- SLIDESHOW DESKTOP AND LARGER DEVICE-->
-<section class="main-slideshow relative">
-<!-- <div class="carousel hidden md:block" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false }'>
-<div class="carousel-cell">
-<img src="images/home-banner.png" alt="banner-1">
-</div>
-<div class="carousel-cell">
-<img src="images/home-banner.png" alt="banner-2">
-</div>
-</div> -->
-<!-- SLIDESHOW MOBILE DEVICES -->
-<!-- <div class="carousel block md:hidden" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false }'>
-<div class="carousel-cell">
-<img src="images/mobile-activities-banner-1.jpg" alt="banner-1">
-</div>
-<div class="carousel-cell">
-<img src="images/mobile-activities-banner-2.jpg" alt="banner-2">
-</div>
-</div> -->
-</section>
+ <!-- About Section -->
+
+ <section class="about-section py-8">
+  <div class="about flex flex-row items-center justify-between gap-6 text-center container mx-auto w-[65%]">
+    <div class="profile-icon">
+      <a href="#">
+        <img src="images/profile.png" alt="icon-about">
+       <div class="profile-title">
+         <h3 class="text-blue text-3xl font-poppins-medium pt-6">Profile</h3>
+       </div>
+     </a>
+    </div>
+    <div class="profile-icon">
+      <a href="#">
+        <img src="images/team.png" alt="icon-team">
+       <div class="team-title">
+         <h3 class="text-blue text-3xl font-poppins-medium pt-6">Team</h3>
+       </div>
+     </a>
+    </div>
+    <div class="profile-icon">
+      <a href="#">
+        <img src="images/testimonial.png" alt="icon-testimonial">
+       <div class="testimonial-title">
+         <h3 class="text-blue text-3xl font-poppins-medium pt-6">Testimonial</h3>
+       </div>
+     </a>
+    </div>
+ </div>
+ </section>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
 integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="

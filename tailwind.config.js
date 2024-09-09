@@ -26,6 +26,7 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         blue: '#08265a',
+        green: '#07522c',
       }, 
     },
   },
