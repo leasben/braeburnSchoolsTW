@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <title>Shannon - Home</title>
+    <title>Shannon - Services</title>
   </head>
   <body>
   <!-- NAV BAR -->
@@ -61,138 +61,88 @@
 </nav>
 </section>
  
-<!-- HOME SLIDER SECTION -->
- <section class="home-slider my-8">
-  <div class="grid grid-cols-1 md:grid-cols-2">
-    <div class="slider-section">
-      <div class="carousel" data-flickity='{"autoPlay": 2000, "pageDots": false, "prevNextButtons": false, "fade": true, "imagesLoaded": true}'>
-      <div class="carousel-cell">
-          <img src="images/renewable-1.jpg" class="carousel-cell-image md:rounded-tr-[120px] md:rounded-br-[120px] lazyload visi" alt=""/>
-      </div>
-      <div class="carousel-cell">
-        <img src="images/renewable-2.jpg" class="carousel-cell-image md:rounded-tr-[120px] md:rounded-br-[120px] lazyload visi" alt=""/>
-    </div>
-  </div>
-    </div>
-    <div class="text-section flex flex-col justify-center pl-5">
-      <div class="heading">
-        <h2 class="text-3xl font-poppins-medium text-green pb-5">Slider Heading</h2>
-        <p class="text-xl font-poppins-light pr-[7%]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus minima ipsum nesciunt, nobis alias vitae numquam quia laudantium! Ratione, ea? sit amet consectetur, adipisicing elit. Doloribus minima</p>
-      </div>
-    </div>
-  </div>
- </section>
+<!-- SERVICES SECTION -->
+<section class="services mt-14">
 
- <!-- About Section -->
+    <div class="md:grid-cols-2 grid grid-cols-1 mt-14">
+        <!-- First service -->
+        <div class="service executive-image bg-blue md:rounded-tl-[80px] md:rounded-bl-[80px] flex items-center justify-center ml-auto">
+            <a href="#" class="lg:max-w-[90%]">
+                <img src="images/executive-imag.png" alt="Executive" class="transition-transform duration-300 ease-in-out transform hover:scale-110 max-w-[70%]">
+            </a>
+        </div>
+        
+        <div class="content pl-6 pt-6 bg-servicesBg">
+            <h2 class="text-blue font-poppins-medium text-3xl uppercase">Executive Search</h2>
+            <p class="text-black font-poppins-light text-xl py-4 pr-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, natus autem accusantium laboriosam ullam id provident corrupti repudiandae vero fugit.</p>
+            <a href="#" class="text-xl text-blue underline font-poppins-light">Read More</a>
+        </div>
+    </div>
 
- <section class="about-section py-8" id="about">
-  <div class="about flex flex-col md:flex-row items-center justify-between gap-6 text-center container mx-auto w-[65%]">
-    <div class="profile-icon">
-      <a href="#">
-        <img src="images/profile.png" alt="icon-about">
-       <div class="profile-title">
-         <h3 class="text-blue text-3xl font-poppins-medium pt-6">Profile</h3>
-       </div>
-     </a>
+    <!-- Second service for odd child -->
+    <div class="md:grid-cols-2 grid grid-cols-1 mt-14">
+        <div class="content pl-6 pt-6 bg-servicesBg">
+            <h2 class="text-blue font-poppins-medium text-3xl uppercase">Executive</h2>
+            <p class="text-black font-poppins-light text-xl py-4 pr-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, natus autem accusantium laboriosam ullam id provident corrupti repudiandae vero fugit.</p>
+            <a href="#" class="text-xl text-blue underline font-poppins-light">Read More</a>
+        </div>
+        <div class="service executive-image bg-blue md:rounded-tr-[80px] md:rounded-br-[80px] flex items-center justify-center mr-auto">
+            <a href="#" class="lg:max-w-[90%]">
+                <img src="images/exec-assessment-icon.png" alt="Executive" class="transition-transform duration-300 ease-in-out transform hover:scale-110 max-w-[70%]">
+            </a>
+        </div>
+        
     </div>
-    <div class="profile-icon">
-      <a href="#">
-        <img src="images/team.png" alt="icon-team">
-       <div class="team-title">
-         <h3 class="text-blue text-3xl font-poppins-medium pt-6">Team</h3>
-       </div>
-     </a>
+<!-- Third service for odd child -->
+    <div class="md:grid-cols-2 grid grid-cols-1 mt-14">
+        <!-- Third service -->
+        <div class="service executive-image bg-blue md:rounded-tl-[80px] md:rounded-bl-[80px] flex items-center justify-center ml-auto">
+            <a href="#" class="lg:max-w-[90%]">
+                <img src="images/talent-acquisition.png" alt="Executive" class="transition-transform duration-300 ease-in-out transform hover:scale-110 max-w-[70%]">
+            </a>
+        </div>
+        
+        <div class="content pl-6 pt-6 bg-servicesBg">
+            <h2 class="text-blue font-poppins-medium text-3xl uppercase">Talent Acquisition</h2>
+            <p class="text-black font-poppins-light text-xl py-4 pr-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, natus autem accusantium laboriosam ullam id provident corrupti repudiandae vero fugit.</p>
+            <a href="#" class="text-xl text-blue underline font-poppins-light">Read More</a>
+        </div>
     </div>
-    <div class="profile-icon">
-      <a href="#">
-        <img src="images/testimonial.png" alt="icon-testimonial">
-       <div class="testimonial-title">
-         <h3 class="text-blue text-3xl font-poppins-medium pt-6">Testimonial</h3>
-       </div>
-     </a>
-    </div>
- </div>
- </section>
 
- <!-- SERVICES SECTION -->
+       <!-- Fourth service for odd child -->
+       <div class="md:grid-cols-2 grid grid-cols-1 mt-14">
+        <div class="content pl-6 pt-6 bg-servicesBg">
+            <h2 class="text-blue font-poppins-medium text-3xl uppercase">Consulting</h2>
+            <p class="text-black font-poppins-light text-xl py-4 pr-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, natus autem accusantium laboriosam ullam id provident corrupti repudiandae vero fugit.</p>
+            <a href="#" class="text-xl text-blue underline font-poppins-light">Read More</a>
+        </div>
+        <div class="service executive-image bg-blue md:rounded-tr-[80px] md:rounded-br-[80px] flex items-center justify-center mr-auto">
+            <a href="#" class="lg:max-w-[90%]">
+                <img src="images/consulting-icon.png" alt="Executive" class="transition-transform duration-300 ease-in-out transform hover:scale-110 max-w-[70%]">
+            </a>
+        </div>
+        
+    </div>
 
- <section class="services my-5" id="services">
-  <div class="services-section grid grid-cols-1 md:grid-cols-2 container mx-auto">
-    <div class="services-image">
-      <img src="images/services-featured.jpg" alt="services-featured" class="md:rounded-tl-[120px] md:rounded-bl-[120px]">
+    <!-- Fifth service for odd child -->
+    <div class="md:grid-cols-2 grid-cols-1 grid mt-14">
+        <!-- Fifth service -->
+        <div class="service executive-image bg-blue md:rounded-tl-[80px] md:rounded-bl-[80px] flex items-center justify-center ml-auto">
+            <a href="#" class="lg:max-w-[90%]">
+                <img src="images/project-icon.png" alt="Executive" class="transition-transform duration-300 ease-in-out transform hover:scale-110 max-w-[70%]">
+            </a>
+        </div>
+        
+        <div class="content pl-6 pt-6 bg-servicesBg">
+            <h2 class="text-blue font-poppins-medium text-3xl uppercase">Project Management</h2>
+            <p class="text-black font-poppins-light text-xl py-4 pr-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, natus autem accusantium laboriosam ullam id provident corrupti repudiandae vero fugit.</p>
+            <a href="#" class="text-xl text-blue underline font-poppins-light">Read More</a>
+        </div>
     </div>
-    <div class="sevices-catergories flex flex-1 items-center shadow-custom-inset bg-bgGrey pl-5 md:mr-[-18%]">
-      <div class="services-title">
-        <h2 class="text-3xl uppercase text-blue font-poppins-medium pb-5">Services</h2>
-      <div class="services-items">
-        <ul class="space-y-6  text-blue font-poppins-light text-2xl">
-        <li>
-          <div class="services-title flex items-center">
-            <img src="images/list-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-            <a href="#">Executive Search</a>
-          </div>
-        </li>
-        <li>
-          <div class="services-title flex items-center">
-            <img src="images/list-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-            <a href="#">Executive</a>
-          </div>
-        </li>
-        <li>
-          <div class="services-title flex items-center">
-            <img src="images/list-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-            <a href="#">Talent Acquisition & Management</a>
-          </div>
-        </li>
-        <li>
-          <div class="services-title flex items-center">
-            <img src="images/list-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-            <a href="#">Consulting</a>
-          </div>
-        </li>
-        <li>
-          <div class="services-title flex items-center">
-            <img src="images/list-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-            <a href="#">Project Management</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-    </div>
-  </div>
- </section>
-
- <!-- SECTORS -->
+</section>
 
 
 
- <!-- ARTICLES -->
-  <section class="articles" id="articles">
-    <div class="articles-heading">
-      <h2 class="text-blue font-poppins-medium text-3xl uppercase text-center py-9">Articles</h2>
-    </div>
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 p-12 shadow-custom-inset-2 bg-lightGrey rounded-3xl">
-      <div class="col-1 p-10 border-2 border-green rounded-[40px] shadow-2xl">
-        <img src="images/articles-icon.svg" alt="">
-        <h3 class="font-poppins-regular text-3xl text-blue pt-7">Post 1</h3>
-        <p class="py-5 font-poppins-light text-black text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis excepturi quidem fuga, hic quam, laboriosam temporibus neque dolor, perferendis voluptates magni eligendi error voluptatibus. ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis excepturi quidem fuga, hic quam, labori</p>
-        <div class="articles-bttn w-[170px] mx-auto">
-          <button> <span>Read More</span>
-        </button>
-      </div>
-      </div>
-      <div class="col-1 p-10 border-2 border-green rounded-[40px] shadow-2xl">
-        <img src="images/articles-icon.svg" alt="">
-        <h3 class="font-poppins-regular text-3xl text-blue pt-7">Post 1</h3>
-        <p class="py-5 font-poppins-light text-black text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis excepturi quidem fuga, hic quam, laboriosam temporibus neque dolor, perferendis voluptates magni eligendi error voluptatibus. ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis excepturi quidem fuga, hic quam, labori</p>
-        <div class="articles-bttn w-[170px] mx-auto">
-          <button> <span>Read More</span>
-        </button>
-      </div>
-      </div>
-    </div>
-  </section>
 
   <!-- FOOTER SECTION -->
    <section class="fotter-section">

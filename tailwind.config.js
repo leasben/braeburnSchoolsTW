@@ -31,9 +31,10 @@ module.exports = {
       },
       boxShadow: {
         'custom-inset': 'inset 1px 4px 8px 1px rgba(0, 0, 0, 0.1)', // Services Custom inset box shadow
-      },
-      boxShadow: {
         'custom-inset-2': 'inset 1px -1px 5px 1px #0000001a', // Articles Custom inset box shadow
+      },
+      backgroundImage: {
+        'servicesBg': 'linear-gradient(360deg, hsla(0, 2%, 90%, 1) 0%, hsla(60, 100%, 100%, 1) 61%)',
       },
     },
   },
