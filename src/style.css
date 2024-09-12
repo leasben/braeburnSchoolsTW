@@ -156,12 +156,25 @@ button {
   transform: translate3d(100%, 0, 0);
  }
 
-
  .carousel-cell {
   width: 100%;
   margin-right: 10px;
   border-radius: 5px;
   counter-increment: gallery-cell;
+}
+
+
+/* PARMACEUTICAL BUTTON STYLES */
+.custom-btn {
+  @apply bg-white w-[280px] p-[10px_30px] rounded-[12px] text-blue font-poppins-light text-xl;
+}
+
+.card {
+  @apply flex flex-col;
+}
+
+.card-read-more {
+  @apply font-poppins-light text-xl text-white underline pt-4 mt-auto;
 }
 
 
