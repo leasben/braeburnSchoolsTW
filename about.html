@@ -61,80 +61,92 @@
 </nav>
 </section>
  
-<!-- SECTORS SECTION -->
-<section class="sectors-section mt-14">
-    <div class="relative grid  grid-cols-1 xl:grid-cols-[40%_60%] gap-4 bg-[url('/images/pharmaceutical-featured.jpg')] bg-cover bg-center bg-no-repeat w-[90%] mx-auto px-20 rounded-[80px] min-h-[500px] py-10">
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-[#08265a80] z-0 rounded-[80px]"></div>
-        <div class="relative z-10 col-1">
-          <h2 class="uppercase font-poppins-medium text-3xl text-white">Pharmaceutical</h2>
-          <p class="text-white font-poppins-light text-xl mt-5">
-            <a href="#" class="underline  transition-transform duration-300 ease-in-out transform hover:scale-110">Read More               
-            </a>
-          </p>
-        </div>
-        <div class="relative z-10 col-2">
-          <p class="text-white text-xl font-poppins-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eaque dolor ratione expedita similique inventore odio minima quae autem eveniet veniam repellat ab, recusandae laboriosam placeat! maiores eius asperiores quae. Amet quidem itaque cupiditate mollitia omnis recusandae quos exercitationem explicabo fugiat nisi eligendi delectus pariatur ab saepe, ad consectetur.</p>
-          <div class="col-2-bttns mt-10">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-8">
-              <a href="#" class="custom-btn">Research</a>
-              <a href="#" class="custom-btn">Biotech</a>
-              <a href="#" class="custom-btn">Life Sciences</a>
-              <a href="#" class="custom-btn">Consumer Health Care</a>
-            </div>
-          </div>
+<!-- HOME SLIDER SECTION -->
+ <section class="about-home-banner my-8">
+    <div class="about-heading">
+        <h2 class="text-3xl font-poppins-medium text-blue text-center uppercase pb-8">Profile</h2>
+    </div>
+  <div class="grid grid-cols-1 md:grid-cols-2">
+    <div class="about-banner">
+        <img src="images/about-home-slide-1.jpg" class="md:rounded-tr-[120px] md:rounded-br-[120px]" alt="about-images">
+    </div>
+    <div class="text-section flex flex-col justify-center pl-9">
+        <div class="heading">
+          <h2 class="text-3xl font-poppins-medium text-green pb-5">About Slider Heading</h2>
+          <p class="text-xl font-poppins-light pr-[7%]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus minima ipsum nesciunt, nobis alias vitae numquam quia laudantium! Ratione, ea? sit amet consectetur, adipisicing elit. Doloribus minima</p>
         </div>
       </div>
-      <!-- CARDS START HERE -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-9 w-[90%] mx-auto mt-7">
-        <div class="card bg-blue pt-2 md:h-[450px]">
-            <h2 class="card-title">FMCG</h2>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam aut, quos rem officia quod, explicabo dolor natus ad libero eos non saepe commodi doloribus asperiores quibusdam est. Labore sint blanditiis tenetur inventore ea consequuntur delectus.</p>
-            <div class="card-read-more mt-auto pt-4">
-                <a href="#" class="text-white underline">Read More</a>
+    </div>
+  </div>
+ </section>
+
+ <!-- MEET THE TEAM -->
+  <section class="meet-team">
+    <div class="teamheading">
+        <h2 class="text-3xl font-poppins-medium text-blue text-center uppercase">Mett The Team</h2>
+    </div>
+    <div class="search-member flex md:flex-row flex-col gap-5 px-6 justify-center gap-x-[2%] pt-5">
+            <input class="input" name="text" type="text" placeholder="Full Name">
+            <select name="Location" class="input">
+                <option value="Location1">Location</option>
+                <option value="Location2">Location 1</option>
+                <option value="Location3">Location 2</option>
+            </select>
+            <select name="Expertise" class="input">
+                <option value="Expertise">Expertise</option>
+                <option value="Pharmaceutical">Pharmaceutical</option>
+                <option value="Sports">Sports</option>
+            </select>
+            <div class="search-bttn bg-green w-[60px] text-white font-poppins-light text-2xl rounded-xl text-center flex items-center justify-center">
+                <a href="#">Go</a>
+            </div>
+    </div>
+
+    <div class="team-cards mt-10 w-[90%] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+           <div class="team-info">
+            <div class="team-card">
+                <img src="images/mr-shannon.jpg" class="card-details" alt="mr-shannon">
+            </div>
+            <div class="card-info">
+                <h2>Name</h2>
+                <h3>Location</h3>
+                <h3>Expertise</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fuga.</p>
+                <div><a href="#">Read More</a></div>
             </div>
         </div>
-        <div class="card relative bg-[url('/images/renewable-energy-featured.jpg')]">
-          <div class="absolute inset-0 bg-[#08265a80] z-0 rounded-[40px]"></div>
-            <h2 class="card-title">Renewable Energy</h2>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam aut, quos rem officia quod, explicabo dolor natus ad libero eos non saepe commodi doloribus asperiores quibusdam est. Labore sint blanditiis tenetur inventore ea consequuntur delectus.</p>
-            <div class="card-read-more mt-auto pt-4">
-                <a href="#" class="text-white underline">Read More</a>
+           <div class="team-info">
+            <div class="team-card">
+                <img src="images/mr-shannon.jpg" class="card-details" alt="mr-shannon">
+            </div>
+            <div class="card-info">
+                <h2>Name</h2>
+                <h3>Location</h3>
+                <h3>Expertise</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fuga</p>
+                <div><a href="#">Read More</a></div>
             </div>
         </div>
-        <div class="card bg-green pt-2 md:h-[450px]">
-            <h2 class="card-title">Marketing Services</h2>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam aut, quos rem officia quod, explicabo dolor natus ad libero eos non saepe commodi doloribus asperiores quibusdam est. Labore sint blanditiis tenetur inventore ea consequuntur delectus.</p>
-            <div class="card-read-more mt-auto pt-4">
-                <a href="#" class="text-white underline">Read More</a>
+           <div class="team-info">
+            <div class="team-card">
+                <img src="images/mr-shannon.jpg" class="card-details" alt="mr-shannon">
+            </div>
+            <div class="card-info">
+                <h2>Name</h2>
+                <h3>Location</h3>
+                <h3>Expertise</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fuga</p>
+                <div><a href="#">Read More</a></div>
             </div>
         </div>
-        <div class="card bg-[url('/images/sports-and-science-featured.jpg')]">
-            <h2 class="card-title">Sports & Science</h2>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam aut, quos rem officia quod, explicabo dolor natus ad libero eos non saepe commodi doloribus asperiores quibusdam est. Labore sint blanditiis tenetur inventore ea consequuntur delectus.</p>
-            <div class="card-read-more mt-auto pt-4">
-                <a href="#" class="text-white underline">Read More</a>
-            </div>
-        </div>
-        <div class="card bg-[url('/images/financial-sector.jpg')] md:h-[450px]">
-            <h2 class="card-title">Financila Sector</h2>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam aut, quos rem officia quod, explicabo dolor natus ad libero eos non saepe commodi doloribus asperiores quibusdam est. Labore sint blanditiis tenetur inventore ea consequuntur delectus.</p>
-            <div class="card-read-more mt-auto pt-4">
-                <a href="#" class="text-white underline">Read More</a>
-            </div>
-        </div>
-        <div class="card bg-green px-7 rounded-[40px]">
-            <h2 class="card-title">Beverages</h2>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam aut, quos rem officia quod, explicabo dolor natus ad libero eos non saepe commodi doloribus asperiores quibusdam est. Labore sint blanditiis tenetur inventore ea consequuntur delectus.</p>
-            <div class="card-read-more mt-auto pt-4">
-                <a href="#" class="text-white underline">Read More</a>
-            </div>
         </div>
     </div>
-    
-      
-</section>
+  </section>
 
+  <!-- TESTIMONIAL SECTION -->
+
+  
 
 
   <!-- FOOTER SECTION -->

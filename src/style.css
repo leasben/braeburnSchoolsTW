@@ -164,19 +164,68 @@ button {
 }
 
 
-/* PARMACEUTICAL BUTTON STYLES */
+/* PAHARMACEUTICAL BUTTONS */
 .custom-btn {
-  @apply bg-white w-[280px] p-[10px_30px] rounded-[12px] text-blue font-poppins-light text-xl;
+  @apply max-w-fit m-auto bg-white p-[10px_30px] rounded-2xl text-2xl font-poppins-regular text-blue uppercase; 
 }
 
 .card {
-  @apply flex flex-col;
+  @apply flex flex-col bg-cover bg-center bg-no-repeat px-7 rounded-[40px];
 }
 
 .card-read-more {
-  @apply font-poppins-light text-xl text-white underline pt-4 mt-auto;
+  @apply font-poppins-light text-xl text-white underline pt-4 pb-4 mt-auto;
 }
 
+.card-title {
+  @apply font-poppins-medium text-2xl text-white pt-5;
+}
+
+.card-text {
+  @apply font-poppins-light text-xl text-white pt-5;
+}
+
+/* TEAM CARD DETAILS */
+
+.team-card {
+  @apply bg-slate-400 p-[50px_40px] rounded-[50px];
+}
+
+.card-details {
+  @apply flex items-center justify-center w-[280px] h-[280px] mx-auto rounded-[50px];
+}
+
+.card-info h2 {
+  @apply font-poppins-medium text-3xl text-blue uppercase;
+}
+
+.card-info h3 {
+  @apply font-poppins-light text-xl text-blue;
+}
+
+.card-info p {
+  @apply text-blue text-xl font-poppins-light pt-3 pb-3;
+}
+
+/* MEET TEAM IMOUT FIELDS */
+.input {
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid hsl(236, 92%, 66%);
+  outline: none;
+  transition: 200ms ease-in;
+  padding-left: 1rem;
+}
+
+.input:focus {
+  border-bottom: 4px solid hsl(236, 92%, 66%);
+  padding-top: 2px;
+}
+
+.input::placeholder {
+  color: hsl(236, 92%, 66%);
+  opacity: 0.5;
+}
 
 
 
