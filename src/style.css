@@ -192,7 +192,7 @@ button {
 }
 
 .card-details {
-  @apply flex items-center justify-center w-[280px] h-[280px] mx-auto rounded-[50px];
+  @apply flex items-center justify-center w-[280px] h-[280px] mx-auto md:rounded-[50px];
 }
 
 .card-info h2 {
@@ -207,7 +207,11 @@ button {
   @apply text-blue text-xl font-poppins-light pt-3 pb-3;
 }
 
-/* MEET TEAM IMOUT FIELDS */
+.team-read-more {
+  @apply text-blue text-xl font-poppins-light underline;
+}
+
+/* MEET TEAM INPUT FIELDS */
 .input {
   height: 40px;
   border-radius: 8px;
@@ -227,7 +231,29 @@ button {
   opacity: 0.5;
 }
 
+/* TESTIMONIAL CARD */
 
+.testimonial-card {
+  @apply border-4 p-[35px_30px] rounded-[20px];
+  border: 1px solid rgba(0, 0, 0, .2);
+  box-shadow: inset 0 -2px 8px #0003;
+}
+
+.testimonial-card h2 {
+  @apply text-3xl pb-4 text-blue;
+}
+
+.testimonial-card p {
+  @apply text-blue text-xl font-poppins-light p-[10px_0];
+}
+
+.star-ratings {
+  @apply flex items-center justify-end pt-[20px];
+}
+
+.star-ratings img {
+  @apply w-[20px] h-[20px];
+}
 
  
 
