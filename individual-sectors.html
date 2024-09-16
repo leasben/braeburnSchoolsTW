@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Shannon - Individual Sectors</title>
+  </head>
+  <body>
+  <!-- NAV BAR -->
+  <section class="main-menu">
+<nav class="navbar border-b-blue border-b-4">
+<div class="nav-section flex items-center mx-10">
+   <!-- LOGO -->
+   <div class=" logo pt-0">
+       <a href="/">
+           <img src="images/shannon_logo.svg" alt="Shannon Logo" width="400" height="200">
+       </a>
+   </div>
+
+   <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
+   <btn class="hamburger hamburger--stand is-active lg:hidden" type="button" id="hamburger_toggle">
+       <span class="hamburger-box">
+           <span class="hamburger-inner"></span>
+       </span>
+   </btn>
+
+ <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
+<div class="hidden lg:flex md:items-center lg:gap-24 md:gap-12 ml-auto mr-10 uppercase font-poppins-light text-blue text-xl">
+  <ul class="flex space-x-20">
+    <li class="menu-items hover:text-green"><a href="/#about">About</a></li>
+    <li class="menu-items hover:text-green"><a href="/#services">Services</a></li>
+    <li class="menu-items hover:text-green"><a href="/#sectors">Sectors</a></li>
+    <li class="menu-items hover:text-green"><a href="/#articles">Articles</a></li>
+    <li class="menu-items hover:text-green"><a href="/#contact">Contact</a></li>
+  </ul>
+</div>
+
+   <!-- linkedin icon -->
+   <div class="social-icon w-[36px] transition-transform duration-300 ease-in-out transform hover:scale-110 hover:fill-red-500">
+    <a href="https://linkedin.com" target="_blank">
+      <img src="images/icon-linkedin.svg" alt="" class="transition-colors duration-300 ease-in-out hover:fill-red-500">
+    </a>
+  </div>
+  
+</div>
+
+<!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
+<div id="mobile_menu" class="w-full space-y-20 uppercase font-semibold font-poppins-light text-lg z-10 text-white text-left py-6 bg-blue top-20 lg:hidden">
+ <ul class="space-y-8">
+  <li class="menu-items"><a href="/#about">About</a></li>
+    <li class="menu-items"><a href="/#services">Services</a></li>
+    <li class="menu-items"><a href="/#sectors">Sectors</a></li>
+    <li class="menu-items"><a href="/#articles">Articles</a></li>
+    <li class="menu-items"><a href="/#contact">Contact</a></li>
+      </ul>
+  
+</div>
+</nav>
+</section>
+ 
+<!-- HOME SLIDER SECTION -->
+<section class="individual-sector my-8">
+    <div class="sectors w-[90%] mx-auto relative">
+        <div class="back-to-sector">
+            <a href="/sectors.html">
+                <div class="flex items-center p-[25px_0]"> 
+                    <img src="images/back-to-articles-icon.svg" class="w-[24px] h-[23px] mb-1" alt="back-to-articles"> 
+                    <h2 class="text-blue font-poppins-bold text-xl uppercase">Sectors</h2>
+                </div> 
+            </a> 
+        </div>
+        <div class="sectors-banner relative">
+            <div class="relative">
+                <img src="/images/individual-sectors-banner.jpg" alt="Banner Image" class="w-full h-[274px] rounded-[38px] object-cover">
+                <div class="absolute inset-0 bg-[#b5bcc7b3] rounded-[38px] z-10"></div>
+            </div>
+            <h2 class="text-3xl font-poppins-medium uppercase text-white absolute inset-0 flex items-center justify-center z-20">Pharmaceuticals</h2>
+        </div>
+        <div class="sector-text mt-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo a atque rerum exercitationem consectetur eius corporis, recusandae fuga explicabo dolorem ut architecto obcaecati iure quia iusto harum reiciendis vero optio doloribus nemo iste voluptates. Iste sint, distinctio sit iure maiores harum aliquid est quisquam aspernatur officiis quidem beatae ratione laborum omnis, nesciunt ad id facere dicta vel. Quam itaque at debitis, nisi vel recusandae voluptas labore nulla eligendi et quisquam reiciendis obcaecati porro voluptatibus ipsam animi, non architecto assumenda magni culpa? Laborum accusantium aut cum magnam, amet deleniti molestiae nihil consequatur architecto doloremque adipisci incidunt enim quasi possimus suscipit facilis.</p>
+        </div>
+    </div>
+
+    <!-- sectors -->
+     <section class="sectors">
+        <div class="sub-sectors" id="research">
+            <h2>Research</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus doloremque sequi, ducimus error ad mollitia odit repellat, fugit quaerat iusto ab animi reprehenderit autem obcaecati cumque tempora rerum earum excepturi praesentium! Error obcaecati voluptates eum. Molestias quidem impedit nam voluptatum est corrupti, doloribus minima nesciunt et cum ipsam? Facere fugiat expedita error neque ratione ipsa ducimus, suscipit explicabo vitae quibusdam!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus doloremque sequi, ducimus error ad mollitia odit repellat, fugit quaerat iusto ab animi reprehenderit autem obcaecati cumque tempora rerum earum excepturi praesentium! Error obcaecati voluptates eum. Molestias quidem impedit nam voluptatum est corrupti, doloribus minima nesciunt et cum ipsam? Facere fugiat expedita error neque ratione ipsa ducimus, suscipit explicabo vitae quibusdam!</p>
+        </div>
+        <div class="sub-sectors" id="biotech">
+            <h2>BioTech</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus doloremque sequi, ducimus error ad mollitia odit repellat, fugit quaerat iusto ab animi reprehenderit autem obcaecati cumque tempora rerum earum excepturi praesentium! Error obcaecati voluptates eum. Molestias quidem impedit nam voluptatum est corrupti, doloribus minima nesciunt et cum ipsam? Facere fugiat expedita error neque ratione ipsa ducimus, suscipit explicabo vitae quibusdam!</p>
+        </div>
+        <div class="sub-sectors" id="life-sciences">
+            <h2>Life Scinces</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus doloremque sequi, ducimus error ad mollitia odit repellat, fugit quaerat iusto ab animi reprehenderit autem obcaecati cumque tempora rerum earum excepturi praesentium! Error obcaecati voluptates eum. Molestias quidem impedit nam voluptatum est corrupti, doloribus minima nesciunt et cum ipsam? Facere fugiat expedita error neque ratione ipsa ducimus, suscipit explicabo vitae quibusdam!</p>
+            
+        </div>
+        <div class="sub-sectors" id="consumer-healtchcare">
+            <h2>Consumer HealthCare</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus doloremque sequi, ducimus error ad mollitia odit repellat, fugit quaerat iusto ab animi reprehenderit autem obcaecati cumque tempora rerum earum excepturi praesentium! Error obcaecati voluptates eum. Molestias quidem impedit nam voluptatum est corrupti, doloribus minima nesciunt et cum ipsam? Facere fugiat expedita error neque ratione ipsa ducimus, suscipit explicabo vitae quibusdam!</p>
+            
+        </div>
+     </section>
+
+  
+</section>
+
+
+ <!-- MEET THE TEAM -->
+  <section class="meet-team">
+    <div class="team-heading">
+        <h2 class="text-blue font-poppins-medium text-3xl uppercase text-center">Pharmaceutical Consultants</h2>
+    </div>
+    <div class="team-cards mt-10 w-[90%] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+           <div class="team-info">
+            <div class="team-card">
+                <img src="images/mr-shannon.jpg" class="card-details" alt="mr-shannon">
+            </div>
+            <div class="card-info">
+                <h2>Name</h2>
+                <h3>Location</h3>
+                <h3>Expertise</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fuga</p>
+                <div><a href="#" class="team-read-more">Read More</a></div>
+            </div>
+        </div>
+           <div class="team-info">
+            <div class="team-card">
+                <img src="images/mr-shannon.jpg" class="card-details" alt="mr-shannon">
+            </div>
+            <div class="card-info">
+                <h2>Name</h2>
+                <h3>Location</h3>
+                <h3>Expertise</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fuga</p>
+                <div><a href="#" class="team-read-more">Read More</a></div>
+            </div>
+        </div>
+        </div>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER SECTION -->
+   <section class="fotter-section">
+    <div class="footer-heading" id="contact">
+      <h2 class="text-blue font-poppins-medium text-3xl text-center uppercase py-7">Contact</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2">
+      <div class="footer-menu flex flex-col md:flex-row md:items-center gap-8  text-white bg-blue font-poppins-light text-2xl py-[15%] md:rounded-tr-[70px] md:rounded-br-[70px] px-10">
+        <ul class="nav-links space-y-4 md:px-24">
+          <li>
+            <div class="menu-title flex items-center">
+              <img src="images/list-white-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
+              <a href="/about.html" class="hover:underline">About</a>
+            </div>
+          </li>
+          <li>
+            <div class="menu-title flex items-center">
+              <img src="images/list-white-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
+              <a href="/services.html" class="hover:underline">Services</a>
+            </div>
+          </li>
+          <li>
+            <div class="menu-title flex items-center">
+              <img src="images/list-white-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
+              <a href="/sectors.html" class="hover:underline">Sectors</a>
+            </div>
+          </li>
+          <li>
+            <div class="menu-title flex items-center">
+              <img src="images/list-white-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
+              <a href="/articles.html" class="hover:underline">Articles</a>
+            </div>
+          </li>
+          <li>
+            <div class="menu-title flex items-center">
+              <img src="images/list-white-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
+              <a href="/contact.html" class="hover:underline">Contact</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="contacts space-y-4">
+          <li>
+            <div class="menu-title flex items-center">
+              <img src="images/list-white-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
+              <a href="mailto:info@example.com">info@example.com</a>
+            </div>
+          </li>
+          <li>
+            <div class="menu-title flex items-center">
+              <img src="images/list-white-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
+              <a href="tel:+27 12 345 6789">+27 12 345 6789</a>
+            </div>
+          </li>
+            <!-- linkedin icon -->
+   <div class="social-icon w-[60px] transition-transform duration-300 ease-in-out transform hover:scale-110 mx-auto">
+    <a href="https://linkedin.com" target="_blank">
+      <img src="images/icon-linkedin-white.svg" alt="" class="transition-colors duration-300 ease-in-out">
+    </a>
+  </div>
+        </ul>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class=" w-full">
+        <div class="py-10 mx-8 md:mx-0 sm:p-10">
+          <div class="text-white">
+          <div>
+                <label
+                  class="text-xl text-blue pb-1 block font-poppins-light"
+                  for="fullname"
+                  >Full Name</label
+                >
+                <input
+                  class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full text-white focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                  type="text"
+                />
+              </div>
+            <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label
+                  class="text-xl text-blue pb-1 block font-poppins-light"
+                  >Contact Number</label>
+                <input
+                  class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full text-white focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                  type="text"/>
+              </div>
+              <div>
+                <label
+                  class="text-xl text-blue pb-1 block font-poppins-light"
+                  >Email Address</label>
+                <input
+                  class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full text-white focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                  type="email"/>
+              </div>
+            </div>
+            
+              <div>
+                <label
+                  class="text-xl text-blue pb-1 block font-poppins-light"
+                  >Message</label>
+                <textarea rows="5"
+                  class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full text-white focus:border-blue-500 focus:ring-2 focus:ring-blue-500 rows-20">
+              </textarea>
+            </div>
+            <div class="mt-5">
+              <a href="#">
+                <bttn
+                class="py-2 px-4 bg-blue text-white text-center text-base rounded-lg"
+                type="submit">
+                Submit
+              </bttn>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+   </section>
+
+   <!-- COPYRIGHT FOOTER -->
+<section class="bottom-footer bg-blue text-white h-[50px] flex justify-center items-center mt-7">
+  <div class="bottom-text">
+    © Shannon 2024 | By <a href="https://powerof9.co.za" target="_blank" class="hover:underline">Power of 9</a>
+        
+  </div>
+</section>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+crossorigin="anonymous">
+</script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

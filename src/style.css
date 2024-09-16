@@ -255,6 +255,10 @@ button {
   @apply w-[20px] h-[20px];
 }
 
+.posts-text p,
+.sector-text p {
+  @apply text-xl font-poppins-light mb-5
+}
  
 
 
