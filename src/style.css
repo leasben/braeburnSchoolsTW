@@ -188,7 +188,7 @@ button {
 /* TEAM CARD DETAILS */
 
 .team-card {
-  @apply bg-slate-400 p-[50px_40px] rounded-[50px];
+  @apply bg-slate-400 p-[50px_40px] md:rounded-[50px];
 }
 
 .card-details {
@@ -257,7 +257,15 @@ button {
 
 .posts-text p,
 .sector-text p {
-  @apply text-xl font-poppins-light mb-5
+  @apply text-xl font-poppins-light mb-5;
+}
+
+.sub-sectors h2 {
+  @apply text-blue font-poppins-medium text-3xl uppercase pb-4;
+}
+
+.sub-sectors p {
+  @apply text-xl font-poppins-light pb-10;
 }
  
 
