@@ -170,7 +170,7 @@ button {
 }
 
 .card {
-  @apply flex flex-col bg-cover bg-center bg-no-repeat px-7 rounded-[40px];
+  @apply flex flex-col bg-cover bg-center bg-no-repeat px-7 md:rounded-[40px];
 }
 
 .card-read-more {
@@ -208,7 +208,7 @@ button {
 }
 
 .team-read-more {
-  @apply text-blue text-xl font-poppins-light underline;
+  @apply text-blue text-xl font-poppins-light underline transition duration-1000 transform hover:scale-110 hover:translate-y-1;
 }
 
 /* MEET TEAM INPUT FIELDS */
@@ -265,8 +265,10 @@ button {
 }
 
 .sub-sectors p {
-  @apply text-xl font-poppins-light pb-10;
+  @apply text-xl font-poppins-light pb-9;
 }
+
+
  
 
 
