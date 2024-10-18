@@ -24,21 +24,21 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        blue: '#08265a',
-        green: '#07522c',
-        bgGrey: '#d0d0d04f',
-        lightGrey: '#f4f4f4',
+        blue: '#032765',
+        lightBlue: '#003DA6',
       },
       boxShadow: {
-        'custom-inset': 'inset 1px 4px 8px 1px rgba(0, 0, 0, 0.1)', // Services Custom inset box shadow
-        'custom-inset-2': 'inset 1px -1px 5px 1px #0000001a', // Articles Custom inset box shadow
+        'button': '2px 8px 4px -2px rgba(226, 226, 226, 0.75)',
+        'mobileBackground': '-19px 15px 12px -9px rgba(199,199,199,0.63)',
       },
-      backgroundImage: {
-        'servicesBg': 'linear-gradient(360deg, hsla(0, 2%, 90%, 1) 0%, hsla(60, 100%, 100%, 1) 61%)',
+      aspectRatio: {
+        'custom': '420 / 100',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio')
+  ],
 }
 
 

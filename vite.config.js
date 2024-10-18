@@ -9,13 +9,12 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'), 
+        schools: resolve(__dirname, 'schools.html'),
         about: resolve(__dirname, 'about.html'),
-        services: resolve(__dirname, 'services.html'),
-        sectors: resolve(__dirname, 'sectors.html'),
-        articles: resolve(__dirname, 'articles.html'),
+        newsAndEvents: resolve(__dirname, 'schools-and-events.html'),
+        professionalOpportunities: resolve(__dirname, 'professional-opportunities.html'),
+        apply: resolve(__dirname, 'apply.html'),
         contact: resolve(__dirname, 'contact.html'),
-        singlePosts: resolve(__dirname, 'single-posts.html'),
-        individualSectors: resolve(__dirname, 'individual-sectors.html'),
       },
       output: {
         dir: 'dist', // Output directory for the build

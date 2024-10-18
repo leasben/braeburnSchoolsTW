@@ -1,5 +1,5 @@
 {
-  "name": "thabatrails",
+  "name": "Braeburn Schools",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "flickity": "^3.0.0",
     "flickity-fade": "^2.0.0",
     "hamburgers": "^1.2.1",

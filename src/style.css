@@ -94,179 +94,103 @@ h6 {
 }
 
 .logo img {
-  width: 300px;
-  aspect-ratio: 420 / 200;
+  @apply w-[300px] aspect-custom;
 }
 
-.profile-icon img {
-  width: 225px;
+/* CAROUSEL */
+.home-slider {
+  position: relative;  
+  overflow: hidden; 
+  height: 240px;
+  background-color: #032765;
+  clip-path: polygon(36% 9%, 77% 16%, 100% 18%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 0 0);
 }
 
-/* From Uiverse.io by BHARGAVPATEL1244 */ 
-button {
-  outline: none;
-  cursor: pointer;
-  border: none;
-  padding: 0.9rem 2rem;
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  position: relative;
-  display: inline-block;
-  letter-spacing: 0.05rem;
-  font-weight: 700;
-  font-size: 17px;
-  border-radius: 500px;
-  overflow: hidden;
-  background: var(--blue);
-  color: ghostwhite;
-  text-transform: uppercase;
+.carousel {
+  @apply absolute top-0 left-0 w-full h-full;
+}
+
+.carousel-cell {
+  @apply w-full h-full flex flex-col justify-center items-center text-4xl text-white;
+}
+
+.flickity-prev-next-button.previous,
+.flickity-prev-next-button.next {
+  @apply hidden;
+}
+
+/* SEARCH */
+/* From Uiverse.io by alexruix */ 
+.group {
+  @apply flex leading-7 items-center relative w-80 mx-auto pb-[30px];
  }
  
- button span {
-  position: relative;
-  z-index: 10;
-  transition: color 0.4s;
+ .input {
+  @apply w-full h-10 leading-7 pt-5 pb-5 pl-9 bg-blue outline-none text-white rounded-lg border-2 border-transparent;
  }
  
- button:hover span {
-  color: #fff;
+ .input::placeholder {
+  @apply text-white pl-2 text-[18px];
  }
  
- button::before,
- button::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+ .input:focus, input:hover {
+  @apply outline-none bg-blue;
  }
  
- button::before {
-  content: "";
-  background: var(--green);
-  width: 120%;
-  left: -10%;
-  transform: skew(30deg);
-  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+ .icon {
+@apply absolute left-4 w-6 h-6 fill-white;
  }
+
+/* VIDEO */
+.video-container {
+  @apply max-w-full relative overflow-hidden;
+}
+
+.video-container iframe, 
+.video-container video {
+  @apply w-full h-auto;
+}
+
+/* MENU TOGGLE ICONS */
+.main-mobile-menu {
+  @apply hidden w-full ml-[35px] bg-white mt-8 rounded-tl-[23px] rounded-bl-[23px] text-2xl font-poppins-medium z-10 text-white py-6 shadow-mobileBackground;
+}
+
+.menu-icon img {
+  @apply w-[80px] h-[80px];
+}
+
+/* MOBILE MENU ITEMS */
+.mobile-menu-items {
+  @apply w-[350px] p-[15px] rounded-[18px] mx-auto text-center shadow-button;
+}
+
+.mobile-menu-items a {
+  @apply block transition-transform duration-300 ease-in-out transform hover:scale-110;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  @apply mx-auto flex items-center justify-center space-x-8 p-[30px];
+}
+
+.social-icons img {
+  @apply w-[60px] h-[60px] mx-auto;
+}
+
+/* SCHOOLS */
+.schools-background-image {
+  @apply bg-[url('/images/lower-curve.svg')] bg-no-repeat bg-cover bg-center h-[450px] w-[100%]
+}
+
+
  
- button:hover::before {
-  transform: translate3d(100%, 0, 0);
- }
-
- .carousel-cell {
-  width: 100%;
-  margin-right: 10px;
-  border-radius: 5px;
-  counter-increment: gallery-cell;
-}
+ 
+ 
+ 
+ 
 
 
-/* PAHARMACEUTICAL BUTTONS */
-.custom-btn {
-  @apply max-w-fit m-auto bg-white p-[10px_30px] rounded-2xl text-2xl font-poppins-regular text-blue uppercase; 
-}
-
-.card {
-  @apply flex flex-col bg-cover bg-center bg-no-repeat px-7 md:rounded-[40px];
-}
-
-.card-read-more {
-  @apply font-poppins-light text-xl text-white underline pt-4 pb-4 mt-auto;
-}
-
-.card-title {
-  @apply font-poppins-medium text-2xl text-white pt-5;
-}
-
-.card-text {
-  @apply font-poppins-light text-xl text-white pt-5;
-}
-
-/* TEAM CARD DETAILS */
-
-.team-card {
-  @apply bg-slate-400 p-[50px_40px] md:rounded-[50px];
-}
-
-.card-details {
-  @apply flex items-center justify-center w-[280px] h-[280px] mx-auto md:rounded-[50px];
-}
-
-.card-info h2 {
-  @apply font-poppins-medium text-3xl text-blue uppercase;
-}
-
-.card-info h3 {
-  @apply font-poppins-light text-xl text-blue;
-}
-
-.card-info p {
-  @apply text-blue text-xl font-poppins-light pt-3 pb-3;
-}
-
-.team-read-more {
-  @apply text-blue text-xl font-poppins-light underline transition duration-1000 transform hover:scale-110 hover:translate-y-1;
-}
-
-/* MEET TEAM INPUT FIELDS */
-.input {
-  height: 40px;
-  border-radius: 8px;
-  border: 2px solid hsl(236, 92%, 66%);
-  outline: none;
-  transition: 200ms ease-in;
-  padding-left: 1rem;
-}
-
-.input:focus {
-  border-bottom: 4px solid hsl(236, 92%, 66%);
-  padding-top: 2px;
-}
-
-.input::placeholder {
-  color: hsl(236, 92%, 66%);
-  opacity: 0.5;
-}
-
-/* TESTIMONIAL CARD */
-
-.testimonial-card {
-  @apply border-4 p-[35px_30px] rounded-[20px];
-  border: 1px solid rgba(0, 0, 0, .2);
-  box-shadow: inset 0 -2px 8px #0003;
-}
-
-.testimonial-card h2 {
-  @apply text-3xl pb-4 text-blue;
-}
-
-.testimonial-card p {
-  @apply text-blue text-xl font-poppins-light p-[10px_0];
-}
-
-.star-ratings {
-  @apply flex items-center justify-end pt-[20px];
-}
-
-.star-ratings img {
-  @apply w-[20px] h-[20px];
-}
-
-.posts-text p,
-.sector-text p {
-  @apply text-xl font-poppins-light mb-5;
-}
-
-.sub-sectors h2 {
-  @apply text-blue font-poppins-medium text-3xl uppercase pb-4;
-}
-
-.sub-sectors p {
-  @apply text-xl font-poppins-light pb-9;
-}
 
 
  
