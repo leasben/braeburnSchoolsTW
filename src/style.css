@@ -103,7 +103,10 @@ h6 {
   overflow: hidden; 
   height: 240px;
   background-color: #032765;
-  clip-path: polygon(36% 9%, 77% 16%, 100% 18%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 0 0);
+}
+
+.lower-curve {
+  @apply bg-[url('/images/lower-curve.svg')] bg-no-repeat bg-cover bg-center h-[90px] w-[100%] absolute top-[-53px] bottom-0 mt-8;
 }
 
 .carousel {
@@ -178,10 +181,12 @@ h6 {
   @apply w-[60px] h-[60px] mx-auto;
 }
 
-/* SCHOOLS */
-.schools-background-image {
-  @apply bg-[url('/images/lower-curve.svg')] bg-no-repeat bg-cover bg-center h-[450px] w-[100%]
+/* FIND SCHOOL */
+.find-school-btn {
+  @apply absolute top-[145%] -right-12 transform -translate-y-[-30%] rotate-90 border-b-2 border-l-2 border-r-2 border-lightBlue text-lightBlue py-2 px-4 font-poppins-light;
 }
+
+
 
 
  
