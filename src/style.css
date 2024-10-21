@@ -97,7 +97,6 @@ h6 {
   @apply w-[300px] aspect-custom;
 }
 
-/* CAROUSEL */
 .home-slider {
   position: relative;  
   overflow: hidden; 
@@ -106,8 +105,10 @@ h6 {
 }
 
 .lower-curve {
-  @apply bg-[url('/images/lower-curve.svg')] bg-no-repeat bg-cover bg-center h-[90px] w-[100%] absolute top-[-53px] bottom-0 mt-8;
+  @apply bg-[url('/images/lower-curve.svg')] bg-no-repeat bg-cover bg-center w-full absolute bottom-[150px]; 
+  height: 90px; 
 }
+
 
 .carousel {
   @apply absolute top-0 left-0 w-full h-full;
@@ -182,9 +183,15 @@ h6 {
 }
 
 /* FIND SCHOOL */
-.find-school-btn {
-  @apply absolute top-[160%] -right-0 transform -translate-x-[-39%] -rotate-90 border-4 rounded-t-[30px] border-lightBlue text-lightBlue py-2 px-4 font-poppins-light;
+.find-school {
+  @apply relative flex flex-col items-center; 
 }
+
+.find-school-btn {
+  @apply absolute right-[-108px] transform -translate-y-1/2 -rotate-90 border-4 rounded-t-[30px] border-lightBlue text-lightBlue py-2 px-4 font-poppins-light;
+  top: 50%;
+}
+
 
 /* SCHOOLS SUMMARY */
 
@@ -193,7 +200,8 @@ h6 {
 }
 
 .schools-curve {
-  @apply bg-[url('/images/lower-curve2.svg')] bg-no-repeat bg-cover bg-center h-[90px] w-[100%] absolute top-[24px] bottom-0;
+  @apply bg-[url('/images/lower-curve2.svg')] bg-no-repeat bg-cover bg-center w-full absolute bottom-[560px];
+  height: 90px;
 }
 
   /* STUDENT */
