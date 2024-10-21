@@ -183,14 +183,47 @@ h6 {
 
 /* FIND SCHOOL */
 .find-school-btn {
-  @apply absolute top-[145%] -right-12 transform -translate-y-[-30%] rotate-90 border-b-2 border-l-2 border-r-2 border-lightBlue text-lightBlue py-2 px-4 font-poppins-light;
+  @apply absolute top-[160%] -right-0 transform -translate-x-[-39%] -rotate-90 border-4 rounded-t-[30px] border-lightBlue text-lightBlue py-2 px-4 font-poppins-light;
+}
+
+/* SCHOOLS SUMMARY */
+
+.schools-summary {
+  @apply bg-[url('/images/school-bg.png')] bg-cover bg-center bg-no-repeat h-[650px];
+}
+
+.schools-curve {
+  @apply bg-[url('/images/lower-curve2.svg')] bg-no-repeat bg-cover bg-center h-[90px] w-[100%] absolute top-[24px] bottom-0;
+}
+
+  /* STUDENT */
+
+ .student-heading h2 {
+  @apply text-4xl text-lightBlue text-center font-poppins-medium py-9; 
+ }
+
+ .schools-lower-curve {
+  @apply bg-[url('/images/whitestrip.png')] bg-no-repeat bg-cover bg-center h-[90px] w-[100%] absolute top-[-6%] bottom-0;
 }
 
 
+/* LATEST NEWS */
+.news-section {
+  @apply bg-blue;
+}
+.latest-news {
+  @apply text-4xl text-white text-center font-poppins-medium
+}
 
+.carousel-cell .main {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
 
- 
- 
  
  
  

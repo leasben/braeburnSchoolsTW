@@ -25,7 +25,7 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         blue: '#032765',
-        lightBlue: '#003DA6',
+        lightBlue: '#2961e5',
       },
       boxShadow: {
         'button': '2px 8px 4px -2px rgba(226, 226, 226, 0.75)',
