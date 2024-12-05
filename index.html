@@ -6,17 +6,18 @@
     <link rel="stylesheet" href="/src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Braeburn - Home</title>
   </head>
   <body>
   <!-- NAV BAR -->
-  <section class="main-menu">
-<nav class="navbar mt-8">
-<div class="nav-section flex items-center justify-between w-[95%] mx-auto">
+  <section class="main-menu bg-blue py-5 px-5 w-[90%] mx-auto">
+<nav class="navbar">
+<div class="nav-section flex items-center justify-between">
    <!-- LOGO -->
-   <div class="logo pt-0">
+   <div class="logo cls-1 pt-0">
        <a href="/">
-           <img src="images/braeburn-logo.svg" alt="Braeburn Logo" width="400" height="200">
+           <img src="images/braeburn-logo-white.png" alt="Braeburn Logo"  width="400" height="200">
        </a>
    </div>
    <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
@@ -41,27 +42,23 @@
 <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
 <div id="mobile_menu" class="main-mobile-menu ">
 
-  <div class="group">
-    <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
-    <input placeholder="What are you looking for?" type="search" class="input">
-  </div>
   <ul class="space-y-8">
-    <li class="mobile-menu-items bg-[#0F3CA6]">
+    <li class="mobile-menu-items">
         <a href="#">Schools</a>
     </li>
-    <li class="mobile-menu-items bg-[#164BC9]">
+    <li class="mobile-menu-items">
         <a href="#">About</a>
     </li>
-    <li class="mobile-menu-items bg-[#376EEF]">
+    <li class="mobile-menu-items">
         <a href="#">News & Events</a>
     </li>
-    <li class="mobile-menu-items bg-[#17ABF4]">
+    <li class="mobile-menu-items">
         <a href="#">Professional Opportunities</a>
     </li>
-    <li class="mobile-menu-items bg-[#3AA6DB]">
+    <li class="mobile-menu-items">
         <a href="#">Apply</a>
     </li>
-    <li class="mobile-menu-items bg-[#238DC1]">
+    <li class="mobile-menu-items">
         <a href="#">Contact</a>
     </li>
 </ul>
@@ -80,27 +77,8 @@
 </nav>
 </section>
 
-<!-- Flickity HTML init -->
-<section class="home-slider">
-  <div class="lower-curve"></div>
-  <div class="carousel" data-flickity='{ "autoPlay": true }'>
-    <div class="carousel-cell">
-        <span class="font-poppins-bold leading-[28px]">Confident</span>
-        <span class="font-poppins-light">Individuals</span>
-    </div>
-    <div class="carousel-cell">
-        <span class="font-poppins-bold">Responsible</span>
-        <span class="font-poppins-light leading-[28px]">Citizens</span>
-    </div>
-    <div class="carousel-cell">
-        <span class="font-poppins-light leading-[28px]">Learners</span> <span class="font-poppins-bold">Enjoying</span>
-        <span class="font-poppins-light leading-[28px]">Success</span>
-    </div>
-</div>
-</section>
-
  <!-- BRAEBURN VIDEO -->
-  <section class="video">
+  <section class="video w-[90%] mx-auto">
     <div class="video-container">
       <video width="560" height="215" autoplay loop muted>
           <source src="images/braeburn-schools.mp4" type="video/mp4">
@@ -108,57 +86,129 @@
     </div>
   </section>
 
-<!-- FIND SCHOOL -->
- <section class="find-school my-16">
-  <div class="w-[90%] mx-auto">
-    <div class="find-school-heading">
-      <h3 class="text-2xl text-lightBlue font-poppins-regular pr-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odio laboriosam necessitatibus! Suscipit nihil eaque eos distinctio deleniti quo, ex accusamus harum magni excepturi ipsum at</h3>
-    </div>
-  </div>
-  <div class="find-school-btn">
-    <a href="#" class="text-4xl font-poppins-medium">Find a School</a>
-  </div>
- </section>
-
- <!-- SCHOOLS SUMMARY -->
-  <section class="main-schools-summary relative">
-    <div class="schools-curve"></div>
-    <div class="schools-summary"></div>
-  </section>
-
-  <!-- STUDENT -->
-   <section class="student relative">
-    <div class="schools-lower-curve"></div>
-     <div class="student-heading">
-      <h2>Student</h2>
-    </div> 
-    <div class="student-image px-10">
-      <img src="images/video.png" alt="Video Image">
-    </div>
-    <div class="cards grid grid-cols-2">
-      <div class="cards-row">
-        <div class="boats"> <img src="images/boats.png" alt="Boats"></div>
-        <div class="swimming"><img src="images/trophy.png" alt="Trophy"></div>
+  <!-- BACKGROUND IMAGES -->
+   <section class="welcome-section my-8 w-[90%] mx-auto">
+    <div class="grid grid-cols-[69%_31%]">
+      <div class="bg-image bg-[url('/images/Home-Page.webp')] bg-cover bg-no-repeat bg-center min-h-[600px]"></div>
+      <div class="card pr-5 flex items-center justify-center">
+        <div class="card-title text-white">
+          <div class="welocme-copy bg-blue py-5 px-8">
+          <h2 class="text-white text-center text-3xl">Welcome</h2>
+          <p class="text-white pt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus assumenda eveniet qui illum impedit, quibusdam, sapiente vitae minima accusamus aperiam nisi aut eligendi. At labore doloribus odit voluptas, excepturi ex ab, qui ipsum iste ducimus quo ea alias optio quia suscipit nulla magni similique quaerat adipisci. Doloremque illum accusantium fugiat.</p>
+        </div>
+          <div class="welcome-icons flex items-center justify-between gap-3 pt-10">
+            <div class="confident-icons">
+              <img src="images/person-icon.svg" class="w-20 h-20" alt="Person Icons">
+              <h3 class="text-blue font-poppins-light">Confident Individuals</h3>
+            </div>
+            <div class="confident-icons">
+              <img src="images/star-icon.svg" class="w-20 h-20" alt="Star Icons">
+              <h3 class="text-blue font-poppins-light">Learners Enjoying Success</h3>
+            </div>
+            <div class="confident-icons">
+              <img src="images/globe-icon.svg" class="w-20 h-20" alt="Globe Icons">
+              <h3 class="text-blue font-poppins-light">Responsible Citizens</h3>
+            </div>
+          </div>
+        </div>
       </div>
-        <div class="cards-row">
-          <div class="drama"><img src="images/drama.png" alt="Drama"></div>
-          <div class="trophy"><img src="images/swimming.png" alt="Swimming"></div> 
-        </div>   
+    </div>
+   </section>
+
+   <!-- FIND A SCHOOL SECTION -->
+
+   <section class="find-school w-[90%] mx-auto">
+    <div class="find-school-heading">
+      <h2 class="text-4xl text-blue text-center font-poppins-bold">Find a School</h2>
+    </div>
+    <div class="grid grid-cols-[70%_30%]">
+      <div class="bg-image bg-[url('/images/find-school-banner.webp')] bg-cover bg-no-repeat bg-center min-h-[600px] relative">
+        <div class="bottom-card absolute bottom-0 left-0 w-full flex ml-20">
+          <p class="text-white bg-blue text-base p-5 max-w-[600px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolore, laboriosam maxime qui fuga nesciunt, nemo natus expedita numquam autem aperiam tempore, ut labore dolorum fuga nesciunt, nemo natus expedita numquam autem aperiam tempore, ut labore dolorum veritatis vero. Suscipit dolor quos velit in tenetur omnis perspiciatis molestias quibusdam ratione magni provident excepturi, dolore a quas porro rerum quam vero qui consectetur veritatis vero.
+          </p>
+        </div>
+      </div>
+      <div class="find-school-search my-5">
+        <div class="search-by-map relative inline-block transform duration-500 ease-in-out hover:scale-110">
+          <img src="images/red-circle.svg" class="w-64 min-h-64" alt="Red Circle">
+          <h2 class="absolute inset-0 flex items-center justify-center text-blue text-xl font-bold">
+            Search By Map
+          </h2>
+        </div>
+        <div class="search-by-filter relative inline-block pt-7 transform duration-500 ease-in-out hover:scale-110">
+          <img src="images/Purple-circle.svg" class="w-64 min-h-64" alt="Red Circle">
+          <h2 class="absolute inset-0 flex items-center justify-center text-blue text-xl font-bold">
+            Search By Filter
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- CIRCLES/HIGHLIGHTS WITH IMAGES -->
+    <div class="highlights">
+      <div class="highlights-header">
+        <h2 class="text-blue text-3xl text-center font-poppins-bold py-8">Student Highlights</h2>
+        <div class="circles grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-6">
+          <div class="circle-image ">
+            <!-- Yellow Circle Background -->
+            <img src="images/yellow-circle-icon.svg" class="highlight-circle"  alt="Yellow Circle">
+            <!-- Centered and Scaled Image Link -->
+            <a href="#" class="highlight-image">
+              <img src="images/circles-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+            </a>
+          </div>
+          <div class="circle-image">
+            <!-- Orange Circle Background -->
+            <img src="images/Orange-circle-icon.svg" class="highlight-circle"  alt="Yellow Circle">
+            <!-- Centered and Scaled Image Link -->
+            <a href="#" class="highlight-image">
+              <img src="images/circle-2-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+            </a>
+          </div>
+          <div class="circle-image">
+            <!-- Green Circle Background -->
+            <img src="images/green-circle.png" class="highlight-circle"  alt="Yellow Circle">
+            <!-- Centered and Scaled Image Link -->
+            <a href="#" class="highlight-image">
+              <img src="images/cricle-3-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+            </a>
+          </div>
+          <div class="circle-image">
+            <!-- Red Circle Background -->
+            <img src="images/red-circle.svg" class="highlight-circle"  alt="Yellow Circle">
+            <!-- Centered and Scaled Image Link -->
+            <a href="#" class="highlight-image">
+              <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+            </a>
+          </div>
+      </div>
+      </div>
     </div>
    </section>
 
    <!-- LATEST NEWS -->
-    <section class="news-section">
-      <div class="latest-news">
-        <h2>Latest News <br> & Events</h2>
-      </div>
-      <div class="carousel news">
-        <div class="carousel-cell main"></div>
-        <div class="carousel-cell main"></div>
-      </div>
-    </section>
 
-
+   <section class="latest-news my-8">
+    <div class="news w-[90%] mx-auto bg-blue py-14">
+      <div class="news-heading">
+        <h2>Latest News & Events</h2>
+      </div>
+      <div class="wrap-carousel">
+        <div class="wrap" id="carousel">
+          <img src="https://www.codewithfaraz.com/img/code%20with%20Faraz-1.jpg" alt="Image 1">
+          <img src="https://www.codewithfaraz.com/img/code%20with%20Faraz-2.jpg" alt="Image 2">
+          <img src="https://www.codewithfaraz.com/img/code%20with%20Faraz-3.jpg" alt="Image 3">
+          <img src="https://www.codewithfaraz.com/img/code%20with%20Faraz-4.jpg" alt="Image 4">
+          <img src="https://www.codewithfaraz.com/img/code%20with%20Faraz-4.jpg" alt="Image 4">
+          <img src="https://www.codewithfaraz.com/img/code%20with%20Faraz-4.jpg" alt="Image 4">
+          <img src="https://www.codewithfaraz.com/img/code%20with%20Faraz-4.jpg" alt="Image 4">
+          <img src="https://www.codewithfaraz.com/img/code%20with%20Faraz-4.jpg" alt="Image 4">
+        </div>
+        <div class="pagination-dots" id="pagination"></div>
+      </div>
+      
+    </div>
+   </section>
    <!-- COPYRIGHT FOOTER -->
 <section class="bottom-footer bg-blue text-white h-[50px] flex justify-center items-center mt-7">
   <div class="bottom-text">
@@ -167,6 +217,7 @@
 </section>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="module" src="/src/main.js"></script>
+
 
   </body>
 </html>
