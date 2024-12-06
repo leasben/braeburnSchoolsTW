@@ -41,6 +41,11 @@
 
 <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
 <div id="mobile_menu" class="main-mobile-menu ">
+  <div class="logo cls-1 pt-0">
+    <a href="/">
+        <img src="images/braeburn-logo.svg" alt="Braeburn Logo"  width="400" height="200">
+    </a>
+</div>
 
   <ul class="space-y-8">
     <li class="mobile-menu-items">
@@ -88,9 +93,9 @@
 
   <!-- BACKGROUND IMAGES -->
    <section class="welcome-section my-8 w-[90%] mx-auto">
-    <div class="grid grid-cols-[69%_31%]">
+    <div class="grid grid-cols-1 md:grid-cols-[69%_31%] gap-5">
       <div class="bg-image bg-[url('/images/Home-Page.webp')] bg-cover bg-no-repeat bg-center min-h-[600px]"></div>
-      <div class="card pr-5 flex items-center justify-center">
+      <div class="card md:pr-5 flex items-center justify-center">
         <div class="card-title text-white">
           <div class="welocme-copy bg-blue py-5 px-8">
           <h2 class="text-white text-center text-3xl">Welcome</h2>
@@ -121,15 +126,15 @@
     <div class="find-school-heading">
       <h2 class="text-4xl text-blue text-center font-poppins-bold">Find a School</h2>
     </div>
-    <div class="grid grid-cols-[70%_30%]">
+    <div class="grid grid-cols-1 lg:grid-cols-[70%_30%] md:grid-cols-1 gap-5">
       <div class="bg-image bg-[url('/images/find-school-banner.webp')] bg-cover bg-no-repeat bg-center min-h-[600px] relative">
-        <div class="bottom-card absolute bottom-0 left-0 w-full flex ml-20">
+        <div class="bottom-card absolute bottom-0 left-0 w-full flex md:ml-20 px-6">
           <p class="text-white bg-blue text-base p-5 max-w-[600px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolore, laboriosam maxime qui fuga nesciunt, nemo natus expedita numquam autem aperiam tempore, ut labore dolorum fuga nesciunt, nemo natus expedita numquam autem aperiam tempore, ut labore dolorum veritatis vero. Suscipit dolor quos velit in tenetur omnis perspiciatis molestias quibusdam ratione magni provident excepturi, dolore a quas porro rerum quam vero qui consectetur veritatis vero.
           </p>
         </div>
       </div>
-      <div class="find-school-search my-5">
+      <div class="find-school-search my-5 grid justify-items-center">
         <div class="search-by-map relative inline-block transform duration-500 ease-in-out hover:scale-110">
           <img src="images/red-circle.svg" class="w-64 min-h-64" alt="Red Circle">
           <h2 class="absolute inset-0 flex items-center justify-center text-blue text-xl font-bold">
@@ -148,7 +153,7 @@
     <div class="highlights">
       <div class="highlights-header">
         <h2 class="text-blue text-3xl text-center font-poppins-bold py-8">Student Highlights</h2>
-        <div class="circles grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-6">
+        <div class="circles grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-6 place-items-center">
           <div class="circle-image ">
             <!-- Yellow Circle Background -->
             <img src="images/yellow-circle-icon.svg" class="highlight-circle"  alt="Yellow Circle">
@@ -206,15 +211,76 @@
         </div>
         <div class="pagination-dots" id="pagination"></div>
       </div>
-      
     </div>
    </section>
-   <!-- COPYRIGHT FOOTER -->
-<section class="bottom-footer bg-blue text-white h-[50px] flex justify-center items-center mt-7">
-  <div class="bottom-text">
-    © Lorem 2024 | By <a href="https://powerof9.co.za" target="_blank" class="hover:underline">Power of 9</a>
-  </div>
-</section>
+
+   <!-- SCHOOL ACCREDITATION -->
+    <section class="accreditation py-8">
+      <div class="w-[90%] mx-auto">
+        <div class="acreditation-headline">
+          <h2>School Accreditation</h2>
+        </div>
+        <div class="accreditation-logo">
+          <img src="images/accreditation-4.png" alt="Accreditation">
+          <img src="images/accreditation-3.jpg" alt="Accreditation">
+          <img src="images/accreditation-1.jpg" alt="Accreditation">
+          <img src="images/accreditation-2.jpg" alt="Accreditation">
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+
+    <section class="footer-section mt-5">
+      <div class="main-footer bg-blue w-[90%] mx-auto py-8">
+        <div class="logo">
+          <img src="images/braeburn-logo-white.png" alt="Logo">
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center px-5 pt-5">
+          <div class="col-address">
+            <ul>
+              <li>Braeburn Schools</li>
+              <li>Braeburn Schools Ltd</li>
+              <li>P.O. Box 45112</li>
+              <li>00100 Nairobi</li>
+              <li>Kenya</li>
+              <li>+254 (0)730 881000</li>
+            </ul>
+          </div>
+          <div class="col-links">
+              <ul>
+                <li><a href="#">Schools</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Braeburn Experience</a></li>
+                <li><a href="#">News & Events</a></li>
+                <li><a href="#">Professional Opportunities</a></li>
+            </ul> 
+          </div>
+          <div class="col-links">
+            <ul>
+              <li><a href="#">Apply</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul> 
+        </div>
+          <div class="footer-social-links">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook"></a>  
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="Linkedin"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="carousel"
+  data-flickity='{ "contain": true }'>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+</div>
+
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="module" src="/src/main.js"></script>
 

@@ -11,7 +11,6 @@
   --green: #07522c;
   --black: #000;
   --bg-grey: #d0d0d04f;
- 
 }
 
 * {
@@ -203,8 +202,59 @@ h6 {
   background-color: red;
 }
 
+/* SCHOOL ACCREDITATION */
+
+.acreditation-headline h2 {
+  @apply text-3xl text-blue text-center font-poppins-bold pb-3;
+}
  
- 
+.accreditation-logo {
+  @apply grid grid-cols-2 md:grid-cols-4 gap-2 max-w-5xl mx-auto;
+}
+
+.accreditation-logo img {
+  @apply flex items-center justify-center p-2 h-24 object-contain;
+}
+
+/* FOOTER SECTION */
+
+.col-address ul li {
+  @apply text-white text-xl font-poppins-regular;
+}
+
+.col-links ul li a {
+  @apply text-white text-xl font-poppins-regular;
+}
+  
+/* FOOTER-SOCIAL-LINKS */
+.footer-social-links img {
+  @apply w-14 h-14 mb-2;
+}
+
+
+.carousel {
+  background: #FAFAFA;
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
 
 
 
