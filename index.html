@@ -11,77 +11,68 @@
   </head>
   <body>
   <!-- NAV BAR -->
-  <section class="main-menu bg-blue py-5 px-5 w-[90%] mx-auto">
-<nav class="navbar">
-<div class="nav-section flex items-center justify-between">
-   <!-- LOGO -->
-   <div class="logo cls-1 pt-0">
-       <a href="/">
-           <img src="images/braeburn-logo-white.png" alt="Braeburn Logo"  width="400" height="200">
-       </a>
-   </div>
-   <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
-   <div class="menu-icon z-[100]" id="menu-toggle">
-    <img src="images/open-menu-icon.svg" alt="Menu" class="toggle-icon">
-    <img src="images/close-menu-icon.svg" alt="Close" class="close" style="display:none;">
-</div>
+  <section class="main-menu bg-blue py-16 md:py-5 px-5 w-[90%] mx-auto">
+    <nav class="navbar">
+      <div class="nav-section flex items-center justify-between">
 
- <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
-<!-- <div class="hidden lg:flex md:items-center lg:gap-24 md:gap-12 ml-auto mr-10 uppercase font-poppins-light text-blue text-xl">
-  <ul class="flex space-x-20">
-    <li class="menu-items"><a href="#">Schools</a></li>
-    <li class="menu-items"><a href="#">About</a></li>
-    <li class="menu-items"><a href="#">News & Events</a></li>
-    <li class="menu-items"><a href="#">Professional Opportunities</a></li>
-    <li class="menu-items"><a href="#">Apply</a></li>
-    <li class="menu-items"><a href="#">Contact</a></li>
-  </ul>
-</div> -->  
-</div>
+           <!-- LOGO (CENTERED) -->
+           <div class="logo cls-1 hidden md:block justify-center pt-0 flex-1">
+            <a href="/">
+              <img src="images/braeburn-logo-white.png" alt="Braeburn Logo" width="400" height="200">
+            </a>
+          </div>
 
-<!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
-<div id="mobile_menu" class="main-mobile-menu ">
-  <div class="logo cls-1 pt-0">
-    <a href="/">
-        <img src="images/braeburn-logo.svg" alt="Braeburn Logo"  width="400" height="200">
-    </a>
-</div>
-
-  <ul class="space-y-8">
-    <li class="mobile-menu-items">
-        <a href="#">Schools</a>
-    </li>
-    <li class="mobile-menu-items">
-        <a href="#">About</a>
-    </li>
-    <li class="mobile-menu-items">
-        <a href="#">News & Events</a>
-    </li>
-    <li class="mobile-menu-items">
-        <a href="#">Professional Opportunities</a>
-    </li>
-    <li class="mobile-menu-items">
-        <a href="#">Apply</a>
-    </li>
-    <li class="mobile-menu-items">
-        <a href="#">Contact</a>
-    </li>
-</ul>
- <div class="social-icons">
- <div class="facebook">
- <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook Icon"></a> 
- </div>
- <div class="instagram">
- <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram Icon"></a> 
- </div>
- <div class="linkedin">
-  <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="Linkedin Icon"></a>
- </div>
-</div>
-</div>
-</nav>
-</section>
-
+        <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
+        <div class="menu-icon" id="menu-toggle">
+          <img src="images/open-menu-icon.svg" alt="Menu" class="toggle-icon">
+          <img src="images/close-menu-icon.svg" alt="Close" class="close" style="display:none;">
+        </div>
+      </div>
+  
+      <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
+      <div id="mobile_menu" class="main-mobile-menu">
+        <div class="logo cls-1 pt-0">
+          <a href="/">
+            <img src="images/braeburn-logo.svg" alt="Braeburn Logo" width="400" height="200">
+          </a>
+        </div>
+  
+        <ul class="space-y-8">
+          <li class="mobile-menu-items">
+            <a href="#">Schools</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="#">About</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="#">News & Events</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="#">Professional Opportunities</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="#">Apply</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+  
+        <div class="social-icons">
+          <div class="facebook">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook Icon"></a>
+          </div>
+          <div class="instagram">
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram Icon"></a>
+          </div>
+          <div class="linkedin">
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="Linkedin Icon"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+  
  <!-- BRAEBURN VIDEO -->
   <section class="video w-[90%] mx-auto">
     <div class="video-container">
@@ -194,23 +185,83 @@
    <!-- LATEST NEWS -->
 
    <section class="latest-news my-8">
-    <div class="news w-[90%] mx-auto bg-blue py-14">
+    <div class="news w-[90%] mx-auto bg-blue py-8">
       <div class="news-heading">
         <h2>Latest News & Events</h2>
       </div>
-      <div class="wrap-carousel">
-        <div class="wrap" id="carousel">
-          <img src="https://www.codewithfaraz.com/img/code%20with%20Faraz-1.jpg" alt="Image 1">
-          <img src="https://www.codewithfaraz.com/img/code%20with%20Faraz-2.jpg" alt="Image 2">
-          <img src="https://www.codewithfaraz.com/img/code%20with%20Faraz-3.jpg" alt="Image 3">
-          <img src="https://www.codewithfaraz.com/img/code%20with%20Faraz-4.jpg" alt="Image 4">
-          <img src="https://www.codewithfaraz.com/img/code%20with%20Faraz-4.jpg" alt="Image 4">
-          <img src="https://www.codewithfaraz.com/img/code%20with%20Faraz-4.jpg" alt="Image 4">
-          <img src="https://www.codewithfaraz.com/img/code%20with%20Faraz-4.jpg" alt="Image 4">
-          <img src="https://www.codewithfaraz.com/img/code%20with%20Faraz-4.jpg" alt="Image 4">
+
+      <div class="carousel mt-5" data-flickity='{ "contain": true, "wrapAround": true }'>
+      <div class="carousel-cell">
+        <div class="news-card border-red-500">
+        <div class="card-image"><img src="images/news-5.jpg" alt=""></div>  
+        <div class="card-details pl-4 py-5">
+          <h2>Headline</h2>
+          <h3>Date</h3>
+          <h3>School Name</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
+          <div class="link">
+            <a href="#">Link</a>
+          </div>
         </div>
-        <div class="pagination-dots" id="pagination"></div>
+        </div>
       </div>
+      <div class="carousel-cell">
+        <div class="news-card border-yellow-500">
+        <div class="card-image"><img src="images/news-5.jpg" alt=""></div>  
+        <div class="card-details pl-4 py-5">
+          <h2>Headline</h2>
+          <h3>Date</h3>
+          <h3>School Name</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
+          <div class="link">
+            <a href="#">Link</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="news-card border-green-500">
+        <div class="card-image"><img src="images/news-5.jpg" alt=""></div>  
+        <div class="card-details pl-4 py-5">
+          <h2>Headline</h2>
+          <h3>Date</h3>
+          <h3>School Name</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
+          <div class="link">
+            <a href="#">Link</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="news-card border-orange-500">
+        <div class="card-image"><img src="images/news-5.jpg" alt=""></div>  
+        <div class="card-details pl-4 py-5">
+          <h2>Headline</h2>
+          <h3>Date</h3>
+          <h3>School Name</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
+          <div class="link">
+            <a href="#">Link</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="news-card border-green-500">
+        <div class="card-image"><img src="images/news-5.jpg" alt=""></div>  
+        <div class="card-details pl-4 py-5">
+          <h2>Headline</h2>
+          <h3>Date</h3>
+          <h3>School Name</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
+          <div class="link">
+            <a href="#">Link</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
     </div>
    </section>
 
@@ -237,7 +288,7 @@
           <img src="images/braeburn-logo-white.png" alt="Logo">
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center px-5 pt-5">
-          <div class="col-address">
+          <div class="col-address md:border-r-4 md:border-white pr-10"> 
             <ul>
               <li>Braeburn Schools</li>
               <li>Braeburn Schools Ltd</li>
@@ -247,21 +298,21 @@
               <li>+254 (0)730 881000</li>
             </ul>
           </div>
-          <div class="col-links">
-              <ul>
-                <li><a href="#">Schools</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Braeburn Experience</a></li>
-                <li><a href="#">News & Events</a></li>
-                <li><a href="#">Professional Opportunities</a></li>
+          <div class="col-links pr-4">
+            <ul>
+              <li><a href="#">Schools</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Braeburn Experience</a></li>
+              <li><a href="#">News & Events</a></li>
+              <li><a href="#">Professional Opportunities</a></li>
             </ul> 
           </div>
-          <div class="col-links">
-            <ul>
+          <div class="col-links md:border-r-4 md:border-white pr-4"> 
+            <ul class="pr-20">
               <li><a href="#">Apply</a></li>
               <li><a href="#">Contact</a></li>
-          </ul> 
-        </div>
+            </ul> 
+          </div>
           <div class="footer-social-links">
             <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook"></a>  
             <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram"></a>
@@ -270,16 +321,7 @@
         </div>
       </div>
     </section>
-
-    <div class="carousel"
-  data-flickity='{ "contain": true }'>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-</div>
-
+    
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="module" src="/src/main.js"></script>
