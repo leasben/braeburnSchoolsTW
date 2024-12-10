@@ -11,6 +11,8 @@
   --green: #07522c;
   --black: #000;
   --bg-grey: #d0d0d04f;
+  --lightBlue: #238DC1;
+
 }
 
 * {
@@ -98,7 +100,7 @@ h6 {
 
 /* HAMBURGER ICON */
 .menu-icon {
-      @apply fixed top-4 right-[100px] z-[10000] p-3;
+      @apply fixed top-4 right-[100px] z-[10000] rounded-full bg-blue mr-5 flex items-center;
     }
 
 /* VIDEO */
@@ -128,6 +130,10 @@ h6 {
   /* Add max-height and make it scrollable */
   max-height: calc(100vh - 80px); /* Prevent the menu from exceeding the viewport height */
   overflow-y: auto; /* Add vertical scrolling if the content exceeds the max height */
+}
+
+.flickity-prev-next-button {
+  @apply hidden;
 }
 
 
@@ -166,6 +172,35 @@ h6 {
   @apply absolute inset-0 flex items-center justify-center overflow-hidden rounded-full;
  }
 
+ /* STUDENT HIGHLIGHT */
+ .student-highlight-image {
+  @apply relative inline-block w-48 h-48;
+}
+ .highlight-student-image {
+  @apply w-full h-full object-cover rounded-full z-0;
+ }
+
+ .highlight-image-student {
+  @apply absolute inset-0 flex items-center justify-center overflow-hidden rounded-full;
+ }
+/* OUR TEAM */
+.team-image {
+  @apply relative inline-block w-48 h-48;  /* Reduce image size */
+  margin: 0 1rem; /* Added horizontal gap between circles if displayed in a row */
+}
+
+.team-image-circle {
+  @apply w-full h-full object-cover rounded-full z-0;
+}
+
+.team-member-image {
+  @apply absolute inset-0 flex items-center justify-center overflow-hidden rounded-full;
+}
+
+.member-name {
+  @apply mt-2 text-center;
+}
+
  /* LATEST NEWS */
  .news-heading h2 {
   @apply text-white text-center text-3xl font-poppins-bold;
@@ -184,6 +219,9 @@ h6 {
 .accreditation-logo img {
   @apply flex items-center justify-center p-2 h-24 object-contain;
 }
+
+/* ABOUT SECTION */
+
 
 /* FOOTER SECTION */
 

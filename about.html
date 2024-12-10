@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/braeburn-logo.svg" />
+    <link rel="stylesheet" href="/src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Braeburn Schools - About</title>
+  </head>
+  <body>
+  <!-- NAV BAR -->
+  <section class="main-menu bg-blue py-16 md:py-5 px-5 w-[90%] mx-auto">
+    <nav class="navbar">
+      <div class="nav-section flex items-center justify-between">
+
+           <!-- LOGO (CENTERED) -->
+           <div class="logo cls-1 hidden md:block justify-center pt-0 flex-1">
+            <a href="/">
+              <img src="images/braeburn-logo-white.png" alt="Braeburn Logo" width="400" height="200">
+            </a>
+          </div>
+
+        <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
+        <div class="menu-icon" id="menu-toggle">
+          <img src="images/open-menu-icon.svg" alt="Menu" class="toggle-icon">
+          <img src="images/close-menu-icon.svg" alt="Close" class="close" style="display:none;">
+        </div>
+      </div>
+  
+      <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
+      <div id="mobile_menu" class="main-mobile-menu">
+        <div class="logo cls-1 pt-0">
+          <a href="/">
+            <img src="images/braeburn-logo.svg" alt="Braeburn Logo" width="400" height="200">
+          </a>
+        </div>
+  
+        <ul class="space-y-8">
+          <li class="mobile-menu-items">
+            <a href="#">Schools</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="/about.html">About</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="#">News & Events</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="#">Professional Opportunities</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="#">Apply</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+  
+        <div class="social-icons">
+          <div class="facebook">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook Icon"></a>
+          </div>
+          <div class="instagram">
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram Icon"></a>
+          </div>
+          <div class="linkedin">
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="Linkedin Icon"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+  
+  <!-- ABOUT SECTION -->
+   <section class="about-us w-[90%] mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-[70%_30%] md:grid-cols-1 gap-5">
+      <div class="bg-image bg-[url('/images/braeburnschools-about.jpg')] bg-cover bg-no-repeat bg-center min-h-[600px] relative">
+        <div class="about-card absolute bottom-0 left-0 w-full flex items-center justify-center gap-5 mb-5">
+          <p class="text-white bg-blue text-base px-5 py-1 max-w-[600px]"><a href="#">Approach</a></p>
+          <p class="text-white bg-blue text-base px-5 py-1 max-w-[600px]"><a href="#">History</a></p>
+          <p class="text-white bg-blue text-base px-5 py-1 max-w-[600px]"><a href="#">Curricula</a></p>
+          <p class="text-white bg-blue text-base px-5 py-1 max-w-[600px]"><a href="#">Team</a></p>
+        </div>
+      </div>
+      <div class="about-us mt-8 grid justify-items-center">
+        <div class="relative inline-block transform duration-500 ease-in-out hover:scale-110">
+          <img src="images/blue-circle-icon.svg" class="w-64 min-h-64" alt="Blue Circle">
+          <h2 class="absolute inset-0 flex items-center justify-center text-blue text-3xl font-bold">
+            Vision
+          </h2>
+        </div>
+        <div class="relative inline-block pt-7 transform duration-500 ease-in-out hover:scale-110">
+          <img src="images/blue-circle-icon.svg" class="w-64 min-h-64" alt="Blue Circle">
+          <h2 class="absolute inset-0 flex items-center justify-center text-blue text-3xl font-bold">
+            Mission
+          </h2>
+        </div>
+      </div>
+    </div>
+   </section>
+
+      <!-- APPROACH -->
+      <section class="approach-section my-8 w-[90%] mx-auto">
+        <div class="approach-heading">
+            <h2 class="text-4xl text-center text-blue font-poppins-bold pb-6">Approach</h2>
+        </div>
+              <div class="grid grid-cols-1 md:grid-cols-[35%_65%] gap-5">
+                  <div class="card flex items-center justify-center relative">
+                      <div class="card-title text-white">
+                        <div class="approach-copy bg-blue py-5 absolute bottom-20 left-10 w-full flex px-6">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus assumenda eveniet qui illum impedit, quibusdam, sapiente vitae minima accusamus aperiam voluptas, excepturi ex ab, qui ipsum iste ducimus quo ea alias optio quia suscipit nulla magni similique quaerat adipisci. Doloremque illum accusantium fugiat nisi aut eligendi. At labore doloribus odit <br><br>voluptas, excepturi ex ab, qui ipsum iste ducimus quo ea alias optio quia suscipit nulla magni similique quaerat adipisci. Doloremque illum accusantium fugiat ea alias optio quia suscipit nulla magni similique quaerat adipisci. Doloremque illum accusantium fugiat nisi aut eligendi. eveniet qui illum impedit, quibusdam.</p>
+                      </div>
+                      </div>
+                    </div>
+                <div class="bg-image bg-[url('/images/braeburn-approach.jpg')] bg-cover bg-no-repeat bg-center min-h-[600px]"></div>
+              </div>
+             </section>
+
+    <!-- History Section -->        
+     to come here 
+
+     <!-- CURRICULA SECTION -->
+      <section class="curricula">
+        <div class="w-[90%] mx-auto">
+            <div class="curricula-heading">
+                <h2>Curricula</h2>
+            </div>
+            <div class="curricula-cards grid grid-cols-5 gap-5">
+              <div class="card-image border-4 border-lightBlue">
+                <img src="images/curricula-card-1.jpg" alt="Curricula Card" class="border-b-4 border-lightBlue">
+                <div class="curricula-text py-2">
+                    <div class="age text-base text-blue text-center font-poppins-medium">Age 2-5</div>
+                    <div class="curricula-level text-sm text-blue text-center font-poppins-regular">Early Years Foundation Stage</div>
+                </div>
+            </div>
+              <div class="card-image border-4 border-lightBlue">
+                <img src="images/curricula-card-1.jpg" alt="Curricula Card" class="border-b-4 border-lightBlue">
+                <div class="curricula-text py-2">
+                    <div class="age text-base text-blue text-center font-poppins-medium">Age 2-5</div>
+                    <div class="curricula-level text-sm text-blue text-center font-poppins-regular">Early Years Foundation Stage</div>
+                </div>
+            </div>
+              <div class="card-image border-4 border-lightBlue">
+                <img src="images/curricula-card-1.jpg" alt="Curricula Card" class="border-b-4 border-lightBlue">
+                <div class="curricula-text py-2">
+                    <div class="age text-base text-blue text-center font-poppins-medium">Age 2-5</div>
+                    <div class="curricula-level text-sm text-blue text-center font-poppins-regular">Early Years Foundation Stage</div>
+                </div>
+            </div>
+              <div class="card-image border-4 border-lightBlue">
+                <img src="images/curricula-card-1.jpg" alt="Curricula Card" class="border-b-4 border-lightBlue">
+                <div class="curricula-text py-2">
+                    <div class="age text-base text-blue text-center font-poppins-medium">Age 2-5</div>
+                    <div class="curricula-level text-sm text-blue text-center font-poppins-regular">Early Years Foundation Stage</div>
+                </div>
+            </div>
+              <div class="card-image border-4 border-lightBlue">
+                <img src="images/curricula-card-1.jpg" alt="Curricula Card" class="border-b-4 border-lightBlue">
+                <div class="curricula-text py-2">
+                    <div class="age text-base text-blue text-center font-poppins-medium">Age 2-5</div>
+                    <div class="curricula-level text-sm text-blue text-center font-poppins-regular">Early Years Foundation Stage</div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+      </section>
+
+      <!-- STUDENT HIGHLIGHTS -->
+       <section class="student-highlights">
+        <div class="w-[90%] mx-auto">
+            <div class="studnet-highlights-heading">
+                <h2 class="text-3xl text-center text-blue font-poppins-bold pt-5">Student Highlights</h2>
+            </div>
+                <div class="founding-members-text bg-blue my-8">
+                    <h2 class="text-3xl text-center text-white font-poppins-regular pt-5">Founding Members</h2>
+                    <p class="text-base text-white font-poppins-light px-20 py-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus exercitationem aperiam tempora nemo expedita dolorum explicabo sint et similique quasi iste, delectus odit qui mollitia rem sequi natus dolore a, quos quidem sunt, nam voluptates ab perferendis. Praesentium, sapiente cupiditate? Laboriosam, laborum fugit! Veritatis corporis perferendis eum, corrupti amet exercitationem aperiam tempora nemo expedita dolorum explicabo sint et similique quasi iste, delectus odit qui mollitia rem sequi natus dolore a, quos quidem sunt, nam voluptates ab perferendis. Praesentium, sapiente cupiditate? Laboriosam, laborum fugit! <br><br>Veritatis corporis perferendis eum, corrupti amet pariatur?Nostra dignissim morbi dis fringilla leo erat eu placerat vestibulum nunc, id nisl praesent posuere penatibus justo curabitur ligula euismod, platea cubilia mus vitae dui laoreet felis class odio. Porttitor sodales posuere aliquet vestibulum facilisi dictum tellus fames blandit, mattis urna habitant tempor dis tristique quisque mi. Commodo aliquam tortor varius nostra odio magnis erat elementum vivamus torquent curae, ut mus habitant dis cursus non mi potenti nunc platea, tristique congue ridiculus aptent natoque donec nisl dapibus penatibus maecenas. Aliquet dignissim</p>
+                </div>
+            <div class="flex itmes-center justify-between gap-5">
+            <div class="student-highlight-image">
+                <!-- Blue Circle Background -->
+                <img src="images/blue-circle-highlight.svg" class="highlight-student-image"  alt="Yellow Circle">
+                <!-- Centered and Scaled Image Link -->
+                <a href="#" class="highlight-image-student">
+                  <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                </a>
+              </div>
+            <div class="student-highlight-image">
+                <!-- Blue Circle Background -->
+                <img src="images/blue-circle-highlight.svg" class="highlight-student-image"  alt="Yellow Circle">
+                <!-- Centered and Scaled Image Link -->
+                <a href="#" class="highlight-image-student">
+                  <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                </a>
+              </div>
+            <div class="student-highlight-image">
+                <!-- Blue Circle Background -->
+                <img src="images/blue-circle-highlight.svg" class="highlight-student-image"  alt="Yellow Circle">
+                <!-- Centered and Scaled Image Link -->
+                <a href="#" class="highlight-image-student">
+                  <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                </a>
+              </div>
+            <div class="student-highlight-image">
+                <!-- Blue Circle Background -->
+                <img src="images/blue-circle-highlight.svg" class="highlight-student-image"  alt="Yellow Circle">
+                <!-- Centered and Scaled Image Link -->
+                <a href="#" class="highlight-image-student">
+                  <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                </a>
+              </div>
+            <div class="student-highlight-image">
+                <!-- Blue Circle Background -->
+                <img src="images/blue-circle-highlight.svg" class="highlight-student-image"  alt="Yellow Circle">
+                <!-- Centered and Scaled Image Link -->
+                <a href="#" class="highlight-image-student">
+                  <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                </a>
+              </div>
+            <div class="student-highlight-image">
+                <!-- Blue Circle Background -->
+                <img src="images/blue-circle-highlight.svg" class="highlight-student-image"  alt="Yellow Circle">
+                <!-- Centered and Scaled Image Link -->
+                <a href="#" class="highlight-image-student">
+                  <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                </a>
+              </div>
+            </div>
+        </div>
+       </section>
+
+       <!-- OUR TEAM -->
+        <section class="our-team">
+            <div class="w-[90%] mx-auto">
+                <div class="our-team-text bg-blue my-8">
+                    <h2 class="text-3xl text-center text-white font-poppins-regular pt-5">Our Team</h2>
+                    <p class="text-base text-white font-poppins-light px-20 py-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus exercitationem aperiam tempora nemo expedita dolorum explicabo sint et similique quasi iste, delectus odit qui mollitia rem sequi natus dolore a, quos quidem sunt, nam voluptates ab perferendis. Praesentium, sapiente cupiditate? Laboriosam, laborum fugit! Veritatis Praesentium, sapiente cupiditate? Laboriosam, laborum fugit! <br><br>Veritatis corporis perferendis eum, corrupti amet pariatur?Nostra dignissim morbi dis fringilla leo erat eu placerat vestibulum nunc, id nisl praesent posuere penatibus justo curabitur ligula euismod, platea cubilia mus vitae dui laoreet felis class odio. Porttitor sodales posuere aliquet vestibulum facilisi dictum tellus fames blandit</p>
+                </div>
+                <div class="team-title">
+                    <h3 class="text-blue text-sm font-poppins-medium pb-2">Braeburn Schools Limited</h3>
+                </div>
+                <div class="grid grid-cols-6 gap-20 justify-items-center pb-8">
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                </div>
+                <!--BRAEBURN SCHOOLS LIMITED EXECUTIVE COMMITTEE -->
+                <div class="executive-committee mt-5">
+                <div class="team-title">
+                    <h3 class="text-blue text-sm font-poppins-medium pb-2">Braeburn Schools Limited Executive Committee</h3>
+                </div>
+                <div class="grid grid-cols-6 gap-20 justify-items-center pb-8">
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+                <!-- BRAEBURN SCHOOL TANZANIA LIMITED -->
+                <div class="braeburn-tanzania mt-5">
+                <div class="team-title">
+                    <h3 class="text-blue text-sm font-poppins-medium pb-2">Braeburn Schools Tanzania Limited</h3>
+                </div>
+                <div class="grid grid-cols-6 gap-20 justify-items-center pb-8">
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                  <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle" alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                      <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                  
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+                <!-- TES AFRICA LIMITED (RWANDA) -->
+                 <div class="tes-africa-rwanda mt-5">
+                <div class="team-title">
+                    <h3 class="text-blue text-sm font-poppins-medium pb-2">TAS Africa Limited (Rwanda)</h3>
+                </div>
+                <div class="grid grid-cols-6 gap-20 justify-items-center pb-8">
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                <div class="team-image">
+                    <!-- Blue Circle Background -->
+                    <img src="images/blue-circle-highlight.svg" class="team-image-circle"  alt="Yellow Circle">
+                    <!-- Centered and Scaled Image Link -->
+                    <a href="#" class="team-member-image">
+                      <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+                    </a>
+                    <div class="member-name">
+                        <h3 class="text-blue text-base font-poppins-medium flex items-center justify-center py-1">John Doe</h3>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- FIND A SCHOOL -->
+         <section class="find-a-school mt-5">
+            <div class="w-[90%] mx-auto">
+                <div class="find-school-banner bg-[url('/images/find-school-bg-banner.jpg')] bg-no-repeat bg-cover bg-center min-h-[600px]">
+                    <div class=" relative inline-block top-28 left-28">
+                        <img src="images/red-circle.svg" class="w-64 min-h-64" alt="Red Circle">
+                        <h2 class="absolute inset-0 flex items-center justify-center text-blue text-2xl font-poppins-bold">
+                          Find a School
+                        </h2>
+                      </div>
+                </div>
+                
+            </div>
+         </section>
+
+    <!-- footer section -->
+    <section class="footer-section">
+      <div class="main-footer bg-blue w-[90%] mx-auto py-8">
+        <div class="logo">
+          <img src="images/braeburn-logo-white.png" alt="Logo">
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center px-5 pt-5">
+          <div class="col-address md:border-r-4 md:border-white pr-10"> 
+            <ul>
+              <li>Braeburn Schools</li>
+              <li>Braeburn Schools Ltd</li>
+              <li>P.O. Box 45112</li>
+              <li>00100 Nairobi</li>
+              <li>Kenya</li>
+              <li>+254 (0)730 881000</li>
+            </ul>
+          </div>
+          <div class="col-links pr-4">
+            <ul>
+              <li><a href="#">Schools</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Braeburn Experience</a></li>
+              <li><a href="#">News & Events</a></li>
+              <li><a href="#">Professional Opportunities</a></li>
+            </ul> 
+          </div>
+          <div class="col-links md:border-r-4 md:border-white pr-4"> 
+            <ul class="pr-20">
+              <li><a href="#">Apply</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul> 
+          </div>
+          <div class="footer-social-links">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook"></a>  
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="Linkedin"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="module" src="/src/main.js"></script>
+
+
+  </body>
+</html>
