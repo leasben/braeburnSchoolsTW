@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'), 
         about: resolve(__dirname, 'about.html'), 
+        groupSchools: resolve(__dirname, 'group-schools.html'), 
       },
       output: {
         dir: 'dist', // Output directory for the build

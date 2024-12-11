@@ -238,6 +238,8 @@ h6 {
   @apply w-14 h-14 mb-2;
 }
 
+/* NEWS */
+ 
 .carousel-cell {
   @apply w-[35%] min-h-[600px] mr-[10px] pr-8
  }

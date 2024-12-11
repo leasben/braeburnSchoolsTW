@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/braeburn-logo.svg" />
+    <link rel="stylesheet" href="/src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Braeburn Schools - Group Schools</title>
+  </head>
+  <body>
+  <!-- NAV BAR -->
+  <section class="main-menu bg-blue py-16 md:py-5 px-5 w-[90%] mx-auto">
+    <nav class="navbar">
+      <div class="nav-section flex items-center justify-between">
+
+           <!-- LOGO (CENTERED) -->
+           <div class="logo cls-1 hidden md:block justify-center pt-0 flex-1">
+            <a href="/">
+              <img src="images/braeburn-logo-white.png" alt="Braeburn Logo" width="400" height="200">
+            </a>
+          </div>
+
+        <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
+        <div class="menu-icon" id="menu-toggle">
+          <img src="images/open-menu-icon.svg" alt="Menu" class="toggle-icon">
+          <img src="images/close-menu-icon.svg" alt="Close" class="close" style="display:none;">
+        </div>
+      </div>
+  
+      <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
+      <div id="mobile_menu" class="main-mobile-menu">
+        <div class="logo cls-1 pt-0">
+          <a href="/">
+            <img src="images/braeburn-logo.svg" alt="Braeburn Logo" width="400" height="200">
+          </a>
+        </div>
+  
+        <ul class="space-y-8">
+          <li class="mobile-menu-items">
+            <a href="/group-schools.html">Schools</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="/about.html">About</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="#">News & Events</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="#">Professional Opportunities</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="#">Apply</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+  
+        <div class="social-icons">
+          <div class="facebook">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook Icon"></a>
+          </div>
+          <div class="instagram">
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram Icon"></a>
+          </div>
+          <div class="linkedin">
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="Linkedin Icon"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+   <!-- Group Schools Banner -->
+
+   <section class="group-schools-section w-[90%] mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-[70%_30%] md:grid-cols-1 gap-5">
+      <div class="bg-image bg-[url('/images/find-school-banner.webp')] bg-cover bg-no-repeat bg-center min-h-[600px] relative">
+        <div class="bottom-card absolute bottom-0 left-0 w-full flex md:ml-20 px-6">
+          <p class="text-white bg-blue text-base p-5 max-w-[850px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolore, laboriosam maxime qui fuga nesciunt, nemo natus expedita numquam autem aperiam tempore, ut labore dolorum fuga nesciunt, nemo natus expedita numquam autem aperiam tempore, ut labore dolorum veritatis vero. Suscipit dolor quos velit in tenetur omnis perspiciatis molestias quibusdam ratione magni</br><br> provident excepturi, dolore a quas porro rerum quam vero qui consectetur veritatis vero. quos velit in tenetur omnis perspiciatis molestias quibusdam ratione magni provident excepturi, dolore a quas porro rerum quam vero qui consectetur veritatis vero
+          </p>
+        </div>
+      </div>
+      <div class="find-school-filter my-5 grid justify-items-center">
+        <div class="search-by-map relative inline-block transform duration-500 ease-in-out hover:scale-110">
+          <img src="images/red-circle.svg" class="w-64 min-h-64" alt="Red Circle">
+          <h2 class="absolute inset-0 flex items-center justify-center text-blue text-xl font-bold">
+            Search By Filter
+          </h2>
+        </div>
+        <div class="search-by-map relative inline-block pt-7 transform duration-500 ease-in-out hover:scale-110">
+          <img src="images/Purple-circle.svg" class="w-64 min-h-64" alt="Red Circle">
+          <h2 class="absolute inset-0 flex items-center justify-center text-blue text-xl font-bold">
+            Search By Map
+          </h2>
+        </div>
+      </div>
+    </div>
+   </section>
+
+    <!-- LIST OF GROUP SCHOOL SECTION -->
+    <section class="list-group-schools my-8">
+        <div class="w-[90%] mx-auto">
+            <div class="curricula-cards grid grid-cols-2 md:grid-cols-5 gap-5">
+              <div class="card-image border-4 border-lightBlue">
+                <img src="images/curricula-card-1.jpg" alt="Curricula Card" class="border-b-4 border-lightBlue">
+                <div class="curricula-text py-2">
+                    <div class="age text-base text-blue text-center font-poppins-medium">Braeburn</div>
+                    <div class="curricula-level text-sm text-blue text-center font-poppins-regular">Nairobi, Kenya</div>
+                </div>
+            </div>
+              <div class="card-image border-4 border-lightBlue">
+                <img src="images/curricula-card-1.jpg" alt="Curricula Card" class="border-b-4 border-lightBlue">
+                <div class="curricula-text py-2">
+                    <div class="age text-base text-blue text-center font-poppins-medium">Braeburn Arusha International</div>
+                    <div class="curricula-level text-sm text-blue text-center font-poppins-regular">Arusha, Tanzania</div>
+                </div>
+            </div>
+              <div class="card-image border-4 border-lightBlue">
+                <img src="images/curricula-card-1.jpg" alt="Curricula Card" class="border-b-4 border-lightBlue">
+                <div class="curricula-text py-2">
+                    <div class="age text-base text-blue text-center font-poppins-medium">Braeburn Garden Estate</div>
+                    <div class="curricula-level text-sm text-blue text-center font-poppins-regular">Nairobi, Kenya</div>
+                </div>
+            </div>
+              <div class="card-image border-4 border-lightBlue">
+                <img src="images/curricula-card-1.jpg" alt="Curricula Card" class="border-b-4 border-lightBlue">
+                <div class="curricula-text py-2">
+                    <div class="age text-base text-blue text-center font-poppins-medium">Braeburn Dar es Salaam International School</div>
+                    <div class="curricula-level text-sm text-blue text-center font-poppins-regular">Dar es Salaam, Tanzania</div>
+                </div>
+            </div>
+              <div class="card-image border-4 border-lightBlue">
+                <img src="images/curricula-card-1.jpg" alt="Curricula Card" class="border-b-4 border-lightBlue">
+                <div class="curricula-text py-2">
+                    <div class="age text-base text-blue text-center font-poppins-medium">Braeburn Lavington</div>
+                    <div class="curricula-level text-sm text-blue text-center font-poppins-regular">Nairobi, Kenya</div>
+                </div>
+            </div>
+            
+    <!-- SCHOOS SECOND ROW -->
+            <div class="card-image border-4 border-lightBlue">
+                <img src="images/curricula-card-1.jpg" alt="Curricula Card" class="border-b-4 border-lightBlue">
+                <div class="curricula-text py-2">
+                    <div class="age text-base text-blue text-center font-poppins-medium">Braeburn Lavington</div>
+                    <div class="curricula-level text-sm text-blue text-center font-poppins-regular">Nairobi, Kenya</div>
+                </div>
+            </div>
+            <div class="card-image border-4 border-lightBlue">
+                <img src="images/curricula-card-1.jpg" alt="Curricula Card" class="border-b-4 border-lightBlue">
+                <div class="curricula-text py-2">
+                    <div class="age text-base text-blue text-center font-poppins-medium">Braeburn Lavington</div>
+                    <div class="curricula-level text-sm text-blue text-center font-poppins-regular">Nairobi, Kenya</div>
+                </div>
+            </div>
+            <div class="card-image border-4 border-lightBlue">
+                <img src="images/curricula-card-1.jpg" alt="Curricula Card" class="border-b-4 border-lightBlue">
+                <div class="curricula-text py-2">
+                    <div class="age text-base text-blue text-center font-poppins-medium">Braeburn Lavington</div>
+                    <div class="curricula-level text-sm text-blue text-center font-poppins-regular">Nairobi, Kenya</div>
+                </div>
+            </div>
+            <div class="card-image border-4 border-lightBlue">
+                <img src="images/curricula-card-1.jpg" alt="Curricula Card" class="border-b-4 border-lightBlue">
+                <div class="curricula-text py-2">
+                    <div class="age text-base text-blue text-center font-poppins-medium">Braeburn Lavington</div>
+                    <div class="curricula-level text-sm text-blue text-center font-poppins-regular">Nairobi, Kenya</div>
+                </div>
+            </div>
+            <div class="card-image border-4 border-lightBlue">
+                <img src="images/curricula-card-1.jpg" alt="Curricula Card" class="border-b-4 border-lightBlue">
+                <div class="curricula-text py-2">
+                    <div class="age text-base text-blue text-center font-poppins-medium">Braeburn Lavington</div>
+                    <div class="curricula-level text-sm text-blue text-center font-poppins-regular">Nairobi, Kenya</div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+      </section>
+
+    <!-- footer section -->
+
+    <section class="footer-section mt-5">
+      <div class="main-footer bg-blue w-[90%] mx-auto py-8">
+        <div class="logo">
+          <img src="images/braeburn-logo-white.png" alt="Logo">
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center px-5 pt-5">
+          <div class="col-address md:border-r-4 md:border-white pr-10"> 
+            <ul>
+              <li>Braeburn Schools</li>
+              <li>Braeburn Schools Ltd</li>
+              <li>P.O. Box 45112</li>
+              <li>00100 Nairobi</li>
+              <li>Kenya</li>
+              <li>+254 (0)730 881000</li>
+            </ul>
+          </div>
+          <div class="col-links pr-4">
+            <ul>
+              <li><a href="#">Schools</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Braeburn Experience</a></li>
+              <li><a href="#">News & Events</a></li>
+              <li><a href="#">Professional Opportunities</a></li>
+            </ul> 
+          </div>
+          <div class="col-links md:border-r-4 md:border-white pr-4"> 
+            <ul class="pr-20">
+              <li><a href="#">Apply</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul> 
+          </div>
+          <div class="footer-social-links">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook"></a>  
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="Linkedin"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="module" src="/src/main.js"></script>
+
+
+  </body>
+</html>
