@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity-fade@2/flickity-fade.css">
     <title>Braeburn Schools - About</title>
   </head>
   <body>
@@ -45,16 +45,16 @@
             <a href="/about.html">About</a>
           </li>
           <li class="mobile-menu-items">
-            <a href="#">News & Events</a>
+            <a href="latest-news.html">News & Events</a>
           </li>
           <li class="mobile-menu-items">
-            <a href="#">Professional Opportunities</a>
+            <a href="careers.html">Professional Opportunities</a>
           </li>
           <li class="mobile-menu-items">
-            <a href="#">Apply</a>
+            <a href="/enquire.html">Enquire</a>
           </li>
           <li class="mobile-menu-items">
-            <a href="#">Contact</a>
+            <a href="/contact.html">Contact</a>
           </li>
         </ul>
   
@@ -119,13 +119,45 @@
              </section>
 
     <!-- History Section -->        
-     to come here 
+     <section class="history-section">
+      <div class="w-[90%] mx-auto">
+        <div class="history-heading">
+          <h2 class="text-4xl text-center text-blue font-poppins-bold pb-6">History</h2>
+        </div>
+        <div class="history grid grid-cols-[65%_35%]">
+          <div class="fade-carousel">
+            <div class="carousel" data-flickity='{ "fade": true, "pauseAutoPlayOnHover": false, "autoplay": 1500, "wrapAround": true }'>
+              <div class="carousel-cell">
+                <img class="carousel-cell-image" src="https://picsum.photos/720/540/?image=517" />
+              </div>
+              <div class="carousel-cell">
+                <img class="carousel-cell-image" src="https://picsum.photos/540/720/?image=696" />
+              </div>
+            </div>
+          </div>
+            <div class="history-carousel" data-flickity='{ "freeScroll": true }'>
+                <div class="history-carousel-cell">
+                    <h2>1978 - 1980</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa velit quasi laboriosam sapiente delectus possimus, cupiditate quos molestias quis ullam nulla hic cum corporis. Consectetur doloremque, voluptatum amet impedit quo natus cum Dictum luctus torquent id morbi sodales massa quisque, habitant dictumst augue lectus cum sociosqu maecenas netus, semper fames porttitor pharetra nam sed. Praesent euismod aliquet ut sagittis non pulvinar, congue nunc class rutrum magnis bibendum, curabitur tincidunt proin tristique sodales. Per inceptos tortor ut varius auctor ultrices eget molestie etiam, risus penatibus accumsan taciti senectus iaculis lacinia interdum montes, magna suspendisse habitant netus fermentum porta turpis volutpat, class netus suspendisse faucibu nobis pariatur aperiam cupiditate neque vel dolores praesentium minus quae aliquid quis tenetur nihil est blanditiis officiis rem.</p>
+                </div>
+                <div class="history-carousel-cell">
+                    <h2>1978 - 1980</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa velit quasi laboriosam sapiente delectus possimus, cupiditate quos molestias quis ullam nulla hic cum corporis. Consectetur doloremque, voluptatum amet impedit quo natus cum Dictum luctus torquent id morbi sodales massa quisque, habitant dictumst augue lectus cum sociosqu maecenas netus, semper fames porttitor pharetra nam sed. Praesent euismod aliquet ut sagittis non pulvinar, congue nunc class rutrum magnis bibendum, curabitur tincidunt proin tristique sodales. Per inceptos tortor ut varius auctor ultrices eget molestie etiam, risus penatibus accumsan taciti senectus iaculis lacinia interdum montes, magna suspendisse habitant netus fermentum porta turpis volutpat. suspendisse faucibu nobis pariatur aperiam cupiditate neque vel dolores praesentium minus quae aliquid quis tenetur nihil est blanditiis officiis rem.</p>
+                </div>
+                <div class="history-carousel-cell">
+                    <h2>1978 - 1980</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa velit quasi laboriosam sapiente delectus possimus, cupiditate quos molestias quis ullam nulla hic cum corporis. Consectetur doloremque, voluptatum amet impedit quo natus cum Dictum luctus torquent id morbi sodales massa quisque, habitant dictumst augue lectus cum sociosqu maecenas netus, semper fames porttitor pharetra nam sed. Praesent euismod aliquet ut sagittis non pulvinar, congue nunc class rutrum magnis bibendum, curabitur tincidunt proin tristique sodales. Per inceptos tortor ut varius auctor ultrices eget molestie etiam, risus penatibus accumsan taciti senectus iaculis lacinia interdum montes, magna suspendisse habitant netus fermentum porta turpis volutpat. Ornare cursus suspendisse faucibu nobis pariatur aperiam cupiditate neque vel dolores praesentium minus quae aliquid quis tenetur nihil est blanditiis officiis rem.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+     </section>
 
      <!-- CURRICULA SECTION -->
       <section class="curricula">
         <div class="w-[90%] mx-auto">
             <div class="curricula-heading">
-                <h2>Curricula</h2>
+                <h2 class="text-4xl text-center text-blue font-poppins-bold pb-6">Curricula</h2>
             </div>
             <div class="curricula-cards grid grid-cols-2 md:grid-cols-5 gap-5">
               <div class="card-image border-4 border-lightBlue">
@@ -595,6 +627,7 @@
     
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/flickity-fade@2/flickity-fade.js"></script>
 <script type="module" src="/src/main.js"></script>
 
 

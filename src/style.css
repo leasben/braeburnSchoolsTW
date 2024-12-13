@@ -267,8 +267,83 @@ h6 {
     @apply text-blue
   }
 
+  /* CONTACT SECTION */
+  .message-col h2,
+  .guardian-details h2 {
+    @apply text-xl text-blue font-poppins-regular pb-2;
+  }
 
+  .guardian-details p,
+  .message-col p {
+    @apply text-blue text-base font-poppins-regular py-2;
+  }
 
+  .contact-details h3 {
+    @apply text-base text-blue font-poppins-medium;
+  }
+
+  .contact-details ul li {
+    @apply text-base text-blue font-poppins-light;
+  }
+
+  ul {
+    @apply pb-3;
+  }
+
+  .contact-grid {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .main-form input,
+  textarea {
+    @apply placeholder-blue text-base font-poppins-regular;
+  }
+
+  /* HISTORY CAROUSEL FADE */
+  .carousel {
+    background: #222;
+  }
+  
+  .carousel-cell {
+    width: 100%;
+    height: 300px;
+    margin-right: 10px;
+    /* center images in cells with flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel.is-fullscreen .carousel-cell {
+    height: 100%;
+  }
+  
+  .carousel-cell-image {
+    display: block;
+    max-height: 100%;
+  }
+  
+
+  /* RIGHT CARD */
+  .history-carousel {
+    @apply bg-blue py-4 my-8;
+  }
+  
+  .history-carousel-cell {
+    @apply w-full flex flex-col justify-center items-center;
+  }
+
+.history-carousel-cell h2 {
+  @apply text-white text-center text-3xl;
+}
+
+.history-carousel-cell p {
+  @apply text-white text-base font-poppins-light px-8 py-5;
+}
+
+.flickity-page-dots {
+  @apply bottom-2 py-4;
+}
 
 
 

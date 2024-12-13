@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/braeburn-logo.svg" />
+    <link rel="stylesheet" href="/src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Braeburn Schools - Careers</title>
+  </head>
+  <body>
+  <!-- NAV BAR -->
+  <section class="main-menu bg-blue py-16 md:py-5 px-5 w-[90%] mx-auto">
+    <nav class="navbar">
+      <div class="nav-section flex items-center justify-between">
+
+           <!-- LOGO (CENTERED) -->
+           <div class="logo cls-1 hidden md:block justify-center pt-0 flex-1">
+            <a href="/">
+              <img src="images/braeburn-logo-white.png" alt="Braeburn Logo" width="400" height="200">
+            </a>
+          </div>
+
+        <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
+        <div class="menu-icon" id="menu-toggle">
+          <img src="images/open-menu-icon.svg" alt="Menu" class="toggle-icon">
+          <img src="images/close-menu-icon.svg" alt="Close" class="close" style="display:none;">
+        </div>
+      </div>
+  
+      <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
+      <div id="mobile_menu" class="main-mobile-menu">
+        <div class="logo cls-1 pt-0">
+          <a href="/">
+            <img src="images/braeburn-logo.svg" alt="Braeburn Logo" width="400" height="200">
+          </a>
+        </div>
+  
+        <ul class="space-y-8">
+          <li class="mobile-menu-items">
+            <a href="/group-schools.html">Schools</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="/about.html">About</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="latest-news.html">News & Events</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="/careers.html">Professional Opportunities</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="/enquire.html">Enquire</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="/contact.html">Contact</a>
+          </li>
+        </ul>
+  
+        <div class="social-icons">
+          <div class="facebook">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook Icon"></a>
+          </div>
+          <div class="instagram">
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram Icon"></a>
+          </div>
+          <div class="linkedin">
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="Linkedin Icon"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+    <!--CAREERS -->
+    <section class="careers-section my-8">
+        <div class="w-[90%] mx-auto">
+            <div class="careers-heading">
+                <h2 class="text-blue text-center text-3xl font-poppins-medium">Careers</h2>
+            </div>
+            <div class="filter-schools py-6 grid  md:grid-cols-1 lg:grid-cols-2 gap-5 px-16">
+                <form class="choose-school">
+                  <select
+                    class="text-white text-xl bg-blue border-0 rounded-none p-5 focus:outline-none font-poppins-regular w-full">
+                    <option value="filter-by-country">Filter By Country</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="tanzania">Tanzania</option>
+                    <option value="rwanda">Rwanda</option>
+                  </select>
+                </form>
+                <form class="choose-school">
+                    <select
+                      class="text-white text-xl bg-blue border-0 rounded-none p-5 focus:outline-none w-full font-poppins-regular">
+                      <option value="filter-by-country">Filter By School</option>
+                      <option value="braeburn">Braeburn</option>
+                      <option value="braeburn-gardenn-estate">Braeburn Garden Estate</option>
+                      <option value="bareburn-lavington">Braeburn Lavington</option>
+                      <option value="braeburn-thika">Braeburn Thika</option>
+                      <option value="bareburn-mombassa">Braeburn Mombassa</option>
+                      <option value="braeburn-kasumu">Braeburn Kasumu</option>
+                    </select>
+                  </form>
+              </div>
+            <div class="careers-cards grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+              <div class="latest-nesw-card border-2 border-blue">
+                <img src="images/latest-news-1.jpg" alt="Latest News Card">
+                <div class="school-careers py-2 px-4">
+                    <div class="text-base text-blue font-poppins-medium">Headline</div>
+                    <div class="text-base text-[#023DA6] font-poppins-medium">
+                      <p>Date</p> 
+                      <p>School Name</p> 
+                    </div>
+                    <div class="school-text text-base text-blue font-poppins-light py-2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam dolores id expedita. Quis ab voluptatum eligendi nesciunt quas numquam, ad consectetur iure tempore ullam ex, beatae aspernatur quasi error!</p>
+                    </div>
+                    <div class="school-link">
+                        <a href="#" class="text-base text-blue font-poppins-regular">-Link</a>
+                    </div>
+                </div>
+            </div>
+              <div class="latest-nesw-card border-2 border-blue">
+                <img src="images/latest-news-3.jpg" alt="Latest News Card">
+                <div class="school-careers py-2 px-4">
+                    <div class="text-base text-blue font-poppins-medium">Headline</div>
+                    <div class="text-base text-[#023DA6] font-poppins-medium">
+                      <p>Date</p> 
+                      <p>School Name</p> 
+                    </div>
+                    <div class="school-text text-base text-blue font-poppins-light py-2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam dolores id expedita. Quis ab voluptatum eligendi nesciunt quas numquam, ad consectetur iure tempore ullam ex, beatae aspernatur quasi error!</p>
+                    </div>
+                    <div class="school-link">
+                        <a href="#" class="text-base text-blue font-poppins-regular">-Link</a>
+                    </div>
+                </div>
+            </div>
+              <div class="latest-nesw-card border-2 border-blue">
+                <img src="images/latest-news-4.jpg" alt="Latest News Card">
+                <div class="school-careers py-2 px-4">
+                    <div class="text-base text-blue font-poppins-medium">Headline</div>
+                    <div class="text-base text-[#023DA6] font-poppins-medium">
+                      <p>Date</p> 
+                      <p>School Name</p> 
+                    </div>
+                    <div class="school-text text-base text-blue font-poppins-light py-2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam dolores id expedita. Quis ab voluptatum eligendi nesciunt quas numquam, ad consectetur iure tempore ullam ex, beatae aspernatur quasi error!</p>
+                    </div>
+                    <div class="school-link">
+                        <a href="#" class="text-base text-blue font-poppins-regular">-Link</a>
+                    </div>
+                </div>
+            </div>
+              <div class="latest-nesw-card border-2 border-blue">
+                <img src="images/latest-news-4.jpg" alt="Latest News Card">
+                <div class="school-careers py-2 px-4">
+                    <div class="text-base text-blue font-poppins-medium">Headline</div>
+                    <div class="text-base text-[#023DA6] font-poppins-medium">
+                      <p>Date</p> 
+                      <p>School Name</p> 
+                    </div>
+                    <div class="school-text text-base text-blue font-poppins-light py-2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam dolores id expedita. Quis ab voluptatum eligendi nesciunt quas numquam, ad consectetur iure tempore ullam ex, beatae aspernatur quasi error!</p>
+                    </div>
+                    <div class="school-link">
+                        <a href="#" class="text-base text-blue font-poppins-regular">-Link</a>
+                    </div>
+                </div>
+            </div>
+              <div class="latest-nesw-card border-2 border-blue">
+                <img src="images/latest-news-1.jpg" alt="Latest News Card">
+                <div class="school-careers py-2 px-4">
+                    <div class="text-base text-blue font-poppins-medium">Headline</div>
+                    <div class="text-base text-[#023DA6] font-poppins-medium">
+                      <p>Date</p> 
+                      <p>School Name</p> 
+                    </div>
+                    <div class="school-text text-base text-blue font-poppins-light py-2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam dolores id expedita. Quis ab voluptatum eligendi nesciunt quas numquam, ad consectetur iure tempore ullam ex, beatae aspernatur quasi error!</p>
+                    </div>
+                    <div class="school-link">
+                        <a href="#" class="text-base text-blue font-poppins-regular">-Link</a>
+                    </div>
+                </div>
+            </div>
+              <div class="latest-nesw-card border-2 border-blue">
+                <img src="images/latest-news-3.jpg" alt="Latest News Card">
+                <div class="school-careers py-2 px-4">
+                    <div class="text-base text-blue font-poppins-medium">Headline</div>
+                    <div class="text-base text-[#023DA6] font-poppins-medium">
+                      <p>Date</p> 
+                      <p>School Name</p> 
+                    </div>
+                    <div class="school-text text-base text-blue font-poppins-light py-2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam dolores id expedita. Quis ab voluptatum eligendi nesciunt quas numquam, ad consectetur iure tempore ullam ex, beatae aspernatur quasi error!</p>
+                    </div>
+                    <div class="school-link">
+                        <a href="#" class="text-base text-blue font-poppins-regular">-Link</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+      </section>
+
+    <!-- footer section -->
+
+    <section class="footer-section mt-5">
+      <div class="main-footer bg-blue w-[90%] mx-auto py-8">
+        <div class="logo">
+          <img src="images/braeburn-logo-white.png" alt="Logo">
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center px-5 pt-5">
+          <div class="col-address md:border-r-4 md:border-white pr-10"> 
+            <ul>
+              <li>Braeburn Schools</li>
+              <li>Braeburn Schools Ltd</li>
+              <li>P.O. Box 45112</li>
+              <li>00100 Nairobi</li>
+              <li>Kenya</li>
+              <li>+254 (0)730 881000</li>
+            </ul>
+          </div>
+          <div class="col-links pr-4">
+            <ul>
+              <li><a href="#">Schools</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Braeburn Experience</a></li>
+              <li><a href="#">News & Events</a></li>
+              <li><a href="#">Professional Opportunities</a></li>
+            </ul> 
+          </div>
+          <div class="col-links md:border-r-4 md:border-white pr-4"> 
+            <ul class="pr-20">
+              <li><a href="#">Apply</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul> 
+          </div>
+          <div class="footer-social-links">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook"></a>  
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="Linkedin"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="module" src="/src/main.js"></script>
+  </body>
+</html>
