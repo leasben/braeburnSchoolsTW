@@ -136,7 +136,6 @@ h6 {
   @apply hidden;
 }
 
-
 .menu-icon img {
   @apply w-[80px] h-[80px];
 }
@@ -157,6 +156,15 @@ h6 {
 
 .social-icons img {
   @apply w-[60px] h-[60px] mx-auto;
+}
+
+/* WELCOME SECTION */
+.confident-icons img {
+  @apply mx-auto;
+}
+
+.confident-icons h3 {
+  @apply text-sm text-center text-blue font-poppins-light;
 }
 
 /* CIRCLES/HIGHLIGHTS WITH IMAGES */
@@ -201,9 +209,28 @@ h6 {
   @apply mt-2 text-center;
 }
 
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+
  /* LATEST NEWS */
  .news-heading h2 {
-  @apply text-white text-center text-3xl font-poppins-bold;
+  @apply text-white text-center text-3xl font-poppins-bold px-7;
  }
 
 /* SCHOOL ACCREDITATION */
@@ -240,13 +267,17 @@ h6 {
 
 /* NEWS */
  
-.carousel-cell {
-  @apply w-[35%] min-h-[600px] mr-[10px] pr-8
+.news-carousel-cell {
+  @apply min-h-[600px] mr-[10px] pr-8 xm:w-[75%] sm:w-[50%] md:w-[33.33%];
  }
-
+ 
  .flickity-page-dot {
   @apply bg-white;
 }
+
+  .flickity-page-dots {
+    @apply bottom-2 py-4;
+  } 
 
  .news-card {
   @apply bg-white border-2;
@@ -299,38 +330,37 @@ h6 {
     @apply placeholder-blue text-base font-poppins-regular;
   }
 
-  /* HISTORY CAROUSEL FADE */
-  .carousel {
-    background: #222;
+  /* HISTORY CAROUSEL FADE */ 
+ 
+  .historycarousel-cell {
+    @apply w-full min-h-[600px] mr-[10px] flex items-center justify-center;
+    opacity: 0; /* Ensure it fades in/out */
+    transition: opacity 1s ease-in-out; 
   }
   
-  .carousel-cell {
-    width: 100%;
-    height: 300px;
-    margin-right: 10px;
-    /* center images in cells with flexbox */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .carousel.is-fullscreen .carousel-cell {
-    height: 100%;
+  .historyCarousel.is-selected .historycarousel-cell {
+    @apply opacity-[1];
   }
   
   .carousel-cell-image {
-    display: block;
-    max-height: 100%;
+    @apply max-h-full block;
+  }
+
+  .carousel-text {
+    @apply absolute left-0 right-0 bottom-7;
+  }
+
+  .carousel-text h2{
+    @apply text-3xl text-blue text-center font-poppins-bold;
   }
   
-
   /* RIGHT CARD */
   .history-carousel {
-    @apply bg-blue py-4 my-8;
+    @apply bg-blue py-4 my-8 absolute -left-3 right-0 top-0;
   }
   
   .history-carousel-cell {
-    @apply w-full flex flex-col justify-center items-center;
+    @apply w-full h-full flex flex-col justify-center items-center;
   }
 
 .history-carousel-cell h2 {
@@ -339,10 +369,6 @@ h6 {
 
 .history-carousel-cell p {
   @apply text-white text-base font-poppins-light px-8 py-5;
-}
-
-.flickity-page-dots {
-  @apply bottom-2 py-4;
 }
 
 
