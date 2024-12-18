@@ -251,8 +251,9 @@ h6 {
 
 
 /* FOOTER SECTION */
-
-.col-address ul li {
+.col-address ul li,
+.pages-links ul li,
+.pages-2-links ul li {
   @apply text-white text-xl font-poppins-regular;
 }
 
@@ -265,19 +266,19 @@ h6 {
   @apply w-14 h-14 mb-2;
 }
 
+
 /* NEWS */
- 
 .news-carousel-cell {
   @apply min-h-[600px] mr-[10px] pr-8 xm:w-[75%] sm:w-[50%] md:w-[33.33%];
  }
- 
- .flickity-page-dot {
-  @apply bg-white;
-}
 
   .flickity-page-dots {
     @apply bottom-2 py-4;
   } 
+
+  .flickity-page-dot.is-selected {
+    background: hsl(247, 93%, 26%);
+}
 
  .news-card {
   @apply bg-white border-2;
@@ -318,7 +319,7 @@ h6 {
   }
 
   ul {
-    @apply pb-3;
+    @apply md:pb-3;
   }
 
   .contact-grid {
@@ -332,20 +333,12 @@ h6 {
 
   /* HISTORY CAROUSEL FADE */ 
  
-  .historycarousel-cell {
-    @apply w-full min-h-[600px] mr-[10px] flex items-center justify-center;
+  .historySection-carousel-cell {
+    @apply w-full;
     opacity: 0; /* Ensure it fades in/out */
     transition: opacity 1s ease-in-out; 
   }
   
-  .historyCarousel.is-selected .historycarousel-cell {
-    @apply opacity-[1];
-  }
-  
-  .carousel-cell-image {
-    @apply max-h-full block;
-  }
-
   .carousel-text {
     @apply absolute left-0 right-0 bottom-7;
   }
@@ -356,11 +349,11 @@ h6 {
   
   /* RIGHT CARD */
   .history-carousel {
-    @apply bg-blue py-4 my-8 absolute -left-3 right-0 top-0;
+    @apply bg-blue py-4 my-0 lg:my-8 absolute sm:left-0 lg:-left-3 right-0 top-0;
   }
   
   .history-carousel-cell {
-    @apply w-full h-full flex flex-col justify-center items-center;
+    @apply w-full md:h-full sm:h-[400px] flex flex-col justify-center items-center;
   }
 
 .history-carousel-cell h2 {
