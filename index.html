@@ -125,19 +125,28 @@
           </p>
         </div>
       </div>
-      <div class="find-school-search my-5 grid justify-items-center">
-        <div class="search-by-map relative inline-block transform duration-500 ease-in-out hover:scale-110">
-          <img src="images/blue-circle-icon.svg" class="w-64 min-h-64" alt="Red Circle">
-          <h2 class="absolute inset-0 flex items-center justify-center text-blue text-xl font-bold">
-            Search By Map
-          </h2>
+      <div class="map-search my-5 grid justify-items-center">
+        <div class="vision-circle transform duration-500 ease-in-out hover:scale-110  hidden md:block">
+          <a href="#">
+        <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
+          <img src="images/blue-circle-icon.svg" class="w-72 min-h-72" alt="Blue Circle">
         </div>
-        <div class="search-by-filter relative inline-block pt-7 transform duration-500 ease-in-out hover:scale-110">
-          <img src="images/blue-circle-icon.svg" class="w-64 min-h-64" alt="Red Circle">
-          <h2 class="absolute inset-0 flex items-center justify-center text-blue text-xl font-bold">
-            Search By Filter
-          </h2>
+        <h2 class="inset-0 top-[-170px] left-0 bottom-0 relative flex items-center justify-center text-blue text-3xl text-center font-bold">
+          <p>Search By <br> Map</p>
+        </h2>
+      </a>
+      </div>
+        <div class="filter-search transform duration-500 ease-in-out hover:scale-110">
+          <a href="#">
+        <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
+          <img src="images/blue-circle-icon.svg" class="w-72 min-h-72" alt="Blue Circle">
         </div>
+        <h2 class="inset-0 top-[-170px] left-0 bottom-0 relative flex items-center justify-center text-blue text-3xl text-center font-bold">
+         <p>Search By <br>Filter</p> 
+        </h2>
+      </a>
+      </div>
+      
       </div>
     </div>
     <!-- CIRCLES/HIGHLIGHTS WITH IMAGES -->
@@ -171,7 +180,9 @@
           </div>
           <div class="circle-image">
             <!-- Red Circle Background -->
-            <img src="images/red-circle.svg" class="highlight-circle"  alt="Yellow Circle">
+             <div class="highlight-circle">
+              <img src="images/red-circle.svg" class="highlight-circle"  alt="Yellow Circle">
+             </div>
             <!-- Centered and Scaled Image Link -->
             <a href="#" class="highlight-image">
               <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
@@ -280,16 +291,15 @@
     </section>
 
     <!-- footer section -->
-
     <section class="footer-section mt-5">
       <div class="main-footer bg-blue w-[90%] mx-auto py-8">
         <div class="logo">
           <img src="images/braeburn-logo-white.png" alt="Logo">
         </div>
         <div class="bottom-contact px-10 py-8">
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="grid xl:grid-cols-3 xl:gap-24 lg:justify-items-center md:flex lg:items-center md:flex-col lg:flex-row lg:gap-52 px-10">
             <!-- Column 1: Address -->
-            <div class="col-address  border-r-4 border-r-white">
+            <div class="col-address lg:border-r-4 lg:border-r-white xl:pr-20 lg:pr-40">
               <ul>
                 <li>Braeburn Schools</li>
                 <li>Braeburn Schools Ltd</li>
@@ -301,7 +311,7 @@
             </div>
         
             <!-- Column 2: Footer Links -->
-            <div class="footer-links flex space-x-44">
+            <div class="footer-links flex flex-col xl:flex-row justify-between xl:gap-36">
               <div class="pages-links">
                 <ul>
                   <li><a href="#">Schools</a></li>
@@ -320,7 +330,7 @@
             </div>
         
             <!-- Column 3: Social Links -->
-            <div class="footer-social-links flex flex-row md:flex-col items-center justify-center space-x-4 md:space-x-0 md:space-y-4 ml-auto md:border-l-4 md:border-l-white md:pl-[40%]">
+            <div class="footer-social-links hidden xl:block xl:border-l-4 xl:border-l-white pl-40">
               <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook-icon.svg" alt="Facebook" class="h-6 w-6">
               </a>
@@ -333,8 +343,18 @@
             </div>
           </div>
         </div>
-        
-        
+        <!-- MOBILE SOCILAS -->
+        <div class="mobile-socials xl:hidden flex items-center justify-center gap-5 px-10">
+          <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook-icon.svg" alt="Facebook" class="h-6 w-6">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram-icon.svg" alt="Instagram" class="h-6 w-6">
+          </a>
+          <a href="https://linkedin.com" target="_blank">
+            <img src="images/linkedin-icon.svg" alt="LinkedIn" class="h-6 w-6">
+          </a>
+        </div>
       </div>
     </section>
     

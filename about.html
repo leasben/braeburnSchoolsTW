@@ -77,26 +77,34 @@
    <section class="about-us w-[90%] mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-[70%_30%] md:grid-cols-1 gap-5">
       <div class="bg-image bg-[url('/images/braeburnschools-about.jpg')] bg-cover bg-no-repeat bg-center min-h-[600px] relative">
-        <div class="about-card absolute bottom-0 left-0 w-full flex items-center justify-center flex-wrap gap-5 mb-5">
+        <div class="about-card absolute bottom-0 left-0 w-full flex items-center justify-center flex-wrap gap-5 mb-5 order-2 lg:order-none">
           <p class="text-white bg-blue text-base px-5 py-1 max-w-[600px]"><a href="#">Approach</a></p>
           <p class="text-white bg-blue text-base px-5 py-1 max-w-[600px]"><a href="#">History</a></p>
           <p class="text-white bg-blue text-base px-5 py-1 max-w-[600px]"><a href="#">Curricula</a></p>
           <p class="text-white bg-blue text-base px-5 py-1 max-w-[600px]"><a href="#">Team</a></p>
         </div>
       </div>
-      <div class="about-us-circle mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-3 justify-items-center">
+      <div class="about-us-circle mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-3 justify-items-center order-1 lg:order-none">
+        <div class="vision-circle">
+          <a href="#">
         <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
           <img src="images/blue-circle-icon.svg" class="w-64 min-h-64" alt="Blue Circle">
-          <h2 class="absolute inset-0 flex items-center justify-center text-blue text-3xl font-bold">
-            Vision
-          </h2>
         </div>
-        <div class="md:relative transform duration-500 ease-in-out hover:scale-110">
+        <h2 class="inset-0 top-[-160px] left-0 bottom-0 relative flex items-center justify-center text-blue text-3xl font-bold">
+          Vision
+        </h2>
+      </a>
+      </div>
+        <div class="mission-circle">
+          <a href="#">
+        <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:-rotate-90">
           <img src="images/blue-circle-icon.svg" class="w-64 min-h-64" alt="Blue Circle">
-          <h2 class="absolute inset-0 flex items-center justify-center text-blue text-3xl font-bold">
-            Mission
-          </h2>
         </div>
+        <h2 class="inset-0 top-[-160px] left-0 bottom-0 relative flex items-center justify-center text-blue text-3xl font-bold">
+          Mission
+        </h2>
+      </a>
+      </div>
       </div>
     </div>
    </section>
@@ -675,8 +683,8 @@
          <section class="find-a-school mt-5">
             <div class="w-[90%] mx-auto">
                 <div class="find-school-banner bg-[url('/images/find-school-bg-banner.jpg')] bg-no-repeat bg-cover bg-center min-h-[600px]">
-                    <div class=" relative inline-block top-28 left-28">
-                        <img src="images/blue-circle-icon.svg" class="w-64 min-h-64" alt="Red Circle">
+                    <div class=" relative inline-block top-28 left-28 px-6">
+                        <img src="images/light-blue-circle-icon.svg" class="w-64 min-h-64" alt="Find School Circle">
                         <h2 class="absolute inset-0 flex items-center justify-center text-blue text-2xl font-poppins-bold">
                           Find a School
                         </h2>
@@ -692,37 +700,64 @@
         <div class="logo">
           <img src="images/braeburn-logo-white.png" alt="Logo">
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center px-5 pt-5">
-          <div class="col-address md:border-r-4 md:border-white pr-10"> 
-            <ul>
-              <li>Braeburn Schools</li>
-              <li>Braeburn Schools Ltd</li>
-              <li>P.O. Box 45112</li>
-              <li>00100 Nairobi</li>
-              <li>Kenya</li>
-              <li>+254 (0)730 881000</li>
-            </ul>
+        <div class="bottom-contact px-10 py-8">
+          <div class="grid xl:grid-cols-3 xl:gap-24 lg:justify-items-center md:flex lg:items-center md:flex-col lg:flex-row lg:gap-52 px-10">
+            <!-- Column 1: Address -->
+            <div class="col-address lg:border-r-4 lg:border-r-white xl:pr-20 lg:pr-40">
+              <ul>
+                <li>Braeburn Schools</li>
+                <li>Braeburn Schools Ltd</li>
+                <li>P.O. Box 45112</li>
+                <li>00100 Nairobi</li>
+                <li>Kenya</li>
+                <li>+254 (0)730 881000</li>
+              </ul>
+            </div>
+        
+            <!-- Column 2: Footer Links -->
+            <div class="footer-links flex flex-col xl:flex-row justify-between xl:gap-36">
+              <div class="pages-links">
+                <ul>
+                  <li><a href="#">Schools</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Braeburn Experience</a></li>
+                  <li><a href="#">News & Events</a></li>
+                  <li><a href="#">Professional Opportunities</a></li>
+                </ul>
+              </div>
+              <div class="pages-2-links">
+                <ul>
+                  <li><a href="#">Apply</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+        
+            <!-- Column 3: Social Links -->
+            <div class="footer-social-links hidden xl:block xl:border-l-4 xl:border-l-white pl-40">
+              <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-icon.svg" alt="Facebook" class="h-6 w-6">
+              </a>
+              <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram-icon.svg" alt="Instagram" class="h-6 w-6">
+              </a>
+              <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin-icon.svg" alt="LinkedIn" class="h-6 w-6">
+              </a>
+            </div>
           </div>
-          <div class="col-links pr-4">
-            <ul>
-              <li><a href="#">Schools</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Braeburn Experience</a></li>
-              <li><a href="#">News & Events</a></li>
-              <li><a href="#">Professional Opportunities</a></li>
-            </ul> 
-          </div>
-          <div class="col-links md:border-r-4 md:border-white pr-4"> 
-            <ul class="pr-20">
-              <li><a href="#">Apply</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul> 
-          </div>
-          <div class="footer-social-links">
-            <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook"></a>  
-            <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram"></a>
-            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="Linkedin"></a>
-          </div>
+        </div>
+        <!-- MOBILE SOCILAS -->
+        <div class="mobile-socials xl:hidden flex items-center justify-center gap-5 px-10">
+          <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook-icon.svg" alt="Facebook" class="h-6 w-6">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram-icon.svg" alt="Instagram" class="h-6 w-6">
+          </a>
+          <a href="https://linkedin.com" target="_blank">
+            <img src="images/linkedin-icon.svg" alt="LinkedIn" class="h-6 w-6">
+          </a>
         </div>
       </div>
     </section>
