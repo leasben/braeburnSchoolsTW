@@ -169,15 +169,29 @@ h6 {
 
 /* CIRCLES/HIGHLIGHTS WITH IMAGES */
 .circle-image {
-  @apply relative inline-block w-72 h-72 transform duration-300 ease-out hover:scale-110;
+  @apply relative inline-block w-72 h-72;
 }
- .highlight-circle {
-  @apply w-full h-full object-cover rounded-full z-0;
- }
 
- .highlight-image {
-  @apply absolute inset-0 flex items-center justify-center overflow-hidden rounded-full;
- }
+.highlight-circle {
+  @apply w-full h-full object-cover rounded-full z-0;
+}
+
+.highlight-circle-container {
+  @apply w-full h-full relative;
+}
+
+.highlight-image {
+  @apply absolute inset-0 flex items-center justify-center rounded-full;
+}
+
+/* Hover Effect on Group */
+.group:hover .highlight-circle-container {
+  @apply transform duration-500 ease-out hover:scale-110 rotate-90;
+}
+
+.group-hover\:scale-110 {
+  @apply transform duration-500 ease-out scale-110;
+}
 
  /* STUDENT HIGHLIGHT */
  .student-highlight-image {
