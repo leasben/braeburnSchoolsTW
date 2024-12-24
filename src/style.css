@@ -128,7 +128,7 @@ h6 {
   box-sizing: border-box; /* Include padding and border in width calculation */
 
   /* Add max-height and make it scrollable */
-  max-height: calc(100vh - 80px); /* Prevent the menu from exceeding the viewport height */
+  max-height: calc(100vh - 100px); /* Prevent the menu from exceeding the viewport height */
   overflow-y: auto; /* Add vertical scrolling if the content exceeds the max height */
 }
 
@@ -146,16 +146,16 @@ h6 {
 }
 
 .mobile-menu-items a {
-  @apply block transition-transform duration-300 ease-in-out transform hover:scale-110;
+  @apply block;
 }
 
 /* SOCIAL ICONS */
 .social-icons {
-  @apply mx-auto flex items-center justify-center space-x-8 p-[30px];
+  @apply mx-auto flex items-center justify-center space-x-8 p-[30px] ;
 }
 
 .social-icons img {
-  @apply w-[60px] h-[60px] mx-auto;
+  @apply w-[60px] h-[60px] mx-auto transition duration-500 ease-in-out hover:scale-125;
 }
 
 /* WELCOME SECTION */
