@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/braeburn-logo.svg" />
+    <link rel="stylesheet" href="/src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Braeburngargen Estate - Home</title>
+  </head>
+  <body>
+  <!-- NAV BAR -->
+  <section class="main-menu bg-blue py-16 md:py-5 px-5 w-[90%] mx-auto">
+    <nav class="navbar">
+      <div class="nav-section flex items-center justify-between">
+
+           <!-- LOGO (CENTERED) -->
+           <div class="logo cls-1 hidden md:block justify-center pt-0 flex-1">
+            <a href="/">
+              <img src="images/braeburn-logo-white.png" alt="Braeburn Logo" width="400" height="200">
+            </a>
+          </div>
+
+        <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
+        <div class="menu-icon" id="menu-toggle">
+          <img src="images/open-menu-icon.svg" alt="Menu" class="toggle-icon">
+          <img src="images/close-menu-icon.svg" alt="Close" class="close" style="display:none;">
+        </div>
+      </div>
+  
+      <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
+      <div id="mobile_menu" class="main-mobile-menu">
+        <div class="logo cls-1 pt-0">
+          <a href="/">
+            <img src="images/braeburn-logo.svg" alt="Braeburn Logo" width="400" height="200">
+          </a>
+        </div>
+  
+        <ul class="space-y-8">
+          <li class="mobile-menu-items">
+            <a href="/group-schools.html">Schools</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="/about.html">About</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="latest-news.html">News & Events</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="#">Professional Opportunities</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="/enquire.html">Enquire</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+  
+        <div class="social-icons">
+          <div class="facebook">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon-blue.svg" alt="Facebook Icon"></a>
+          </div>
+          <div class="instagram">
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon-blue.svg" alt="Instagram Icon"></a>
+          </div>
+          <div class="linkedin">
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon-blue.svg" alt="Linkedin Icon"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- WELCOME SECTION -->
+   <section class="welcome-section my-8 w-[90%] mx-auto border-t-orange border-t-4">
+    <div class="grid grid-cols-1 md:grid-cols-[69%_31%] gap-5">
+      <div class="bg-image bg-[url('/images/Home-Page.webp')] bg-cover bg-no-repeat bg-center min-h-[600px]"></div>
+      <div class="card md:pr-5 flex items-center justify-center">
+        <div class="card-title text-white">
+          <div class="welocme-copy bg-blue py-5 px-8">
+          <h2 class="text-white text-center text-3xl">Welcome</h2>
+          <p class="text-white pt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus assumenda eveniet qui illum impedit, quibusdam, sapiente vitae minima accusamus aperiam nisi aut eligendi. At labore doloribus odit voluptas, excepturi ex ab, qui ipsum iste ducimus quo ea alias optio quia suscipit nulla magni similique quaerat adipisci. Doloremque illum accusantium fugiat.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <!-- SLIDE SHOW FADE -->
+   <section class="slider-fade">
+    <div class="w-[90%] mx-auto">
+      <div class="slider-fade">
+        <div class="fade-carousel h-full">
+          <div class="historySectionCarousel" data-flickity='{"fade": true, "pauseAutoPlayOnHover": false, "wrapAround": true, "autoPlay": 2000, "pageDots": false }'>
+            <div class="sliderfade-section-carousel-cell">
+              <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/history-1.jpg);"></div>
+              <div class="carousel-text">
+                <h2>Lorem ipsum dolor sit amet</h2>
+              </div>
+            </div>
+            <div class="sliderfade-section-carousel-cell">
+              <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/history-2.jpg);"></div>
+            </div>
+            <div class="sliderfade-section-carousel-cell">
+              <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/braeburn-sports.jpg);"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <!-- FIND A SCHOOL SECTION -->
+
+   <section class="find-school w-[90%] mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-[70%_30%] md:grid-cols-1">
+      <div class="bg-image bg-[url('/images/find-school-banner.webp')] bg-cover bg-no-repeat bg-center min-h-[600px] relative">
+        <div class="bottom-card absolute bottom-0 left-0 w-full flex md:ml-20 px-6">
+          <p class="text-white bg-blue text-base p-5 max-w-[600px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolore, laboriosam maxime qui fuga nesciunt, nemo natus expedita numquam autem aperiam tempore, ut labore dolorum fuga nesciunt, nemo natus expedita numquam autem aperiam tempore, ut labore dolorum veritatis vero. Suscipit dolor quos velit in tenetur omnis perspiciatis molestias quibusdam ratione magni provident excepturi, dolore a quas porro rerum quam vero qui consectetur veritatis vero.
+          </p>
+        </div>
+      </div>
+      <div class="map-search pt-11 grid justify-items-center">
+        <div class="vision-circle transform duration-500 ease-in-out hover:scale-110  hidden md:block">
+          <a href="#">
+        <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
+          <img src="images/orange-circle-icon.svg" class="w-64 min-h-64" alt="Join our school">
+        </div>
+        <h2 class="inset-0 top-[-170px] left-0 bottom-0 relative flex items-center justify-center text-blue text-3xl text-center font-bold">
+          <p>Join our<br> School</p>
+        </h2>
+      </a>
+      </div>
+        <div class="filter-search transform duration-500 ease-in-out hover:scale-110">
+          <a href="#">
+        <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
+          <img src="images/orange-circle-icon.svg" class="w-64 min-h-64" alt="My School">
+        </div>
+        <h2 class="inset-0 top-[-170px] left-0 bottom-0 relative flex items-center justify-center text-blue text-3xl text-center font-bold">
+         <p>My<br>School</p> 
+        </h2>
+      </a>
+      </div>
+      
+      </div>
+    </div>
+  <!-- CIRCLES/HIGHLIGHTS WITH IMAGES -->
+<div class="highlights mb-20">
+  <div class="highlights-header">
+    <h2 class="text-blue text-3xl text-center font-poppins-bold py-8">Student Highlights</h2>
+    <div class="circles grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-24 place-items-center">
+      <!-- Yellow Circle -->
+      <div class="circle-image group relative transform duration-500 ease-in-out">
+        <!-- Circle Wrapper for Hover Effect -->
+        <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90 group-hover:scale-110">
+          <img src="images/orange-circle-icon.svg" class="highlight-circle" alt="Orange Circle">
+        </div>
+        <!-- Centered Image Link -->
+        <a href="#" class="highlight-image group-hover:scale-110">
+          <img src="images/playing-piano.jpg" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+        </a>
+      </div>
+
+      <!-- Orange Circle -->
+      <div class="circle-image group relative transform duration-500 ease-in-out">
+        <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90 group-hover:scale-110">
+          <img src="images/orange-circle-icon.svg" class="highlight-circle" alt="Orange Circle">
+        </div>
+        <a href="#" class="highlight-image group-hover:scale-110">
+          <img src="images/braeburn-bus.jpg" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+        </a>
+      </div>
+
+      <!-- Green Circle -->
+      <div class="circle-image group relative transform duration-500 ease-in-out">
+        <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90 group-hover:scale-110">
+          <img src="images/orange-circle-icon.svg" class="highlight-circle" alt="Orange Circle">
+        </div>
+        <a href="#" class="highlight-image group-hover:scale-110">
+          <img src="images/braeburn-boys.jpg" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+        </a>
+      </div>
+
+      <!-- Red Circle -->
+      <div class="circle-image group relative transform duration-500 ease-in-out">
+        <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90">
+          <img src="images/orange-circle-icon.svg" class="highlight-circle" alt="Orange Circle">
+        </div>
+        <a href="#" class="highlight-image">
+          <img src="images/playing-drums.jpg" alt="Highlight" class="w-10/12 h-5/6  object-cover rounded-full">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+   </section>
+
+   <!-- LATEST NEWS -->
+   <section class="latest-news my-8">
+    <div class="news w-[90%] mx-auto bg-blue py-8">
+      <div class="news-heading">
+        <h2>Latest News & Events</h2>
+      </div>
+
+      <div class="news-carousel mt-5" data-flickity='{ "contain": true, "wrapAround": true }'>
+      <div class="news-carousel-cell">
+        <div class="news-card border-orange">
+        <div class="card-image"><img src="images/bbgarden-news-5.jpg" alt="Braeburn Garden Estate"></div>  
+        <div class="card-details pl-4 py-8">
+          <h2>Headline</h2>
+          <h3>Date</h3>
+          <h3>School Name</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
+          <div class="link">
+            <a href="#">Link</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="news-carousel-cell">
+        <div class="news-card border-orange">
+        <div class="card-image"><img src="images/bbgarden-news-4.jpg" alt="Braeburn Garden Estate"></div>  
+        <div class="card-details pl-4 py-8">
+          <h2>Headline</h2>
+          <h3>Date</h3>
+          <h3>School Name</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
+          <div class="link">
+            <a href="#">Link</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="news-carousel-cell">
+        <div class="news-card border-orange">
+        <div class="card-image"><img src="images/bbgarden-news-3.jpg" alt="Braeburn Garden Estate"></div>  
+        <div class="card-details pl-4 py-8">
+          <h2>Headline</h2>
+          <h3>Date</h3>
+          <h3>School Name</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
+          <div class="link">
+            <a href="#">Link</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="news-carousel-cell">
+        <div class="news-card border-orange">
+        <div class="card-image"><img src="images/bbgarden-news-2.jpg" alt="Braeburn Garden Estate"></div>  
+        <div class="card-details pl-4 py-8">
+          <h2>Headline</h2>
+          <h3>Date</h3>
+          <h3>School Name</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
+          <div class="link">
+            <a href="#">Link</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="news-carousel-cell">
+        <div class="news-card border-orange">
+        <div class="card-image"><img src="images/bbgarden-news-1.jpg" alt="Braeburn Garden Estate"></div>  
+        <div class="card-details pl-4 py-8">
+          <h2>Headline</h2>
+          <h3>Date</h3>
+          <h3>School Name</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
+          <div class="link">
+            <a href="#">Link</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+   </section>
+
+   <!-- SCHOOL ACCREDITATION -->
+    <section class="accreditation py-8">
+      <div class="w-[90%] mx-auto">
+        <div class="acreditation-headline">
+          <h2>School Accreditation</h2>
+        </div>
+        <div class="accreditation-logo">
+          <img src="images/accreditation-4.png" alt="Accreditation">
+          <img src="images/accreditation-3.jpg" alt="Accreditation">
+          <img src="images/accreditation-1.jpg" alt="Accreditation">
+          <img src="images/accreditation-2.jpg" alt="Accreditation">
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="footer-section mt-5">
+      <div class="main-footer bg-blue w-[90%] mx-auto py-8">
+        <div class="logo">
+          <img src="images/braeburn-logo-white.png" alt="Logo">
+        </div>
+        <div class="bottom-contact px-10 py-8">
+          <div class="grid xl:grid-cols-3 xl:gap-24 lg:justify-items-center md:flex lg:items-center md:flex-col lg:flex-row lg:gap-52 px-10">
+            <!-- Column 1: Address -->
+            <div class="col-address lg:border-r-4 lg:border-r-white xl:pr-20 lg:pr-40">
+              <ul>
+                <li>Braeburn Schools</li>
+                <li>Braeburn Schools Ltd</li>
+                <li>P.O. Box 45112</li>
+                <li>00100 Nairobi</li>
+                <li>Kenya</li>
+                <li>+254 (0)730 881000</li>
+              </ul>
+            </div>
+        
+            <!-- Column 2: Footer Links -->
+            <div class="footer-links flex flex-col xl:flex-row justify-between xl:gap-36">
+              <div class="pages-links">
+                <ul>
+                  <li><a href="#">Schools</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Braeburn Experience</a></li>
+                  <li><a href="#">News & Events</a></li>
+                  <li><a href="#">Professional Opportunities</a></li>
+                </ul>
+              </div>
+              <div class="pages-2-links">
+                <ul>
+                  <li><a href="#">Apply</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+        
+            <!-- Column 3: Social Links -->
+            <div class="footer-social-links hidden xl:block xl:border-l-4 xl:border-l-white pl-40">
+              <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-icon.svg" alt="Facebook" class="h-6 w-6">
+              </a>
+              <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram-icon.svg" alt="Instagram" class="h-6 w-6">
+              </a>
+              <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin-icon.svg" alt="LinkedIn" class="h-6 w-6">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- MOBILE SOCILAS -->
+        <div class="mobile-socials xl:hidden flex items-center justify-center gap-5 px-10">
+          <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook-icon.svg" alt="Facebook" class="h-6 w-6">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram-icon.svg" alt="Instagram" class="h-6 w-6">
+          </a>
+          <a href="https://linkedin.com" target="_blank">
+            <img src="images/linkedin-icon.svg" alt="LinkedIn" class="h-6 w-6">
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="module" src="/src/main.js"></script>
+
+
+  </body>
+</html>

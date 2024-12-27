@@ -379,6 +379,15 @@ ul {
   @apply text-white text-base font-poppins-light px-8 py-5;
 }
 
+/* BRAEBURN GARDENS ESTATE CSS */
+
+/* SLIDE SHOW FADE */ 
+ 
+  .sliderfade-section-carousel-cell {
+    @apply w-full;
+    opacity: 0; /* Ensure it fades in/out */
+    transition: opacity 1s ease-in-out; 
+  }
 
 
 

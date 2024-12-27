@@ -15,6 +15,7 @@ export default defineConfig({
         enquire: resolve(__dirname, 'enquire.html'), 
         latestNews: resolve(__dirname, 'laest-news.html'), 
         careers: resolve(__dirname, 'careers.html'),
+        breburngardens: resolve(__dirname, 'braeburngardens.html'),
       },
       output: {
         dir: 'dist', // Output directory for the build

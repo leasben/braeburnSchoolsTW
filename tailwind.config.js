@@ -27,6 +27,7 @@ module.exports = {
         current: 'currentColor',
         blue: '#032765',
         lightBlue: '#238DC1',
+        orange: '#FCB217',
       },
       boxShadow: {
         'button': '2px 8px 4px -2px rgba(226, 226, 226, 0.75)',
