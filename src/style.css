@@ -389,9 +389,63 @@ ul {
     transition: opacity 1s ease-in-out; 
   }
 
+  /* WELCOME SECTION */
+
+  .welcome-author h2 {
+    @apply text-xl font-poppins-medium
+  }
 
 
+  /* IMAGE CIRCLE */
+
+.circle-image-school {
+  @apply inline-block w-36 h-36;
+}
+
+.highlight-circle-school {
+  @apply w-full h-full object-cover rounded-full z-0;
+}
+
+.highlight-circle-container-school {
+  @apply w-full h-full;
+}
+
+.highlight-image-school {
+  @apply absolute inset-0 flex items-center justify-center rounded-full;
+}
+
+/* PLOICIES SECTION */
+
+  .policy-carousel {
+    @apply bg-orange py-4 my-0 lg:my-8 absolute sm:left-0 lg:-left-3 right-0 top-0;
+  }
+  
+  .policy-carousel-cell {
+    @apply w-full md:h-full sm:h-[400px] flex flex-col justify-center items-center;
+  }
+
+.policy-carousel-cell h2 {
+  @apply text-black text-center text-3xl;
+}
+
+.policy-carousel-cell p {
+  @apply text-black text-base font-poppins-light px-8;
+} 
+
+.policy-carousel.flickity-page-dots {
+  @apply bottom-[24px]
+}
  
+/* TEAM SECTION */
+
+.category {
+  @apply bg-blue py-3
+}
+
+.category h3 {
+  @apply text-xl text-center text-white font-poppins-regular
+}
+
 
 
  
