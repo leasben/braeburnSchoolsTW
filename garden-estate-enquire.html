@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/braeburn-logo.svg" />
+    <link rel="stylesheet" href="/src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Braeburn - Enquire</title>
+  </head>
+  <body>
+  <!-- NAV BAR -->
+  <section class="main-menu bg-white py-16 md:py-5 px-5 w-[90%] mx-auto">
+    <nav class="navbar">
+      <div class="nav-section flex items-center justify-between">
+
+           <!-- LOGO (CENTERED) -->
+           <div class="logo cls-1 hidden md:block justify-center pt-0 flex-1">
+            <a href="/">
+              <img src="images/braeburn-gardens-logo.png" alt="Braeburn Logo" width="400" height="200">
+            </a>
+          </div>
+
+        <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
+        <div class="menu-icon" id="menu-toggle">
+          <img src="images/open-menu-icon.svg" alt="Menu" class="toggle-icon">
+          <img src="images/close-menu-icon.svg" alt="Close" class="close" style="display:none;">
+        </div>
+      </div>
+  
+      <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
+      <div id="mobile_menu" class="main-mobile-menu">
+        <div class="logo cls-1 pt-0">
+          <a href="/">
+            <img src="images/braeburn-gardens-logo.png" alt="Braeburn Logo" width="400" height="200">
+          </a>
+        </div>
+  
+        <ul class="space-y-8">
+          <li class="mobile-menu-items">
+            <a href="/why-us.html">Why Us</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="/join-us.html">Join Us</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="/learn-with-us.html">Learn With Us</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="/latest-news-events.html">Latest News & Events</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="/enquire.html">Enquire</a>
+          </li>
+          <li class="mobile-menu-items">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+  
+        <div class="social-icons">
+          <div class="facebook">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon-orange.svg" alt="Facebook Icon"></a>
+          </div>
+          <div class="instagram">
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon-orange.svg" alt="Instagram Icon"></a>
+          </div>
+          <div class="linkedin">
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon-orange.svg" alt="Linkedin Icon"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+  
+  <!-- CONTACT SECTION -->
+<section class="enquire-section">
+    <div class="w-[90%] mx-auto bg-orange py-10">
+      <div class="enquire-container bg-white w-[90%] mx-auto relative top-1">
+        <div class="enquire-heading">
+            <h2 class="text-blue text-3xl pt-5 text-center font-poppins-bold">Enquire</h2>
+        </div>
+        <div class="enquire-text">
+            <p class="text-base text-blue text-center font-poppins-regular pt-3">Use this for to enquire about a place at one of our schools or to arrange to meet a headteacher.</p>
+        </div>
+        <div class="enquire-grid grid grid-cols-1 md:grid-cols-2 gap-5 py-12 px-14">
+            <div class="message-col w-full h-full">
+                <div class="guardian-details">
+                    <h2>Parent/ Guardian details</h2>    
+                    <p>Please provide your details so that we can contact you about your enquiry</p> 
+                </div>
+                
+                <!-- start form -->
+                <form class="main-form">
+                    <div class="mb-4">
+                        <input
+                            placeholder="Name"
+                            type="text"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        />
+                    </div>
+                    <div class="mb-4">
+                        <input
+                            placeholder="Entry Date"
+                            type="text"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        />
+                    </div>
+                    <div class="mb-4">
+                        <input
+                            placeholder="Email"
+                            type="text"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        />
+                    </div>
+                    <div class="mb-4">
+                        <input
+                            placeholder="Phone Number"
+                            type="text"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        />
+                    </div>
+                    <div class="student-details">
+                        <div class="student-heading">
+                            <h2>Student</h2>
+                        </div>
+                        <div class="mb-4">
+                            <input
+                                placeholder="Name"
+                                type="text"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            />
+                        </div>
+                        <div class="mb-4">
+                            <input
+                                placeholder="Date of Birth"
+                                type="text"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            />
+                        </div>
+                    </div>
+                    <div class="add-student-button">
+                        <button
+                        type="submit" class="text-blue text-sm flex justify-end ml-auto hover:bg-blue-700 font-bold rounded focus:outline-none focus:shadow-outline">
+                      Add Student
+                      </button>
+                    </div>
+                </form>
+                <!-- end form -->
+            </div>
+            <div class="message-col w-full h-full">
+                <h2>Choose Schools</h2>
+                <p>Please select the schools you are interested in applying to.</p>
+                <div class="contact-details">
+                        <div class="w-full shadow">
+                          <form class="choose-school">
+                            <select
+                              class="text-blue text-base border-0 p-5 focus:outline-none w-full font-poppins-regular">
+                              <option value="choose schools">Choose Schools</option>
+                              <option value="Braeburnschool1">Braeburn School 1</option>
+                              <option value="Braeburnschool2">Braeburn School 2</option>
+                              <option value="Braeburnschool3">Braeburn School 3</option>
+                              <option value="Braeburnschool4">Braeburn School 4</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="choose-school mt-5">
+                            <h2>Choose Schools</h2>
+                            <p>Use the notes field below if you have any particular preferene or other relevant considerations.</p>
+                            <div class="mb-4">
+                                <textarea
+                                    rows="8"
+                                    placeholder="Notes"
+                                    id="content"
+                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                ></textarea>
+                                <div class="mt-4">
+                                    <button type="submit" class="bg-blue text-sm flex justify-center mx-auto hover:bg-blue-700 text-white font-bold py-3 px-10 rounded focus:outline-none focus:shadow-outline">
+                                  Submit
+                                  </button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+ <!-- footer section -->
+ <section class="footer-section">
+  <div class="main-footer bg-blue w-[90%] mx-auto py-8">
+    <div class="logo">
+      <img src="images/braeburn-logo-white.png" alt="Logo">
+    </div>
+    <div class="bottom-contact px-10 py-8">
+      <div class="grid xl:grid-cols-3 xl:gap-24 lg:justify-items-center md:flex lg:items-center md:flex-col lg:flex-row lg:gap-52 px-10">
+        <!-- Column 1: Address -->
+        <div class="col-address lg:border-r-4 lg:border-r-white xl:pr-20 lg:pr-40">
+          <ul>
+            <li>Braeburn Schools</li>
+            <li>Braeburn Schools Ltd</li>
+            <li>P.O. Box 45112</li>
+            <li>00100 Nairobi</li>
+            <li>Kenya</li>
+            <li>+254 (0)730 881000</li>
+          </ul>
+        </div>
+    
+        <!-- Column 2: Footer Links -->
+        <div class="footer-links flex flex-col xl:flex-row justify-between xl:gap-36">
+          <div class="pages-links">
+            <ul>
+              <li><a href="#">Schools</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Braeburn Experience</a></li>
+              <li><a href="#">News & Events</a></li>
+              <li><a href="#">Professional Opportunities</a></li>
+            </ul>
+          </div>
+          <div class="pages-2-links">
+            <ul>
+              <li><a href="#">Apply</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Column 3: Social Links -->
+        <div class="footer-social-links hidden xl:block xl:border-l-4 xl:border-l-white pl-40">
+          <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook-icon.svg" alt="Facebook" class="h-6 w-6">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram-icon.svg" alt="Instagram" class="h-6 w-6">
+          </a>
+          <a href="https://linkedin.com" target="_blank">
+            <img src="images/linkedin-icon.svg" alt="LinkedIn" class="h-6 w-6">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- MOBILE SOCILAS -->
+    <div class="mobile-socials xl:hidden flex items-center justify-center gap-5 px-10">
+      <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook-icon.svg" alt="Facebook" class="h-6 w-6">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/instagram-icon.svg" alt="Instagram" class="h-6 w-6">
+      </a>
+      <a href="https://linkedin.com" target="_blank">
+        <img src="images/linkedin-icon.svg" alt="LinkedIn" class="h-6 w-6">
+      </a>
+    </div>
+  </div>
+</section>
+
+    
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="module" src="/src/main.js"></script>
+
+
+  </body>
+</html>

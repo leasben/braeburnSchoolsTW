@@ -437,13 +437,51 @@ ul {
 }
  
 /* TEAM SECTION */
-
 .category {
   @apply bg-blue py-3
 }
 
 .category h3 {
   @apply text-xl text-center text-white font-poppins-regular
+}
+
+/* TABLE CARD */
+/* From Uiverse.io by Rodrypaladin */ 
+.card-table {
+  @apply max-w-full w-full sm:w-[750px] mx-auto border-blue border-4 overflow-hidden;
+}
+
+.card__title {
+  @apply text-2xl text-center text-blue border-b-4 border-blue font-poppins-medium py-2;
+}
+
+.card__data {
+  @apply text-base text-blue font-poppins-medium flex flex-row;
+}
+
+.card__right {
+  @apply w-full border-b-4 xm:border-b-0 md:border-r-4 border-blue;
+}
+
+.card__left {
+  @apply w-full text-left;
+}
+
+.item {
+  @apply [&:not(:last-child)]:border-b-4 border-blue p-[3px_0] pl-4 py-2;
+}
+
+
+/* BEYOND THE CLASSROOM */
+
+/* OUR TEAM */
+.beyondclassroom-image {
+  @apply relative inline-block w-56 h-56;  /* Reduce image size */
+  margin: 0 1rem; /* Added horizontal gap between circles if displayed in a row */
+}
+
+.beyondclassrom-member-image {
+  @apply absolute inset-0 flex items-center justify-center overflow-hidden rounded-full;
 }
 
 
