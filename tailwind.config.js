@@ -20,13 +20,17 @@ module.exports = {
       'poppins-regular': ['Poppins Regular', 'sans-serif'],
       'poppins-medium': ['Poppins Medium', 'sans-serif'],
       'poppins-bold': ['Poppins Bold', 'sans-serif'],
+      'freeway-demi-regular': ['FreewayDemi Regular', 'sans-serif'],
+      'freeway-demi-medium': ['FreewayDemi Medium', 'sans-serif'],
+      'ubuntu-regular': ['Ubuntu Regular', 'sans-serif'],
+      'ubuntu-bold': ['Ubuntu Bold', 'sans-serif'],
     },
     extend: {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        blue: '#032765',
-        lightBlue: '#238DC1',
+        blue: '#00205C',
+        lightBlue: '#003DA6',
         orange: '#FCB217',
       },
       boxShadow: {

@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="/src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Braeburn - Home</title>
   </head>
   <body>
@@ -84,13 +83,13 @@
 
   <!-- WELCOME SECTION -->
    <section class="welcome-section my-8 w-[90%] mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-[69%_31%] gap-5">
+    <div class="grid grid-cols-1 md:grid-cols-[65%_35%]">
       <div class="bg-image bg-[url('/images/Home-Page.webp')] bg-cover bg-no-repeat bg-center min-h-[600px]"></div>
       <div class="card md:pr-5 flex items-center justify-center">
         <div class="card-title text-white">
           <div class="welocme-copy bg-blue py-5 px-8">
-          <h2 class="text-white text-center text-3xl">Welcome</h2>
-          <p class="text-white pt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus assumenda eveniet qui illum impedit, quibusdam, sapiente vitae minima accusamus aperiam nisi aut eligendi. At labore doloribus odit voluptas, excepturi ex ab, qui ipsum iste ducimus quo ea alias optio quia suscipit nulla magni similique quaerat adipisci. Doloremque illum accusantium fugiat.</p>
+          <h2 class="text-white text-center text-5xl font-ubuntu-bold">Welcome</h2>
+          <p class="text-white text-base pt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus assumenda eveniet qui illum impedit, quibusdam, sapiente vitae minima accusamus aperiam nisi aut eligendi. At labore doloribus odit voluptas, excepturi ex ab, qui ipsum iste ducimus quo ea alias optio quia suscipit nulla magni similique quaerat adipisci. Doloremque illum accusantium fugiat.</p>
         </div>
           <div class="welcome-icons grid sm:grid-cols-3 justify-items-center gap-3 pt-10">
             <div class="confident-icons">
@@ -112,12 +111,11 @@
    </section>
 
    <!-- FIND A SCHOOL SECTION -->
-
    <section class="find-school w-[90%] mx-auto">
     <div class="find-school-heading">
-      <h2 class="text-4xl text-blue text-center font-poppins-bold">Find a School</h2>
+      <h2 class="text-6xl text-blue text-center">Find a School</h2>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-[70%_30%] md:grid-cols-1 gap-5">
+    <div class="grid grid-cols-1 lg:grid-cols-[69%_31%] md:grid-cols-1">
       <div class="bg-image bg-[url('/images/find-school-banner.webp')] bg-cover bg-no-repeat bg-center min-h-[600px] relative">
         <div class="bottom-card absolute bottom-0 left-0 w-full flex md:ml-20 px-6">
           <p class="text-white bg-blue text-base p-5 max-w-[600px]">
@@ -125,13 +123,13 @@
           </p>
         </div>
       </div>
-      <div class="map-search my-5 grid justify-items-center">
+      <div class="map-search grid justify-items-center">
         <div class="vision-circle transform duration-500 ease-in-out hover:scale-110  hidden md:block">
           <a href="#">
         <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
           <img src="images/blue-circle-icon.svg" class="w-72 min-h-72" alt="Blue Circle">
         </div>
-        <h2 class="inset-0 top-[-170px] left-0 bottom-0 relative flex items-center justify-center text-blue text-3xl text-center font-bold">
+        <h2 class="inset-0 top-[-175px] left-0 bottom-0 relative flex items-center justify-center text-blue text-4xl text-center">
           <p>Search By <br> Map</p>
         </h2>
       </a>
@@ -141,7 +139,7 @@
         <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
           <img src="images/blue-circle-icon.svg" class="w-72 min-h-72" alt="Blue Circle">
         </div>
-        <h2 class="inset-0 top-[-170px] left-0 bottom-0 relative flex items-center justify-center text-blue text-3xl text-center font-bold">
+        <h2 class="inset-0 top-[-175px] left-0 bottom-0 relative flex items-center justify-center text-blue text-4xl text-center">
          <p>Search By <br>Filter</p> 
         </h2>
       </a>
@@ -152,7 +150,7 @@
   <!-- CIRCLES/HIGHLIGHTS WITH IMAGES -->
 <div class="highlights mb-20">
   <div class="highlights-header">
-    <h2 class="text-blue text-3xl text-center font-poppins-bold py-8">Student Highlights</h2>
+    <h2 class="text-blue text-6xl text-center py-14">Student Highlights</h2>
     <div class="circles grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-24 place-items-center">
       <!-- Yellow Circle -->
       <div class="circle-image group relative transform duration-500 ease-in-out">
@@ -208,7 +206,7 @@
         <h2>Latest News & Events</h2>
       </div>
 
-      <div class="news-carousel mt-5" data-flickity='{ "contain": true, "wrapAround": true }'>
+      <div class="news-carousel mt-5" data-flickity='{ "contain": true, "wrapAround": true, "pageDots": true }'>
       <div class="news-carousel-cell">
         <div class="news-card border-red-500">
         <div class="card-image"><img src="images/news-5.jpg" alt=""></div>  
@@ -218,7 +216,7 @@
           <h3>School Name</h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
           <div class="link">
-            <a href="#">Link</a>
+            <a href="#">Read More</a>
           </div>
         </div>
         </div>
@@ -232,7 +230,7 @@
           <h3>School Name</h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
           <div class="link">
-            <a href="#">Link</a>
+            <a href="#">Read More</a>
           </div>
         </div>
         </div>
@@ -246,7 +244,7 @@
           <h3>School Name</h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
           <div class="link">
-            <a href="#">Link</a>
+            <a href="#">Read More</a>
           </div>
         </div>
         </div>
@@ -260,7 +258,7 @@
           <h3>School Name</h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
           <div class="link">
-            <a href="#">Link</a>
+            <a href="#">Read More</a>
           </div>
         </div>
         </div>
@@ -274,7 +272,7 @@
           <h3>School Name</h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
           <div class="link">
-            <a href="#">Link</a>
+            <a href="#">Read More</a>
           </div>
         </div>
         </div>
@@ -305,7 +303,7 @@
           <img src="images/braeburn-logo-white.png" alt="Logo">
         </div>
         <div class="bottom-contact px-10 py-8">
-          <div class="grid xl:grid-cols-3 xl:gap-24 lg:justify-items-center md:flex lg:items-center md:flex-col lg:flex-row lg:gap-52 px-10">
+          <div class="grid xl:grid-cols-3 xl:gap-24 lg:justify-items-center md:flex md:flex-col lg:flex-row lg:gap-52 px-10">
             <!-- Column 1: Address -->
             <div class="col-address lg:border-r-4 lg:border-r-white xl:pr-20 lg:pr-40">
               <ul>

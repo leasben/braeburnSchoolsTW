@@ -23,6 +23,7 @@ export default defineConfig({
         bbGardensEnquire: resolve(__dirname, 'garden-estate-enquire.html'),
         bbGardensContact: resolve(__dirname, 'garden-estate-contact.html'),
         bbGardensExperience: resolve(__dirname, 'braeburn-experience.html'),
+        contentPage: resolve(__dirname, 'content-page.html'),
       },
       output: {
         dir: 'dist', // Output directory for the build

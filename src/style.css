@@ -7,11 +7,11 @@
 
 
 :root {
-  --blue: #08265a;
+  --blue: #00205C;
   --green: #07522c;
   --black: #000;
   --bg-grey: #d0d0d04f;
-  --lightBlue: #238DC1;
+  --lightBlue: #003DA6;
 
 }
 
@@ -46,7 +46,7 @@ html {
 }
 
 body {
-  font-family: "Poppins Light", sans-serif;
+  font-family: "Ubuntu Regular", sans-serif;
   font-size: 16px;
 }
 
@@ -55,7 +55,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins Regular", sans-serif;
+  font-family: "FreewayDemi Medium", sans-serif;
 }
 
 
@@ -94,8 +94,36 @@ h6 {
       url("../src/fonts/Poppins-Bold.woff") format(woff);
 }
 
+@font-face {
+  font-family: "FreewayDemi Regular";
+  font-weight: 400;
+  src: url("../src/fonts/FreewayDemi-Regular.woff2") format(woff2),
+      url("../src/fonts/FreewayDemi-Regular.woff") format(woff);
+}
+
+@font-face {
+  font-family: "FreewayDemi Medium";
+  font-weight: 500;
+  src: url("../src/fonts/FreewayDemi-Medium.woff2") format(woff2),
+      url("../src/fonts/FreewayDemi-Medium.woff") format(woff);
+}
+
+@font-face {
+  font-family: "Ubuntu Regular";
+  font-weight: 400;
+  src: url("../src/fonts/Ubuntu-Regular.woff2") format(woff2),
+      url("../src/fonts/Ubuntu-Regular.woff") format(woff);
+}
+
+@font-face {
+  font-family: "Ubuntu Bold";
+  font-weight: 700;
+  src: url("../src/fonts/Ubuntu-Bold.woff2") format(woff2),
+      url("../src/fonts/Ubuntu-Bold.woff2") format(woff);
+}
+
 .logo img {
-  @apply w-[300px] mx-auto;
+  @apply w-[300px] mx-auto pb-2;
 }
 
 /* HAMBURGER ICON */
@@ -115,24 +143,24 @@ h6 {
 
 /* MOBILE MENU */
 .main-mobile-menu {
-  @apply hidden relative w-[500px] bg-white mt-12 rounded-tl-[23px] rounded-bl-[23px] text-2xl font-poppins-medium z-10 text-white py-6 shadow-mobileBackground overflow-hidden;
+  @apply hidden relative w-[600px] h-[800px] bg-white text-2xl font-poppins-medium z-10 text-white pt-24 shadow-mobileBackground overflow-hidden;
 
   /* Positioning adjustments to fix the overflow issue */
-  position: fixed; /* Fixed positioning relative to the viewport */
-  top: 80px; /* Align it below the header */
-  right: 0; /* Align the menu to the right edge */
-  z-index: 9999; /* Ensure it appears above other content */
+  position: fixed; 
+  top: 0; 
+  right: 0; 
+  z-index: 9999; 
   
   /* Restrict the width to 100% of the viewport */
   max-width: 100vw;
-  box-sizing: border-box; /* Include padding and border in width calculation */
+  box-sizing: border-box; 
 
   /* Add max-height and make it scrollable */
-  max-height: calc(100vh - 100px); /* Prevent the menu from exceeding the viewport height */
-  overflow-y: auto; /* Add vertical scrolling if the content exceeds the max height */
+  max-height: calc(100vh -23px); 
+  
 }
 
-.flickity-prev-next-button {
+ .flickity-prev-next-button {
   @apply hidden;
 }
 
@@ -142,7 +170,7 @@ h6 {
 
 /* MOBILE MENU ITEMS */
 .mobile-menu-items {
-  @apply w-[350px] py-[15px] mx-auto text-blue shadow-button font-poppins-bold text-xl pl-5;
+  @apply w-[350px] mx-auto text-blue shadow-button font-poppins-bold text-xl pl-5 xm:py-2 lg:py-1;
 }
 
 .mobile-menu-items a {
@@ -151,7 +179,7 @@ h6 {
 
 /* SOCIAL ICONS */
 .social-icons {
-  @apply mx-auto flex items-center justify-center space-x-8 p-[30px] ;
+  @apply mx-auto flex items-center justify-center space-x-8 xm:p-[30px] lg:p-[10px];
 }
 
 .social-icons img {
@@ -159,12 +187,13 @@ h6 {
 }
 
 /* WELCOME SECTION */
+
 .confident-icons img {
   @apply mx-auto;
 }
 
 .confident-icons h3 {
-  @apply text-sm text-center text-blue font-poppins-light;
+  @apply text-sm text-center text-blue font-ubuntu-regular;
 }
 
 /* CIRCLES/HIGHLIGHTS WITH IMAGES */
@@ -206,8 +235,8 @@ h6 {
  }
 /* OUR TEAM */
 .team-image {
-  @apply relative inline-block w-48 h-48;  /* Reduce image size */
-  margin: 0 1rem; /* Added horizontal gap between circles if displayed in a row */
+  @apply relative inline-block w-48 h-48; 
+  margin: 0 1rem; 
 }
 
 .team-image-circle {
@@ -223,33 +252,26 @@ h6 {
 }
 
 .carousel-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  border-radius: 5px;
-  counter-increment: gallery-cell;
+  @apply w-[66%] h-[200px] mr-[10px] rounded-[5px];
+   counter-increment: gallery-cell;  
 }
 
 /* cell number */
 .carousel-cell:before {
-  display: block;
-  text-align: center;
+  @apply block text-center text-white text-[80px] leading-[200px];
   content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
+  
 }
-
 
  /* LATEST NEWS */
  .news-heading h2 {
-  @apply text-white text-center text-3xl font-poppins-bold px-7;
+  @apply text-white text-center text-6xl px-7 pb-4;
  }
 
 /* SCHOOL ACCREDITATION */
 
 .acreditation-headline h2 {
-  @apply text-3xl text-blue text-center font-poppins-bold pb-3;
+  @apply text-3xl text-blue text-center pb-3;
 }
  
 .accreditation-logo {
@@ -267,7 +289,7 @@ h6 {
 .col-address ul li,
 .pages-links ul li,
 .pages-2-links ul li {
-  @apply text-white text-xl font-poppins-regular;
+  @apply text-white text-[20px] font-freeway-demi-regular;
 }
 
 .col-links ul li a {
@@ -288,15 +310,20 @@ h6 {
     background: hsl(247, 93%, 26%);
 }
 
+.flickity-page-dot {
+  background: white;
+}
+
+
  .news-card {
   @apply bg-white border-2;
  }
   .card-details h2 {
-    @apply text-2xl text-blue font-poppins-medium;
+    @apply text-3xl text-blue;
   }
 
   .card-details h3 {
-    @apply text-xl text-blue font-poppins-regular;
+    @apply text-2xl text-lightBlue font-freeway-demi-regular;
   }
 
   .card-details p {
@@ -304,13 +331,13 @@ h6 {
   }
 
   .link a {
-    @apply text-blue
+    @apply text-lightBlue text-xl font-freeway-demi-medium;
   }
 
   /* CONTACT SECTION */
   .message-col h2,
   .guardian-details h2 {
-    @apply text-xl text-blue font-poppins-regular pb-2;
+    @apply text-xl text-blue pb-2;
   }
 
   .guardian-details p,
@@ -359,7 +386,7 @@ ul {
   }
 
   .carousel-text h2{
-    @apply text-3xl text-blue text-center font-poppins-bold;
+    @apply text-3xl text-blue text-center;
   }
   
   /* RIGHT CARD */
@@ -372,11 +399,11 @@ ul {
   }
 
 .history-carousel-cell h2 {
-  @apply text-white text-center text-3xl;
+  @apply text-white text-center text-3xl font-ubuntu-bold;
 }
 
 .history-carousel-cell p {
-  @apply text-white text-base font-poppins-light px-8 py-5;
+  @apply text-white text-base font-ubuntu-regular px-8 py-5;
 }
 
 /* BRAEBURN GARDENS ESTATE CSS */
@@ -392,7 +419,7 @@ ul {
   /* WELCOME SECTION */
 
   .welcome-author h2 {
-    @apply text-xl font-poppins-medium
+    @apply text-xl;
   }
 
 
@@ -476,12 +503,37 @@ ul {
 
 /* OUR TEAM */
 .beyondclassroom-image {
-  @apply relative inline-block w-56 h-56;  /* Reduce image size */
-  margin: 0 1rem; /* Added horizontal gap between circles if displayed in a row */
+  @apply relative inline-block w-64 h-64;  
+  margin: 0 1rem; 
 }
 
 .beyondclassrom-member-image {
   @apply absolute inset-0 flex items-center justify-center overflow-hidden rounded-full;
+}
+
+/* SUB HEADING ITEMS */
+
+.sub-heading-items ul li {
+  @apply text-xl text-blue font-poppins-regular;
+}
+
+/* CONTENT IMAGE GALLERY */
+
+.content-carousel {
+  @apply w-[1200px] mx-auto my-4
+}
+
+.content-carousel-cell {
+  width: 33.33%;
+  height: 380px;
+  padding: 0 8px;
+  margin-right: 10px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.content-carousel-cell img {
+  @apply h-full border-4 border-orange
 }
 
 
