@@ -130,6 +130,9 @@ h6 {
 .menu-icon {
       @apply fixed top-4 right-[100px] z-[10000] rounded-full bg-blue mr-5 flex items-center;
     }
+    .menu-icon img {
+      @apply w-[95px] h-[95px];
+    }
 
 /* VIDEO */
 .video-container {
@@ -164,9 +167,6 @@ h6 {
   @apply hidden;
 }
 
-.menu-icon img {
-  @apply w-[80px] h-[80px];
-}
 
 /* MOBILE MENU ITEMS */
 .mobile-menu-items {
@@ -271,7 +271,7 @@ h6 {
 /* SCHOOL ACCREDITATION */
 
 .acreditation-headline h2 {
-  @apply text-3xl text-blue text-center pb-3;
+  @apply text-6xl text-blue text-center pb-10;
 }
  
 .accreditation-logo {
@@ -327,7 +327,7 @@ h6 {
   }
 
   .card-details p {
-    @apply text-base text-blue font-poppins-light py-3;
+    @apply text-base text-blue font-ubuntu-regular py-3;
   }
 
   .link a {
@@ -337,20 +337,20 @@ h6 {
   /* CONTACT SECTION */
   .message-col h2,
   .guardian-details h2 {
-    @apply text-xl text-blue pb-2;
+    @apply text-2xl text-blue pb-2;
   }
 
   .guardian-details p,
   .message-col p {
-    @apply text-blue text-base font-poppins-regular py-2;
+    @apply text-blue text-xl font-ubuntu-regular py-2;
   }
 
   .contact-details h3 {
-    @apply text-base text-blue font-poppins-medium;
+    @apply text-xl text-blue font-ubuntu-bold;
   }
 
   .contact-details ul li {
-    @apply text-base text-blue font-poppins-light;
+    @apply text-xl text-blue font-ubuntu-regular;
   }
 
   .contact-grid {
@@ -359,7 +359,7 @@ h6 {
 
   .main-form input,
   textarea {
-    @apply placeholder-blue text-base font-poppins-regular;
+    @apply placeholder-blue text-base font-ubuntu-regular;
   }
 
   /* FOOTER-SOCIAL-LINKS */

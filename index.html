@@ -13,14 +13,12 @@
   <section class="main-menu bg-blue py-16 md:py-5 px-5 w-[90%] mx-auto">
     <nav class="navbar">
       <div class="nav-section flex items-center justify-between">
-
            <!-- LOGO (CENTERED) -->
            <div class="logo cls-1 hidden md:block justify-center pt-0 flex-1">
             <a href="/">
               <img src="images/braeburn-logo-white.png" alt="Braeburn Logo" width="400" height="200">
             </a>
           </div>
-
         <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
         <div class="menu-icon" id="menu-toggle">
           <img src="images/open-menu-icon.svg" alt="Menu" class="toggle-icon">
@@ -151,18 +149,23 @@
 <div class="highlights mb-20">
   <div class="highlights-header">
     <h2 class="text-blue text-6xl text-center py-14">Student Highlights</h2>
-    <div class="circles grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-24 place-items-center">
-      <!-- Yellow Circle -->
-      <div class="circle-image group relative transform duration-500 ease-in-out">
-        <!-- Circle Wrapper for Hover Effect -->
-        <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90 group-hover:scale-110">
-          <img src="images/yellow-circle-icon.svg" class="highlight-circle" alt="Yellow Circle">
-        </div>
-        <!-- Centered Image Link -->
-        <a href="#" class="highlight-image group-hover:scale-110">
-          <img src="images/circles-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
-        </a>
-      </div>
+    <div class="circles grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-y-20 gap-x-[19px] place-items-center">
+    <!-- Yellow Circle -->
+<div class="circle-image group relative transform duration-500 ease-in-out">
+  <!-- Circle Wrapper for Hover Effect -->
+  <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90 group-hover:scale-110">
+    <img src="images/yellow-circle-icon.svg" class="highlight-circle" alt="Yellow Circle">
+  </div>
+  <!-- Centered Image Link -->
+  <a href="#" class="highlight-image group-hover:scale-110">
+    <img src="images/circles-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
+  </a>
+  <!-- Popup Text -->
+  <div class="popup-text absolute inset-0 flex items-center justify-center bg-black/50 text-white text-4xl font-ubuntu-bold rounded-full opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100">
+    Rugby
+  </div>
+</div>
+
 
       <!-- Orange Circle -->
       <div class="circle-image group relative transform duration-500 ease-in-out">
@@ -172,6 +175,10 @@
         <a href="#" class="highlight-image group-hover:scale-110">
           <img src="images/circle-2-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
         </a>
+          <!-- Popup Text -->
+  <div class="popup-text absolute inset-0 flex items-center justify-center bg-black/50 text-white text-4xl font-ubuntu-bold rounded-full opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100">
+    Athletics
+  </div>
       </div>
 
       <!-- Green Circle -->
@@ -182,16 +189,24 @@
         <a href="#" class="highlight-image group-hover:scale-110">
           <img src="images/cricle-3-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
         </a>
+          <!-- Popup Text -->
+  <div class="popup-text absolute inset-0 flex items-center justify-center bg-black/50 text-white text-4xl font-ubuntu-bold rounded-full opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100">
+    Music & Arts
+  </div>
       </div>
 
       <!-- Red Circle -->
       <div class="circle-image group relative transform duration-500 ease-in-out">
-        <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90">
+        <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90 group-hover:scale-110">
           <img src="images/red-circle.svg" class="highlight-circle" alt="Red Circle">
         </div>
-        <a href="#" class="highlight-image">
+        <a href="#" class="highlight-image group-hover:scale-110">
           <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6  object-cover rounded-full">
         </a>
+          <!-- Popup Text -->
+  <div class="popup-text absolute inset-0 flex items-center justify-center bg-black/50 text-white text-4xl font-ubuntu-bold rounded-full opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100">
+    Soccer
+  </div>
       </div>
     </div>
   </div>
