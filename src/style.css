@@ -299,7 +299,7 @@ h6 {
 
 /* NEWS */
 .news-carousel-cell {
-  @apply min-h-[600px] mr-[10px] pr-8 xm:w-[75%] sm:w-[50%] md:w-[33.33%];
+  @apply min-h-[600px] mr-[10px] xm:px-6 xm:w-[100%] md:w-[50%] lg:w-[33.33%];
  }
 
   .flickity-page-dots {
@@ -535,4 +535,3 @@ ul {
 .content-carousel-cell img {
   @apply h-full border-4 border-orange
 }
-
