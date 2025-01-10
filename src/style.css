@@ -146,7 +146,7 @@ h6 {
 
 /* MOBILE MENU */
 .main-mobile-menu {
-  @apply hidden relative w-[600px] h-[800px] bg-white text-2xl font-poppins-medium z-10 text-white pt-24 shadow-mobileBackground overflow-hidden;
+  @apply hidden relative w-[600px] h-[800px] bg-white text-xl font-ubuntu-bold z-10 text-white pt-32 shadow-mobileBackground overflow-hidden;
 
   /* Positioning adjustments to fix the overflow issue */
   position: fixed; 
@@ -170,7 +170,7 @@ h6 {
 
 /* MOBILE MENU ITEMS */
 .mobile-menu-items {
-  @apply w-[350px] mx-auto text-blue shadow-button font-poppins-bold text-xl pl-5 xm:py-2 lg:py-1;
+  @apply w-[350px] mx-auto text-blue shadow-button font-freeway-demi-regular text-2xl pl-5 xm:py-2 lg:py-1;
 }
 
 .mobile-menu-items a {
@@ -452,24 +452,24 @@ ul {
   }
 
 .policy-carousel-cell h2 {
-  @apply text-black text-center text-3xl;
+  @apply text-3xl text-blue font-ubuntu-bold py-4;
 }
 
 .policy-carousel-cell p {
-  @apply text-black text-base font-poppins-light px-8;
+  @apply text-blue text-base px-8;
 } 
 
 .policy-carousel.flickity-page-dots {
-  @apply bottom-[24px]
+  @apply bottom-[24px];
 }
  
 /* TEAM SECTION */
 .category {
-  @apply bg-blue py-3
+  @apply bg-blue py-3;
 }
 
 .category h3 {
-  @apply text-xl text-center text-white font-poppins-regular
+  @apply text-2xl text-center text-white font-ubuntu-regular;
 }
 
 /* TABLE CARD */
@@ -479,11 +479,11 @@ ul {
 }
 
 .card__title {
-  @apply text-2xl text-center text-blue border-b-4 border-blue font-poppins-medium py-2;
+  @apply text-3xl text-center text-blue border-b-4 border-blue font-ubuntu-bold py-4;
 }
 
 .card__data {
-  @apply text-base text-blue font-poppins-medium flex flex-row;
+  @apply text-xl text-blue font-ubuntu-regular flex flex-row;
 }
 
 .card__right {
@@ -535,12 +535,4 @@ ul {
 .content-carousel-cell img {
   @apply h-full border-4 border-orange
 }
-
-
-
- 
-
-
-
- 
 
