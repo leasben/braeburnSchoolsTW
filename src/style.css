@@ -282,9 +282,6 @@ h6 {
   @apply flex items-center justify-center p-2 h-24 object-contain;
 }
 
-/* ABOUT SECTION */
-
-
 /* FOOTER SECTION */
 .col-address ul li,
 .pages-links ul li,
@@ -299,7 +296,7 @@ h6 {
 
 /* NEWS */
 .news-carousel-cell {
-  @apply min-h-[600px] mr-[10px] xm:px-6 xm:w-[100%] md:w-[50%] lg:w-[33.33%];
+  @apply min-h-[600px] mr-[10px] xm:px-6 xm:w-[100%] md:w-[50%] lg:w-[33.33%] pb-5;
  }
 
   .flickity-page-dots {
@@ -535,3 +532,26 @@ ul {
 .content-carousel-cell img {
   @apply h-full border-4 border-orange
 }
+
+/* Retain background and text colors while customizing the arrow */
+.choose-school select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 40px; /* Adds space for the arrow on the right */
+  background-color: #1e3a8a; /* Ensure the background color is kept */
+  color: white; /* Keep text color white */
+  border: 0;
+  border-radius: 0.375rem; /* Customize border radius (rounded corners) */
+  font-size: 1.25rem; /* Set text size */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><polygon points="0,0 24,0 12,18" fill="white" /></svg>'); /* Custom white arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Position the arrow */
+  background-size: 16px; /* Arrow size */
+}
+
+/* Custom arrow */
+.choose-school select:focus {
+  outline: none; /* Removes the default focus outline */
+}
+
