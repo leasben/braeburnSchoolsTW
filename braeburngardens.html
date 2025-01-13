@@ -11,14 +11,14 @@
   </head>
   <body>
   <!-- NAV BAR -->
-  <section class="main-menu bg-white py-16 md:py-5 px-5 w-[90%] mx-auto">
+  <section class="main-menu bg-white py-8 md:py-5 px-5 w-[90%] mx-auto">
     <nav class="navbar">
-      <div class="nav-section flex items-center justify-between">
+      <div class="nav-section">
 
            <!-- LOGO (CENTERED) -->
-           <div class="logo cls-1 hidden md:block justify-center pt-0 flex-1">
-            <a href="/">
-              <img src="images/braeburn-gardens-logo.png" alt="Braeburn Logo" width="400" height="200">
+           <div class="logo cls-1 justify-center pt-0 flex-1">
+            <a href="/braeburngardens.html">
+              <img src="images/bge-logo.svg" alt="Braeburn Logo" width="400" height="200">
             </a>
           </div>
 
@@ -32,8 +32,8 @@
       <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
       <div id="mobile_menu" class="main-mobile-menu">
         <div class="logo cls-1 pt-0">
-          <a href="/">
-            <img src="images/braeburn-gardens-logo.png" alt="Braeburn Logo" width="400" height="200">
+          <a href="/braeburngardens.html">
+            <img src="images/bge-logo.svg" alt="Braeburn Logo" width="400" height="200">
           </a>
         </div>
   
@@ -201,9 +201,6 @@
         <a href="#" class="highlight-image group-hover:scale-110">
           <img src="images/playing-piano.jpg" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
         </a>
-        <div class="popup-text absolute inset-0 flex items-center justify-center bg-black/50 text-white text-4xl font-ubuntu-bold rounded-full opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100">
-          Arts
-        </div>
       </div>
 
       <!-- Orange Circle -->
@@ -214,9 +211,6 @@
         <a href="#" class="highlight-image group-hover:scale-110">
           <img src="images/braeburn-bus.jpg" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
         </a>
-        <div class="popup-text absolute inset-0 flex items-center justify-center bg-black/50 text-white text-4xl font-ubuntu-bold rounded-full opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100">
-          Cylcing
-        </div>
       </div>
 
       <!-- Green Circle -->
@@ -227,9 +221,6 @@
         <a href="#" class="highlight-image group-hover:scale-110">
           <img src="images/braeburn-boys.jpg" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
         </a>
-        <div class="popup-text absolute inset-0 flex items-center justify-center bg-black/50 text-white text-4xl font-ubuntu-bold rounded-full opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100">
-          Choir
-        </div>
       </div>
 
       <!-- Red Circle -->
@@ -240,9 +231,6 @@
         <a href="#" class="highlight-image">
           <img src="images/playing-drums.jpg" alt="Highlight" class="w-10/12 h-5/6  object-cover rounded-full">
         </a>
-        <div class="popup-text absolute inset-0 flex items-center justify-center bg-black/50 text-white text-4xl font-ubuntu-bold rounded-full opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100">
-          Music
-        </div>
       </div>
     </div>
   </div>
@@ -332,19 +320,27 @@
    </section>
 
    <!-- SCHOOL ACCREDITATION -->
-    <section class="accreditation py-8">
-      <div class="w-[90%] mx-auto">
-        <div class="acreditation-headline">
-          <h2>School Accreditation</h2>
-        </div>
-        <div class="accreditation-logo">
-          <img src="images/accreditation-4.png" alt="Accreditation">
-          <img src="images/accreditation-3.jpg" alt="Accreditation">
-          <img src="images/accreditation-1.jpg" alt="Accreditation">
-          <img src="images/accreditation-2.jpg" alt="Accreditation">
-        </div>
+   <section class="accreditation py-8">
+    <div class="w-[90%] mx-auto">
+      <div class="acreditation-headline">
+        <h2>School Accreditation</h2>
       </div>
-    </section>
+        <div class="accreditation-carousel" data-flickity = '{"wrapAround": true}'>
+          <div class="accreditation-carousel-cell">
+            <img src="images/accreditation-2.jpg" alt="Accreditation">
+          </div>
+          <div class="accreditation-carousel-cell">
+            <img src="images/accreditation-3.jpg" alt="Accreditation">
+          </div>
+          <div class="accreditation-carousel-cell">
+            <img src="images/accreditation-1.jpg" alt="Accreditation">
+          </div>
+          <div class="accreditation-carousel-cell">
+            <img src="images/accreditation-4.png" alt="Accreditation">
+          </div>
+        </div>
+    </div>
+  </section>
 
     <!-- footer section -->
     <section class="footer-section mt-5">

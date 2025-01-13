@@ -122,13 +122,19 @@ h6 {
       url("../src/fonts/Ubuntu-Bold.woff2") format(woff);
 }
 
+/* NAVBAR */
+
+.nav-section {
+  @apply flex items-center justify-between xm:flex-col md:flex-row;
+}
+
 .logo img {
   @apply w-[300px] mx-auto pb-2;
 }
 
 /* HAMBURGER ICON */
 .menu-icon {
-      @apply fixed top-4 right-[100px] z-[10000] rounded-full bg-blue mr-5 flex items-center;
+      @apply md:fixed top-16 md:top-4 right-[100px] z-[10000] rounded-full bg-blue mr-5 flex items-center;
     }
     .menu-icon img {
       @apply w-[95px] h-[95px];
@@ -269,18 +275,18 @@ h6 {
  }
 
 /* SCHOOL ACCREDITATION */
-
 .acreditation-headline h2 {
-  @apply text-6xl text-blue text-center pb-10;
-}
- 
-.accreditation-logo {
-  @apply grid grid-cols-2 md:grid-cols-4 gap-2 max-w-5xl mx-auto;
+  @apply text-6xl text-blue text-center pb-6;
 }
 
-.accreditation-logo img {
-  @apply flex items-center justify-center p-2 h-24 object-contain;
+.accreditation-carousel-cell img {
+  @apply flex items-center justify-center p-2 h-[200px] object-contain;
 }
+
+.accreditation-carousel-cell {
+  @apply w-[20%] mx-auto;
+}
+
 
 /* FOOTER SECTION */
 .col-address ul li,
@@ -530,28 +536,20 @@ ul {
 }
 
 .content-carousel-cell img {
-  @apply h-full border-4 border-orange
+  @apply h-full border-4 border-orange;
 }
 
-/* Retain background and text colors while customizing the arrow */
+
 .choose-school select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
-  padding-right: 40px; /* Adds space for the arrow on the right */
-  background-color: #1e3a8a; /* Ensure the background color is kept */
-  color: white; /* Keep text color white */
-  border: 0;
-  border-radius: 0.375rem; /* Customize border radius (rounded corners) */
-  font-size: 1.25rem; /* Set text size */
+  appearance: none; 
+  background-color: #00205C; 
+  border: 0; 
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><polygon points="0,0 24,0 12,18" fill="white" /></svg>'); /* Custom white arrow */
   background-repeat: no-repeat;
-  background-position: right 10px center; /* Position the arrow */
-  background-size: 16px; /* Arrow size */
+  background-position: right 20px center; 
+  background-size: 18px;
 }
 
-/* Custom arrow */
-.choose-school select:focus {
-  outline: none; /* Removes the default focus outline */
-}
 
