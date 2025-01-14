@@ -86,7 +86,7 @@
         <div class="vision-circle transform duration-500 ease-in-out hover:scale-110">
           <a href="#">
         <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
-          <img src="images/blue-circle-icon.svg" class="w-72 min-h-72" alt="Blue Circle">
+          <img src="images/blue-circle-highlight.svg" class="w-80 min-h-80" alt="Blue Circle">
         </div>
         <h2 class="inset-0 top-[-170px] left-0 bottom-0 relative flex items-center justify-center text-blue text-5xl text-center">
          Vision
@@ -96,7 +96,7 @@
       <div class="mission-circle transform duration-500 ease-in-out hover:scale-110">
         <a href="#">
       <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
-        <img src="images/blue-circle-icon.svg" class="w-72 min-h-72" alt="Blue Circle">
+        <img src="images/blue-circle-highlight.svg" class="w-80 min-h-80" alt="Blue Circle">
       </div>
       <h2 class="inset-0 top-[-170px] left-0 bottom-0 relative flex items-center justify-center text-blue text-5xl text-center">
        Mission
@@ -110,7 +110,7 @@
       <!-- APPROACH -->
       <section class="approach-section w-[90%] mx-auto">
         <div class="approach-heading">
-            <h2 class="text-6xl text-center text-blue py-10">Approach</h2>
+            <h2 class="text-6xl text-center text-blue pb-10 md:py-10">Approach</h2>
         </div>
               <div class="grid grid-cols-1 lg:grid-cols-[35%_65%]">
                   <div class="card flex items-center justify-center relative order-2 lg:order-none">
@@ -132,23 +132,40 @@
           </div>
           <div class="history-section grid sm:grid-cols-1 lg:grid-cols-[60%_40%]">
             <div class="fade-carousel h-full">
-              <div class="historySectionCarousel" data-flickity='{"fade": true, "pauseAutoPlayOnHover": false, "wrapAround": true, "autoPlay": 2000, "pageDots": false }'>
+              <!-- DESKTOP DISPLAY -->
+              <div class="historySectionCarousel md:block xm:hidden" data-flickity='{"fade": true, "pauseAutoPlayOnHover": false, "wrapAround": true, "autoPlay": 2000, "pageDots": false }'>
                 <div class="historySection-carousel-cell">
                   <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/history-1.jpg);"></div>
-                  <div class="carousel-text">
+                  <div class="carousel-text bg-black/50 p-4 rounded-md inline-block">
                     <h2>Lorem ipsum dolor sit amet</h2>
                   </div>
                 </div>
                 <div class="historySection-carousel-cell">
                   <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/history-2.jpg);"></div>
-                  <div class="carousel-text">
+                  <div class="carousel-text bg-black/50 p-4 rounded-md inline-block">
+                    <h2>Dolor sit amet consectetur adipisicing elit.</h2>
+                  </div>
+                </div>
+              </div>
+              <!-- MOBILE DISPLAY  -->
+              <div class="historySectionCarousel xm:block md:hidden" data-flickity='{"fade": true, "pauseAutoPlayOnHover": true, "wrapAround": true }'>
+                <div class="historySection-carousel-cell">
+                  <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/about-history-mobile.jpg);"></div>
+                  <div class="carousel-text bg-black/50 p-4 rounded-md inline-block">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                  </div>
+                </div>
+                <div class="historySection-carousel-cell">
+                  <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/about-history-mobile-2.jpg);"></div>
+                  <div class="carousel-text bg-black/50 p-4 rounded-md inline-block">
                     <h2>Dolor sit amet consectetur adipisicing elit.</h2>
                   </div>
                 </div>
               </div>
             </div>
             
-            <div class="history-carousel relative" data-flickity='{"freeScroll": true, "wrapAround": true, "autoPlay": true, "pauseAutoPlayOnHover": false, "pageDots": false}'>
+            
+            <div id="historyCarousel" class="history-carousel relative" data-flickity='{"freeScroll": true, "wrapAround": true, "autoPlay": true, "pauseAutoPlayOnHover": false}'>
                   <div class="history-carousel-cell">
                       <h2>1978 - 1980</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa velit quasi laboriosam sapiente delectus possimus, cupiditate quos molestias quis ullam nulla hic cum corporis. Consectetur doloremque, voluptatum amet impedit quo natus cum Dictum luctus torquent id morbi sodales massa quisque, habitant dictumst augue lectus cum sociosqu maecenas netus, semper fames porttitor pharetra nam sed. Praesent euismod aliquet ut sagittis non pulvinar, congue nunc class rutrum magnis bibendum, curabitur tincidunt proin tristique sodales. Per inceptos tortor ut varius auctor ultrices eget molestie etiam, risus penatibus accumsan taciti senectus iaculis lacinia interdum montes</p>
@@ -172,7 +189,7 @@
             <div class="curricula-heading">
                 <h2 class="text-6xl text-center text-blue p-8">Curricula</h2>
             </div>
-            <div class="curricula-cards grid grid-cols-2 md:grid-cols-5 gap-5">
+            <div class="curricula-cards grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
               <div class="card-image border-4 border-lightBlue">
                 <img src="images/curricula-card-1.jpg" alt="Curricula Card" class="border-b-4 border-lightBlue">
                 <div class="curricula-text py-2">
@@ -373,11 +390,11 @@
                     </div>
                   </div>
                 <!--BRAEBURN SCHOOLS LIMITED EXECUTIVE COMMITTEE -->
-                <div class="executive-committee mt-5">
+                <div class="executive-committee my-16">
                 <div class="team-title">
                     <h3 class="text-blue text-xl text-center lg:text-left font-ubuntu-bold pb-2">Braeburn Schools Limited Executive Committee</h3>
                 </div>
-                <div class="team-carousel" data-flickity='{ "autoPlay": false,"groupCells":true }'>
+                <div id="executiveCarousel" class="team-carousel" data-flickity='{ "autoPlay": false,"groupCells":true }'>
                   <div class="team-carousel-cell">
                     <div class="team-image-carousel relative inline-block w-48 h-48 m-[0_1rem]">
                       <!-- Blue Circle Background -->
@@ -474,11 +491,11 @@
             </div>
 
                 <!-- BRAEBURN SCHOOL TANZANIA LIMITED -->
-                <div class="braeburn-tanzania mt-5">
+                <div class="braeburn-tanzania my-16">
                 <div class="team-title">
                     <h3 class="text-blue text-xl text-center lg:text-left font-ubuntu-bold pb-2">Braeburn Schools Tanzania Limited</h3>
                 </div>
-                <div class="team-carousel" data-flickity='{ "autoPlay": false,"groupCells":true }'>
+                <div id="executiveCarousel" class="team-carousel" data-flickity='{ "autoPlay": false,"groupCells":true }'>
                   <div class="team-carousel-cell">
                     <div class="team-image-carousel relative inline-block w-48 h-48 m-[0_1rem]">
                       <!-- Blue Circle Background -->
@@ -575,11 +592,11 @@
             </div>
 
                 <!-- TES AFRICA LIMITED (RWANDA) -->
-                 <div class="tes-africa-rwanda mt-5">
+                 <div class="tes-africa-rwanda mmy-16">
                 <div class="team-title">
                     <h3 class="text-blue text-xl text-center lg:text-left font-ubuntu-bold pb-2">TAS Africa Limited (Rwanda)</h3>
                 </div>
-                <div class="team-carousel" data-flickity='{ "autoPlay": false,"groupCells":true }'>
+                <div id="executiveCarousel" class="team-carousel" data-flickity='{ "autoPlay": false,"groupCells":true }'>
                   <div class="team-carousel-cell">
                     <div class="team-image-carousel relative inline-block w-48 h-48 m-[0_1rem]">
                       <!-- Blue Circle Background -->
@@ -682,10 +699,10 @@
           <div class="w-[90%] mx-auto">
               <div class="find-school-banner bg-[url('/images/find-school-bg-banner.jpg')] bg-no-repeat bg-cover bg-center min-h-[600px]">
                   <a href="#">
-                      <div class="relative inline-block top-28 left-28 px-6 transform duration-500 ease-in-out hover:scale-110">
+                      <div class="relative inline-block top-8 left-4 md:top-16 md:left-28 px-6 transform duration-500 ease-in-out hover:scale-110">
                           <!-- Circle container with rotation applied on hover -->
                           <div class="find-school-circle relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
-                              <img src="images/light-blue-circle-icon.svg" class="w-96 h-96" alt="Find School Circle">
+                              <img src="images/blue-circle-highlight.svg" class="w-96 h-96 bg-white rounded-full" alt="Find School Circle">
                           </div>
                           <h2 class="absolute inset-0 flex items-center justify-center text-blue text-5xl font-ubuntu-bold">
                               Find a <br>School

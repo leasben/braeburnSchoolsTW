@@ -117,7 +117,7 @@
     <div class="fixed top-1/2 right-0 z-50 flex flex-col border-4 border-orange">
       <!-- Apply Link -->
       <div class="relative w-full flex justify-center items-center border-b border-orange py-6">
-        <a href="#apply" class="text-xl font-ubuntu-bold -rotate-90 inline-block text-blue">Apply</a>
+        <a href="/join-us.html" class="text-xl font-ubuntu-bold -rotate-90 inline-block text-blue">Apply</a>
       </div>
       <!-- Visit Link -->
       <div class="relative w-full flex justify-center items-center py-6">
@@ -131,12 +131,10 @@
     <div class="w-[90%] mx-auto">
       <div class="slider-fade">
         <div class="fade-carousel h-full">
+          <!-- DESKTOP FADE CAROUSEL-->
           <div class="historySectionCarousel" data-flickity='{"fade": true, "pauseAutoPlayOnHover": false, "wrapAround": true, "autoPlay": 2000, "pageDots": false }'>
             <div class="sliderfade-section-carousel-cell">
               <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/history-1.jpg);"></div>
-              <div class="carousel-text">
-                <h2>Lorem ipsum dolor sit amet</h2>
-              </div>
             </div>
             <div class="sliderfade-section-carousel-cell">
               <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/history-2.jpg);"></div>
@@ -164,9 +162,9 @@
       <div class="filter-circle transform duration-500 ease-in-out hover:scale-110  hidden md:block">
         <a href="#">
       <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
-        <img src="images/orange-circle-icon.svg" class="w-72 min-h-72" alt="Blue Circle">
+        <img src="images/orange-circle-icon.svg" class="w-80 min-h-80" alt="Blue Circle">
       </div>
-      <h2 class="inset-0 top-[-190px] left-0 bottom-0  relative flex items-center justify-center text-blue text-5xl text-center">
+      <h2 class="inset-0 top-[-210px] left-0 bottom-0  relative flex items-center justify-center text-blue text-5xl text-center">
         Join Our <br> School
       </h2>
     </a>
@@ -174,9 +172,9 @@
       <div class="map-search transform duration-500 ease-in-out hover:scale-110">
         <a href="#">
       <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
-        <img src="images/orange-circle-icon.svg" class="w-72 min-h-72" alt="Blue Circle">
+        <img src="images/orange-circle-icon.svg" class="w-80 min-h-80" alt="Blue Circle">
       </div>
-      <h2 class="inset-0 top-[-190px] left-0 bottom-0 relative flex items-center justify-center text-blue text-5xl text-center">
+      <h2 class="inset-0 top-[-210px] left-0 bottom-0 relative flex items-center justify-center text-blue text-5xl text-center">
        My <br>School
       </h2>
     </a>
@@ -325,20 +323,21 @@
       <div class="acreditation-headline">
         <h2>School Accreditation</h2>
       </div>
-        <div class="accreditation-carousel" data-flickity = '{"wrapAround": true}'>
-          <div class="accreditation-carousel-cell">
-            <img src="images/accreditation-2.jpg" alt="Accreditation">
-          </div>
-          <div class="accreditation-carousel-cell">
-            <img src="images/accreditation-3.jpg" alt="Accreditation">
-          </div>
-          <div class="accreditation-carousel-cell">
-            <img src="images/accreditation-1.jpg" alt="Accreditation">
-          </div>
-          <div class="accreditation-carousel-cell">
-            <img src="images/accreditation-4.png" alt="Accreditation">
-          </div>
+      <div id="accreditationCarousel" class="accreditation-carousel relative" data-flickity='{"wrapAround": true, "prevNextButtons": true}'>
+        <div class="accreditation-carousel-cell">
+          <img src="images/accreditation-2.jpg" alt="Accreditation">
         </div>
+        <div class="accreditation-carousel-cell">
+          <img src="images/accreditation-3.jpg" alt="Accreditation">
+        </div>
+        <div class="accreditation-carousel-cell">
+          <img src="images/accreditation-1.jpg" alt="Accreditation">
+        </div>
+        <div class="accreditation-carousel-cell">
+          <img src="images/accreditation-4.png" alt="Accreditation">
+        </div>
+      </div>
+      
     </div>
   </section>
 

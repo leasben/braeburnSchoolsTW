@@ -121,11 +121,11 @@
           </p>
         </div>
       </div>
-      <div class="map-search grid justify-items-center xm:pt-8 lg:pt-0">
+      <div class="map-search grid justify-items-center xm:pt-16 lg:pt-0">
         <div class="vision-circle transform duration-500 ease-in-out hover:scale-110  hidden md:block">
           <a href="#">
         <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
-          <img src="images/blue-circle-icon.svg" class="w-72 min-h-72" alt="Blue Circle">
+          <img src="images/blue-circle-highlight.svg" class="w-72 min-h-72" alt="Blue Circle">
         </div>
         <h2 class="inset-0 top-[-175px] left-0 bottom-0 relative flex items-center justify-center text-blue text-4xl text-center">
           <p>Search By <br> Map</p>
@@ -135,7 +135,7 @@
         <div class="filter-search transform duration-500 ease-in-out hover:scale-110">
           <a href="#">
         <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
-          <img src="images/blue-circle-icon.svg" class="w-72 min-h-72" alt="Blue Circle">
+          <img src="images/blue-circle-highlight.svg" class="w-72 min-h-72" alt="Blue Circle">
         </div>
         <h2 class="inset-0 top-[-175px] left-0 bottom-0 relative flex items-center justify-center text-blue text-4xl text-center">
          <p>Search By <br>Filter</p> 
@@ -148,25 +148,23 @@
   <!-- CIRCLES/HIGHLIGHTS WITH IMAGES -->
 <div class="highlights mb-20">
   <div class="highlights-header">
-    <h2 class="text-blue text-6xl text-center py-14">Student Highlights</h2>
+    <h2 class="text-blue text-6xl text-center xm:pb-12 md:py-14">Student Highlights</h2>
     <div class="circles grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-y-20 gap-x-[19px] place-items-center">
     <!-- Yellow Circle -->
 <div class="circle-image group relative transform duration-500 ease-in-out">
   <!-- Circle Wrapper for Hover Effect -->
   <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90 group-hover:scale-110">
-    <img src="images/yellow-circle-icon.svg" class="highlight-circle" alt="Yellow Circle">
+    <img src="images/blue-circle-highlight.svg" class="highlight-circle" alt="Yellow Circle">
   </div>
   <!-- Centered Image Link -->
   <a href="#" class="highlight-image group-hover:scale-110">
     <img src="images/circles-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
   </a>
 </div>
-
-
       <!-- Orange Circle -->
       <div class="circle-image group relative transform duration-500 ease-in-out">
         <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90 group-hover:scale-110">
-          <img src="images/orange-circle-icon.svg" class="highlight-circle" alt="Orange Circle">
+          <img src="images/blue-circle-highlight.svg" class="highlight-circle" alt="Orange Circle">
         </div>
         <a href="#" class="highlight-image group-hover:scale-110">
           <img src="images/circle-2-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
@@ -176,7 +174,7 @@
       <!-- Green Circle -->
       <div class="circle-image group relative transform duration-500 ease-in-out">
         <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90 group-hover:scale-110">
-          <img src="images/green-circle.png" class="highlight-circle" alt="Green Circle">
+          <img src="images/blue-circle-highlight.svg" class="highlight-circle" alt="Green Circle">
         </div>
         <a href="#" class="highlight-image group-hover:scale-110">
           <img src="images/cricle-3-image.webp" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
@@ -186,7 +184,7 @@
       <!-- Red Circle -->
       <div class="circle-image group relative transform duration-500 ease-in-out">
         <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90 group-hover:scale-110">
-          <img src="images/red-circle.svg" class="highlight-circle" alt="Red Circle">
+          <img src="images/blue-circle-highlight.svg" class="highlight-circle" alt="Red Circle">
         </div>
         <a href="#" class="highlight-image group-hover:scale-110">
           <img src="images/circle-4-image.webp" alt="Highlight" class="w-10/12 h-5/6  object-cover rounded-full">
@@ -280,27 +278,28 @@
    </section>
 
    <!-- SCHOOL ACCREDITATION -->
-    <section class="accreditation py-8">
-      <div class="w-[90%] mx-auto">
-        <div class="acreditation-headline">
-          <h2>School Accreditation</h2>
-        </div>
-          <div class="accreditation-carousel" data-flickity = '{"wrapAround": true}'>
-            <div class="accreditation-carousel-cell">
-              <img src="images/accreditation-2.jpg" alt="Accreditation">
-            </div>
-            <div class="accreditation-carousel-cell">
-              <img src="images/accreditation-3.jpg" alt="Accreditation">
-            </div>
-            <div class="accreditation-carousel-cell">
-              <img src="images/accreditation-1.jpg" alt="Accreditation">
-            </div>
-            <div class="accreditation-carousel-cell">
-              <img src="images/accreditation-4.png" alt="Accreditation">
-            </div>
-          </div>
+   <section class="accreditation py-8">
+    <div class="w-[90%] mx-auto">
+      <div class="acreditation-headline">
+        <h2 class="px-4">School Accreditation</h2>
       </div>
-    </section>
+      <div id="accreditationCarousel" class="accreditation-carousel relative" data-flickity='{"wrapAround": true, "prevNextButtons": true}'>
+        <div class="accreditation-carousel-cell">
+          <img src="images/accreditation-2.jpg" alt="Accreditation">
+        </div>
+        <div class="accreditation-carousel-cell">
+          <img src="images/accreditation-3.jpg" alt="Accreditation">
+        </div>
+        <div class="accreditation-carousel-cell">
+          <img src="images/accreditation-1.jpg" alt="Accreditation">
+        </div>
+        <div class="accreditation-carousel-cell">
+          <img src="images/accreditation-4.png" alt="Accreditation">
+        </div>
+      </div>
+      
+    </div>
+  </section>
 
     <!-- footer section -->
     <section class="footer-section mt-5">

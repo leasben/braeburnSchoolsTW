@@ -15,11 +15,6 @@ module.exports = {
     fontFamily: {
       sans: ['sans-serif'],
       serif: ['Times New Roman', 'ui-serif'],
-      'poppins-extra-light': ['Poppins ExtraLight', 'sans-serif'],
-      'poppins-light': ['Poppins Light', 'sans-serif'],
-      'poppins-regular': ['Poppins Regular', 'sans-serif'],
-      'poppins-medium': ['Poppins Medium', 'sans-serif'],
-      'poppins-bold': ['Poppins Bold', 'sans-serif'],
       'freeway-demi-regular': ['FreewayDemi Regular', 'sans-serif'],
       'freeway-demi-medium': ['FreewayDemi Medium', 'sans-serif'],
       'ubuntu-regular': ['Ubuntu Regular', 'sans-serif'],

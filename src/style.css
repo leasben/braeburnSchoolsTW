@@ -58,42 +58,6 @@ h6 {
   font-family: "FreewayDemi Medium", sans-serif;
 }
 
-
-@font-face {
-  font-family: "Poppins ExtraLight";
-  font-weight: 200;
-  src: url("../src/fonts/Poppins-ExtraLight.woff2") format(woff2),
-      url("../src/fonts/Poppins-ExtraLight.woff") format(woff);
-}
-
-@font-face {
-  font-family: "Poppins Light";
-  font-weight: 300;
-  src: url("../src/fonts/Poppins-Light.woff2") format(woff2),
-      url("../src/fonts/Poppins-Light.woff") format(woff);
-}
-
-@font-face {
-  font-family: "Poppins Regular";
-  font-weight: 400;
-  src: url("../src/fonts/Poppins-Regular.woff2") format(woff2),
-      url("../src/fonts/Poppins-Regular.woff") format(woff);
-}
-
-@font-face {
-  font-family: "Poppins Medium";
-  font-weight: 500;
-  src: url("../src/fonts/Poppins-Medium.woff2") format(woff2),
-      url("../src/fonts/Poppins-Medium.woff") format(woff);
-}
-
-@font-face {
-  font-family: "Poppins Bold";
-  font-weight: 700;
-  src: url("../src/fonts/Poppins-Bold.woff2") format(woff2),
-      url("../src/fonts/Poppins-Bold.woff") format(woff);
-}
-
 @font-face {
   font-family: "FreewayDemi Regular";
   font-weight: 400;
@@ -134,7 +98,7 @@ h6 {
 
 /* HAMBURGER ICON */
 .menu-icon {
-      @apply md:fixed top-16 md:top-4 right-[100px] z-[10000] rounded-full bg-blue mr-5 flex items-center;
+      @apply md:fixed top-8 md:top-4 right-[100px] z-[10000] rounded-full bg-blue mr-5 flex items-center;
     }
     .menu-icon img {
       @apply w-[95px] h-[95px];
@@ -253,6 +217,7 @@ h6 {
   @apply absolute inset-0 flex items-center justify-center overflow-hidden rounded-full;
 }
 
+
 .member-name {
   @apply mt-2 text-center;
 }
@@ -284,7 +249,19 @@ h6 {
 }
 
 .accreditation-carousel-cell {
-  @apply w-[20%] mx-auto;
+  @apply w-[20%] mx-auto mr-[10px] xm:px-6 xm:w-[100%] md:w-[50%] lg:w-[33.33%] pb-5;
+}
+
+#accreditationCarousel .flickity-page-dots {
+  @apply bottom-2;
+} 
+
+#accreditationCarousel .flickity-page-dot.is-selected {
+  background: hsl(247, 93%, 26%);
+}
+
+#accreditationCarousel .flickity-page-dot {
+background: var(--blue);
 }
 
 
@@ -296,7 +273,7 @@ h6 {
 }
 
 .col-links ul li a {
-  @apply text-white text-xl font-poppins-regular;
+  @apply text-orange text-xl font-ubuntu-regular;
 }
   
 
@@ -334,7 +311,7 @@ h6 {
   }
 
   .link a {
-    @apply text-lightBlue text-xl font-freeway-demi-medium;
+    @apply text-orange text-xl font-freeway-demi-medium;
   }
 
   /* CONTACT SECTION */
@@ -389,7 +366,7 @@ ul {
   }
 
   .carousel-text h2{
-    @apply text-3xl text-blue text-center;
+    @apply text-5xl text-white text-center font-ubuntu-bold;
   }
   
   /* RIGHT CARD */
@@ -408,6 +385,20 @@ ul {
 .history-carousel-cell p {
   @apply text-white text-base font-ubuntu-regular px-8 py-5;
 }
+
+
+#historyCarousel .flickity-page-dots {
+  @apply bottom-2 py-4;
+} 
+
+#historyCarousel .flickity-page-dot.is-selected {
+  background: hsl(247, 93%, 26%);
+}
+
+#historyCarousel .flickity-page-dot {
+background: #fff;
+}
+
 
 /* BRAEBURN GARDENS ESTATE CSS */
 
@@ -465,6 +456,19 @@ ul {
 .policy-carousel.flickity-page-dots {
   @apply bottom-[24px];
 }
+
+#policiesCarousel .flickity-page-dots {
+  @apply bottom-2;
+} 
+
+#policiesCarousel .flickity-page-dot.is-selected {
+  background: hsl(247, 93%, 26%);
+}
+
+#policiesCarousel .flickity-page-dot {
+background: #fff;
+}
+
  
 /* TEAM SECTION */
 .category {
@@ -473,6 +477,18 @@ ul {
 
 .category h3 {
   @apply text-2xl text-center text-white font-ubuntu-regular;
+}
+
+#executiveCarousel .flickity-page-dots {
+  @apply mt-4;
+} 
+
+#executiveCarousel .flickity-page-dot.is-selected {
+  background: hsl(247, 93%, 26%);
+}
+
+#executiveCarousel .flickity-page-dot {
+background: var(--blue);
 }
 
 /* TABLE CARD */
@@ -502,7 +518,10 @@ ul {
 }
 
 
-/* BEYOND THE CLASSROOM */
+/* PREPARING FOR SCHOOL */ 
+.learn-more a {
+  @apply  text-orange text-xl font-ubuntu-bold;
+}
 
 /* OUR TEAM */
 .beyondclassroom-image {
@@ -515,9 +534,8 @@ ul {
 }
 
 /* SUB HEADING ITEMS */
-
 .sub-heading-items ul li {
-  @apply text-xl text-blue font-poppins-regular;
+  @apply text-xl text-blue font-ubuntu-regular;
 }
 
 /* CONTENT IMAGE GALLERY */
@@ -539,7 +557,7 @@ ul {
   @apply h-full border-4 border-orange;
 }
 
-
+/* DROP DOWN FILTER */
 .choose-school select {
   -webkit-appearance: none;
   -moz-appearance: none;

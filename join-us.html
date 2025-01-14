@@ -95,11 +95,12 @@
   </section>
 
    <!-- SLIDE SHOW FADE -->
-   <section class="slider-fade md:mt-0 mt-20">
+   <section class="slider-fade md:mt-0 mt-4">
     <div class="w-[90%] mx-auto">
       <div class="slider-fade">
         <div class="fade-carousel h-full">
-          <div class="historySectionCarousel" data-flickity='{"fade": true, "pauseAutoPlayOnHover": false, "wrapAround": true, "autoPlay": 2000, "pageDots": false }'>
+          <!-- DESKTOP FADE CAROUSEL -->
+          <div class="historySectionCarousel hidden md:block" data-flickity='{"fade": true, "pauseAutoPlayOnHover": false, "wrapAround": true, "autoPlay": 2000, "pageDots": false }'>
             <div class="sliderfade-section-carousel-cell">
               <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/kids-working.jpg);"></div>
               <div class="carousel-text">
@@ -111,6 +112,21 @@
             </div>
             <div class="sliderfade-section-carousel-cell">
               <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/braeburn-sports.jpg);"></div>
+            </div>
+          </div>
+          <!-- MOBILE FADE CAROUSEL -->
+          <div class="historySectionCarousel block md:hidden" data-flickity='{"fade": true, "pauseAutoPlayOnHover": false, "wrapAround": true, "autoPlay": 2000, "pageDots": false }'>
+            <div class="sliderfade-section-carousel-cell">
+              <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/mobile-500x500.jpg);"></div>
+              <div class="carousel-text">
+                <h2>Lorem ipsum dolor sit amet</h2>
+              </div>
+            </div>
+            <div class="sliderfade-section-carousel-cell">
+              <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/mobile-2-500x500.jpg);"></div>
+            </div>
+            <div class="sliderfade-section-carousel-cell">
+              <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/mobile-3-500x500.jpg);"></div>
             </div>
           </div>
         </div>
@@ -126,7 +142,7 @@
         <div class="transform duration-500 ease-in-out hover:scale-110">
           <a href="#">
             <div class="transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
-              <img src="images/orange-circle-icon.svg" class="w-72 min-h-72" alt="Join our school">
+              <img src="images/orange-circle-icon.svg" class="w-80 min-h-80" alt="Join our school">
             </div>
             <h2 class="inset-0 top-[-190px] left-0 bottom-0 relative flex items-center justify-center text-blue text-4xl text-center">
               Fee <br> Structure
@@ -136,7 +152,7 @@
         <div class="transform duration-500 ease-in-out hover:scale-110">
           <a href="#">
             <div class="transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
-              <img src="images/orange-circle-icon.svg" class="w-72 min-h-72" alt="My School">
+              <img src="images/orange-circle-icon.svg" class="w-80 min-h-80" alt="My School">
             </div>
             <h2 class="inset-0 top-[-190px] left-0 bottom-0 relative flex items-center justify-center text-blue text-4xl text-center">
             Admission<br>Policies
@@ -196,7 +212,7 @@
         <div class="school-details pl-4 py-8 bg-white">
           <h2 class="text-2xl text-blue">School Uniforms</h2>
           <p class="text-base text-blue py-3 pr-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
-          <div class="learn-more text-blue text-xl font-ubuntu-bold">
+          <div class="learn-more">
             <a href="#">-Learn More</a>
           </div>
         </div>
@@ -208,7 +224,7 @@
         <div class="school-details pl-4 py-8 bg-white">
           <h2 class="text-2xl text-blue">School Lunches</h2>
           <p class="text-base text-blue py-3 pr-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
-          <div class="learn-more text-blue text-xl font-ubuntu-bold">
+          <div class="learn-more">
             <a href="#">-Learn More</a>
           </div>
         </div>
@@ -220,7 +236,7 @@
         <div class="school-details pl-4 py-8 bg-white">
           <h2 class="text-2xl text-blue">School Transport</h2>
           <p class="text-base text-blue py-3 pr-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus facilis iste numquam laudantium doloremque earum nobis ex ea! Rem quidem ipsum et similique labore? Pariatur repellendus soluta libero omnis accusamus voluptate voluptatibus. Necessitatibus nisi possimus dolorum maiores rerum eveniet?</p>
-          <div class="learn-more text-blue text-xl font-ubuntu-bold">
+          <div class="learn-more">
             <a href="#">-Learn More</a>
           </div>
         </div>
@@ -237,7 +253,7 @@
           <div class="vision-circle relative transform duration-500 ease-in-out hover:scale-110">
             <a href="#">
               <div class="transform duration-500 ease-in-out hover:scale-110">
-                <img src="images/orange-circle-icon.svg" class="w-72 min-h-72" alt="Join our school">
+                <img src="images/orange-circle-icon.svg" class="w-80 min-h-80" alt="Join our school">
               </div>
               <!-- Centered Text -->
               <h2 class="absolute inset-0 flex items-center justify-center text-blue text-5xl text-center font-ubuntu-bold">

@@ -104,7 +104,7 @@
       <div class="bg-image bg-[url('/images/why-us-banner.jpg')] bg-cover bg-no-repeat bg-center min-h-[600px]"></div>
   
       <!-- Policies -->
-        <div class="policy-carousel relative" data-flickity='{"freeScroll": true, "wrapAround": true, "autoPlay": true, "pauseAutoPlayOnHover": true, "pageDots": true}'>
+        <div id="policiesCarousel" class="policy-carousel relative" data-flickity='{"freeScroll": true, "wrapAround": true, "autoPlay": false, "pauseAutoPlayOnHover": true, "pageDots": true}'>
             <div class="policy-carousel-cell">
                 <h2>Safeguard Policy</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa velit quasi laboriosam sapiente delectus possimus, cupiditate quos molestias quis ullam nulla hic cum corporis. Consectetur doloremque, voluptatum amet impedit quo natus cum Dictum luctus torquent id morbi sodales massa quisque, habitant dictumst augue lectus cum sociosqu maecenas netus, semper fames porttitor pharetra nam sed. Praesent euismod aliquet ut sagittis non pulvinar, congue nunc class rutrum magnis bibendum, curabitur tincidunt proin tristique sodales. Per inceptos tortor ut varius auctor ultrices eget molestie etiam, risus penatibus accumsan taciti senectus iaculis lacinia interdum montes</p>
@@ -221,11 +221,11 @@
             </div>
           </div>
         <!--EARLY YEARS UNIT-->
-        <div class="executive-committee mt-5">
+        <div class="executive-committee my-16">
         <div class="team-title">
             <h3 class="text-blue text-xl text-center lg:text-left font-ubuntu-bold pb-2">Early Years Unit</h3>
         </div>
-        <div class="team-carousel" data-flickity='{ "autoPlay": false,"groupCells":true }'>
+        <div id="executiveCarousel" class="team-carousel" data-flickity='{ "autoPlay": false,"groupCells":true }'>
           <div class="team-carousel-cell">
             <div class="team-image-carousel relative inline-block w-48 h-48 m-[0_1rem]">
               <img src="images/orange-circle-icon.svg" class="team-image-circle-carousel w-full h-full object-cover rounded-full z-0"  alt="Yellow Circle">
@@ -390,7 +390,7 @@
     </div>
 
         <!-- KEY STAGE TWO -->
-         <div class="tes-africa-rwanda mt-5">
+         <div class="tes-africa-rwanda my-16">
         <div class="team-title">
             <h3 class="text-blue text-xl text-center lg:text-left font-ubuntu-bold pb-2">Key Stage Two</h3>
         </div>
@@ -539,7 +539,7 @@
         </div>
 
       <!-- Teaching Staff Secondary -->
-      <div class="tes-africa-rwanda mt-5">
+      <div class="tes-africa-rwanda mt-16">
         <div class="team-title">
             <h3 class="text-blue text-xl text-center lg:text-left font-ubuntu-bold pb-2">Teaching Staff - Secondary</h3>
         </div>
@@ -621,20 +621,21 @@
         <div class="acreditation-headline">
           <h2>School Accreditation</h2>
         </div>
-          <div class="accreditation-carousel" data-flickity = '{"wrapAround": true}'>
-            <div class="accreditation-carousel-cell">
-              <img src="images/accreditation-2.jpg" alt="Accreditation">
-            </div>
-            <div class="accreditation-carousel-cell">
-              <img src="images/accreditation-3.jpg" alt="Accreditation">
-            </div>
-            <div class="accreditation-carousel-cell">
-              <img src="images/accreditation-1.jpg" alt="Accreditation">
-            </div>
-            <div class="accreditation-carousel-cell">
-              <img src="images/accreditation-4.png" alt="Accreditation">
-            </div>
+        <div id="accreditationCarousel" class="accreditation-carousel relative" data-flickity='{"wrapAround": true, "prevNextButtons": true}'>
+          <div class="accreditation-carousel-cell">
+            <img src="images/accreditation-2.jpg" alt="Accreditation">
           </div>
+          <div class="accreditation-carousel-cell">
+            <img src="images/accreditation-3.jpg" alt="Accreditation">
+          </div>
+          <div class="accreditation-carousel-cell">
+            <img src="images/accreditation-1.jpg" alt="Accreditation">
+          </div>
+          <div class="accreditation-carousel-cell">
+            <img src="images/accreditation-4.png" alt="Accreditation">
+          </div>
+        </div>
+        
       </div>
     </section>
 
@@ -645,7 +646,7 @@
             <div class="vision-circle relative transform duration-500 ease-in-out hover:scale-110">
               <a href="#">
                 <div class="transform duration-500 ease-in-out hover:scale-110">
-                  <img src="images/orange-circle-icon.svg" class="w-72 min-h-72" alt="Join our school">
+                  <img src="images/orange-circle-icon.svg" class="w-80 min-h-80" alt="Join our school">
                 </div>
                 <!-- Centered Text -->
                 <h2 class="absolute inset-0 flex items-center justify-center text-blue text-6xl text-center font-ubuntu-bold">
