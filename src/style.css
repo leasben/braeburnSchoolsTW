@@ -89,7 +89,7 @@ h6 {
 /* NAVBAR */
 
 .nav-section {
-  @apply flex items-center justify-between xm:flex-col md:flex-row;
+  @apply flex items-center justify-between xm:flex-col sm:flex-row;
 }
 
 .logo img {
@@ -98,10 +98,14 @@ h6 {
 
 /* HAMBURGER ICON */
 .menu-icon {
-      @apply md:fixed top-8 md:top-4 right-[100px] z-[10000] rounded-full bg-blue mr-5 flex items-center;
+      @apply top-8 md:top-4 right-[100px] z-[10000] rounded-full bg-blue mr-5 flex items-center;
     }
     .menu-icon img {
-      @apply w-[95px] h-[95px];
+      @apply sm:w-[95px] sm:h-[95px] w-[69px] h-[69px] fixed;
+    }
+
+    .close {
+      @apply mt-[-80px] sm:mt-4;
     }
 
 /* VIDEO */
