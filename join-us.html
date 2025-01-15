@@ -24,8 +24,8 @@
 
          <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
          <div class="menu-icon" id="menu-toggle">
-          <img src="images/open-menu-icon-blue.svg" alt="Menu" class="toggle-icon">
-          <img src="images/close-menu-icon-blue.svg" alt="Close" class="close" style="display:none;">
+          <img src="images/open-menu-icon.svg" alt="Menu" class="toggle-icon bg-blue rounded-full">
+          <img src="images/close-menu-icon-blue.svg" alt="Close" class="close bg-white rounded-full" style="display:none;">
         </div>
       </div>
   
@@ -77,7 +77,7 @@
   </section>
 
   <!-- WELCOME SECTION -->
-  <section class="welcome-section my-4 w-[90%] mx-auto border-t-orange border-t-4 relative">
+  <section class="welcome-section w-[90%] mx-auto border-t-orange border-t-4 relative">
     <div class="relative grid sm:grid-cols-1 lg:grid-cols-[65%_35%]">
       <!-- Image Section -->
       <div class="bg-image bg-[url('/images/join-us-banner.jpg')] bg-cover bg-no-repeat bg-center min-h-[600px]"></div>
@@ -100,12 +100,9 @@
       <div class="slider-fade">
         <div class="fade-carousel h-full">
           <!-- DESKTOP FADE CAROUSEL -->
-          <div class="historySectionCarousel hidden md:block" data-flickity='{"fade": true, "pauseAutoPlayOnHover": false, "wrapAround": true, "autoPlay": 2000, "pageDots": false }'>
+          <div class="historySectionCarousel hidden md:block" data-flickity='{"fade": true, "pauseAutoPlayOnHover": false, "wrapAround": true, "autoPlay": 2000, "pageDots": false,  "prevNextButtons": false}'>
             <div class="sliderfade-section-carousel-cell">
               <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/kids-working.jpg);"></div>
-              <div class="carousel-text">
-                <h2>Lorem ipsum dolor sit amet</h2>
-              </div>
             </div>
             <div class="sliderfade-section-carousel-cell">
               <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/bbgarden-news-2.jpg);"></div>
@@ -118,9 +115,6 @@
           <div class="historySectionCarousel block md:hidden" data-flickity='{"fade": true, "pauseAutoPlayOnHover": false, "wrapAround": true, "autoPlay": 2000, "pageDots": false }'>
             <div class="sliderfade-section-carousel-cell">
               <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/mobile-500x500.jpg);"></div>
-              <div class="carousel-text">
-                <h2>Lorem ipsum dolor sit amet</h2>
-              </div>
             </div>
             <div class="sliderfade-section-carousel-cell">
               <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/mobile-2-500x500.jpg);"></div>
@@ -144,7 +138,7 @@
             <div class="transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
               <img src="images/orange-circle-icon.svg" class="w-80 min-h-80" alt="Join our school">
             </div>
-            <h2 class="inset-0 top-[-190px] left-0 bottom-0 relative flex items-center justify-center text-blue text-4xl text-center">
+            <h2 class="inset-0 top-[-190px] left-0 bottom-0 relative flex items-center justify-center text-blue text-2xl md:text-4xl text-center">
               Fee <br> Structure
             </h2>
           </a>
@@ -154,7 +148,7 @@
             <div class="transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
               <img src="images/orange-circle-icon.svg" class="w-80 min-h-80" alt="My School">
             </div>
-            <h2 class="inset-0 top-[-190px] left-0 bottom-0 relative flex items-center justify-center text-blue text-4xl text-center">
+            <h2 class="inset-0 top-[-190px] left-0 bottom-0 relative flex items-center justify-center text-blue text-2xl md:text-4xl text-center">
             Admission<br>Policies
             </h2>
           </a>

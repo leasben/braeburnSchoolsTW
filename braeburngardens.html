@@ -24,8 +24,8 @@
 
          <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
          <div class="menu-icon" id="menu-toggle">
-          <img src="images/open-menu-icon-blue.svg" alt="Menu" class="toggle-icon">
-          <img src="images/close-menu-icon-blue.svg" alt="Close" class="close" style="display:none;">
+          <img src="images/open-menu-icon.svg" alt="Menu" class="toggle-icon bg-blue rounded-full">
+          <img src="images/close-menu-icon-blue.svg" alt="Close" class="close bg-white rounded-full" style="display:none;">
         </div>
       </div>
   
@@ -132,7 +132,7 @@
       <div class="slider-fade">
         <div class="fade-carousel h-full">
           <!-- DESKTOP FADE CAROUSEL-->
-          <div class="historySectionCarousel" data-flickity='{"fade": true, "pauseAutoPlayOnHover": false, "wrapAround": true, "autoPlay": 2000, "pageDots": false }'>
+          <div class="historySectionCarousel" data-flickity='{"fade": true, "pauseAutoPlayOnHover": false, "wrapAround": true, "autoPlay": 2000, "pageDots": false,  "prevNextButtons": false}'>
             <div class="sliderfade-section-carousel-cell">
               <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/history-1.jpg);"></div>
             </div>
@@ -162,7 +162,7 @@
       <div class="filter-circle transform duration-500 ease-in-out hover:scale-110  hidden md:block">
         <a href="#">
       <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
-        <img src="images/orange-circle-icon.svg" class="w-80 min-h-80" alt="Blue Circle">
+        <img src="images/orange-circle-icon.svg" class="w-[315px] min-h-[315px]" alt="Blue Circle">
       </div>
       <h2 class="inset-0 top-[-210px] left-0 bottom-0  relative flex items-center justify-center text-blue text-5xl text-center">
         Join Our <br> School
@@ -172,7 +172,7 @@
       <div class="map-search transform duration-500 ease-in-out hover:scale-110">
         <a href="#">
       <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
-        <img src="images/orange-circle-icon.svg" class="w-80 min-h-80" alt="Blue Circle">
+        <img src="images/orange-circle-icon.svg" class="w-[315px] min-h-315px" alt="Blue Circle">
       </div>
       <h2 class="inset-0 top-[-210px] left-0 bottom-0 relative flex items-center justify-center text-blue text-5xl text-center">
        My <br>School
@@ -189,39 +189,36 @@
   <div class="highlights-header">
     <h2 class="text-blue text-6xl text-center pt-10">Student Highlights</h2>
     <div class="circles grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-24 place-items-center py-12">
-      <!-- Yellow Circle -->
+
       <div class="circle-image group relative transform duration-500 ease-in-out">
         <!-- Circle Wrapper for Hover Effect -->
-        <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90 group-hover:scale-110">
+        <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90">
           <img src="images/orange-circle-icon.svg" class="highlight-circle" alt="Orange Circle">
         </div>
         <!-- Centered Image Link -->
-        <a href="#" class="highlight-image group-hover:scale-110">
+        <a href="#" class="highlight-image">
           <img src="images/playing-piano.jpg" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
         </a>
       </div>
 
-      <!-- Orange Circle -->
       <div class="circle-image group relative transform duration-500 ease-in-out">
-        <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90 group-hover:scale-110">
+        <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90">
           <img src="images/orange-circle-icon.svg" class="highlight-circle" alt="Orange Circle">
         </div>
-        <a href="#" class="highlight-image group-hover:scale-110">
+        <a href="#" class="highlight-image">
           <img src="images/braeburn-bus.jpg" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
         </a>
       </div>
 
-      <!-- Green Circle -->
       <div class="circle-image group relative transform duration-500 ease-in-out">
-        <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90 group-hover:scale-110">
+        <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90">
           <img src="images/orange-circle-icon.svg" class="highlight-circle" alt="Orange Circle">
         </div>
-        <a href="#" class="highlight-image group-hover:scale-110">
+        <a href="#" class="highlight-image">
           <img src="images/braeburn-boys.jpg" alt="Highlight" class="w-10/12 h-5/6 object-cover rounded-full">
         </a>
       </div>
 
-      <!-- Red Circle -->
       <div class="circle-image group relative transform duration-500 ease-in-out">
         <div class="highlight-circle-container transition-transform duration-300 ease-out group-hover:rotate-90">
           <img src="images/orange-circle-icon.svg" class="highlight-circle" alt="Orange Circle">
@@ -242,7 +239,7 @@
         <h2>Latest News & Events</h2>
       </div>
 
-      <div class="news-carousel mt-5" data-flickity='{ "contain": true, "wrapAround": true }'>
+      <div class="news-carousel mt-5" data-flickity='{ "contain": true, "wrapAround": true,  "prevNextButtons": false }'>
       <div class="news-carousel-cell">
         <div class="news-card border-orange">
         <div class="card-image"><img src="images/bbgarden-news-5.jpg" alt="Braeburn Garden Estate"></div>  
@@ -333,7 +330,7 @@
       <div class="acreditation-headline">
         <h2>School Accreditation</h2>
       </div>
-      <div id="accreditationCarousel" class="accreditation-carousel relative" data-flickity='{"wrapAround": true, "prevNextButtons": true}'>
+      <div id="accreditationCarousel" class="accreditation-carousel relative" data-flickity='{"wrapAround": true, "prevNextButtons": false}'>
         <div class="accreditation-carousel-cell">
           <img src="images/accreditation-2.jpg" alt="Accreditation">
         </div>

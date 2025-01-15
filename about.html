@@ -22,8 +22,8 @@
           </div>
         <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
         <div class="menu-icon" id="menu-toggle">
-          <img src="images/open-menu-icon.svg" alt="Menu" class="toggle-icon">
-          <img src="images/close-menu-icon-blue.svg" alt="Close" class="close" style="display:none;">
+          <img src="images/open-menu-icon.svg" alt="Menu" class="toggle-icon bg-blue rounded-full">
+          <img src="images/close-menu-icon-blue.svg" alt="Close" class="close bg-white rounded-full" style="display:none;">
         </div>
       </div>
   
@@ -86,7 +86,7 @@
         <div class="vision-circle transform duration-500 ease-in-out hover:scale-110">
           <a href="#">
         <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
-          <img src="images/blue-circle-highlight.svg" class="w-80 min-h-80" alt="Blue Circle">
+          <img src="images/blue-circle-highlight.svg" class="w-[315px] min-h-[315px]" alt="Blue Circle">
         </div>
         <h2 class="inset-0 top-[-170px] left-0 bottom-0 relative flex items-center justify-center text-blue text-5xl text-center">
          Vision
@@ -96,7 +96,7 @@
       <div class="mission-circle transform duration-500 ease-in-out hover:scale-110">
         <a href="#">
       <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
-        <img src="images/blue-circle-highlight.svg" class="w-80 min-h-80" alt="Blue Circle">
+        <img src="images/blue-circle-highlight.svg" class="w-[315px] min-h-[315px]" alt="Blue Circle">
       </div>
       <h2 class="inset-0 top-[-170px] left-0 bottom-0 relative flex items-center justify-center text-blue text-5xl text-center">
        Mission
@@ -133,7 +133,7 @@
           <div class="history-section grid sm:grid-cols-1 lg:grid-cols-[60%_40%]">
             <div class="fade-carousel h-full">
               <!-- DESKTOP DISPLAY -->
-              <div class="historySectionCarousel md:block xm:hidden" data-flickity='{"fade": true, "pauseAutoPlayOnHover": false, "wrapAround": true, "autoPlay": 2000, "pageDots": false }'>
+              <div class="historySectionCarousel md:block xm:hidden" data-flickity='{"fade": true, "pauseAutoPlayOnHover": false, "wrapAround": true, "autoPlay": 2000, "pageDots": false,  "prevNextButtons": false }'>
                 <div class="historySection-carousel-cell">
                   <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/history-1.jpg);"></div>
                   <div class="carousel-text bg-black/50 p-4 rounded-md inline-block">
@@ -148,7 +148,7 @@
                 </div>
               </div>
               <!-- MOBILE DISPLAY  -->
-              <div class="historySectionCarousel xm:block md:hidden" data-flickity='{"fade": true, "pauseAutoPlayOnHover": true, "wrapAround": true }'>
+              <div class="historySectionCarousel xm:block md:hidden" data-flickity='{"fade": true, "pauseAutoPlayOnHover": true, "wrapAround": true,  "prevNextButtons": false  }'>
                 <div class="historySection-carousel-cell">
                   <div class="bg-cover bg-no-repeat bg-center h-[500px]" style="background-image:url(images/about-history-mobile.jpg);"></div>
                   <div class="carousel-text bg-black/50 p-4 rounded-md inline-block">
@@ -165,7 +165,7 @@
             </div>
             
             
-            <div id="historyCarousel" class="history-carousel relative" data-flickity='{"freeScroll": true, "wrapAround": true, "autoPlay": true, "pauseAutoPlayOnHover": false}'>
+            <div id="historyCarousel" class="history-carousel relative" data-flickity='{"freeScroll": true, "wrapAround": true, "autoPlay": false, "pauseAutoPlayOnHover": false,  "prevNextButtons": false }'>
                   <div class="history-carousel-cell">
                       <h2>1978 - 1980</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa velit quasi laboriosam sapiente delectus possimus, cupiditate quos molestias quis ullam nulla hic cum corporis. Consectetur doloremque, voluptatum amet impedit quo natus cum Dictum luctus torquent id morbi sodales massa quisque, habitant dictumst augue lectus cum sociosqu maecenas netus, semper fames porttitor pharetra nam sed. Praesent euismod aliquet ut sagittis non pulvinar, congue nunc class rutrum magnis bibendum, curabitur tincidunt proin tristique sodales. Per inceptos tortor ut varius auctor ultrices eget molestie etiam, risus penatibus accumsan taciti senectus iaculis lacinia interdum montes</p>
@@ -394,7 +394,7 @@
                 <div class="team-title">
                     <h3 class="text-blue text-xl text-center lg:text-left font-ubuntu-bold pb-2">Braeburn Schools Limited Executive Committee</h3>
                 </div>
-                <div id="executiveCarousel" class="team-carousel" data-flickity='{ "autoPlay": false,"groupCells":true }'>
+                <div id="executiveCarousel" class="team-carousel" data-flickity='{ "autoPlay": false,"groupCells":true,  "prevNextButtons": false }'>
                   <div class="team-carousel-cell">
                     <div class="team-image-carousel relative inline-block w-48 h-48 m-[0_1rem]">
                       <!-- Blue Circle Background -->
@@ -495,7 +495,7 @@
                 <div class="team-title">
                     <h3 class="text-blue text-xl text-center lg:text-left font-ubuntu-bold pb-2">Braeburn Schools Tanzania Limited</h3>
                 </div>
-                <div id="executiveCarousel" class="team-carousel" data-flickity='{ "autoPlay": false,"groupCells":true }'>
+                <div id="executiveCarousel" class="team-carousel" data-flickity='{ "autoPlay": false,"groupCells":true,  "prevNextButtons": false }'>
                   <div class="team-carousel-cell">
                     <div class="team-image-carousel relative inline-block w-48 h-48 m-[0_1rem]">
                       <!-- Blue Circle Background -->
@@ -596,7 +596,7 @@
                 <div class="team-title">
                     <h3 class="text-blue text-xl text-center lg:text-left font-ubuntu-bold pb-2">TAS Africa Limited (Rwanda)</h3>
                 </div>
-                <div id="executiveCarousel" class="team-carousel" data-flickity='{ "autoPlay": false,"groupCells":true }'>
+                <div id="executiveCarousel" class="team-carousel" data-flickity='{ "autoPlay": false,"groupCells":true,  "prevNextButtons": false }'>
                   <div class="team-carousel-cell">
                     <div class="team-image-carousel relative inline-block w-48 h-48 m-[0_1rem]">
                       <!-- Blue Circle Background -->

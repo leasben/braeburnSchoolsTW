@@ -21,8 +21,8 @@
           </div>
         <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
         <div class="menu-icon" id="menu-toggle">
-          <img src="images/open-menu-icon.svg" alt="Menu" class="toggle-icon">
-          <img src="images/close-menu-icon-blue.svg" alt="Close" class="close" style="display:none;">
+          <img src="images/open-menu-icon.svg" alt="Menu" class="toggle-icon bg-blue rounded-full">
+          <img src="images/close-menu-icon-blue.svg" alt="Close" class="close bg-white rounded-full" style="display:none;">
         </div>
       </div>
   
@@ -80,7 +80,7 @@
   </section>
 
   <!-- WELCOME SECTION -->
-   <section class="welcome-section my-8 w-[90%] mx-auto">
+   <section class="welcome-section my-3 w-[90%] mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-[65%_35%]">
       <div class="bg-image bg-[url('/images/Home-Page.webp')] bg-cover bg-no-repeat bg-center min-h-[600px]"></div>
       <div class="card md:pr-5 flex items-center justify-center">
@@ -125,9 +125,9 @@
         <div class="vision-circle transform duration-500 ease-in-out hover:scale-110  hidden md:block">
           <a href="#">
         <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
-          <img src="images/blue-circle-highlight.svg" class="w-72 min-h-72" alt="Blue Circle">
+          <img src="images/blue-circle-highlight.svg" class="w-80 min-h-80" alt="Blue Circle">
         </div>
-        <h2 class="inset-0 top-[-175px] left-0 bottom-0 relative flex items-center justify-center text-blue text-4xl text-center">
+        <h2 class="inset-0 top-[-200px] left-0 bottom-0 relative flex items-center justify-center text-blue text-4xl text-center">
           <p>Search By <br> Map</p>
         </h2>
       </a>
@@ -135,9 +135,9 @@
         <div class="filter-search transform duration-500 ease-in-out hover:scale-110">
           <a href="#">
         <div class="md:relative transform duration-500 ease-in-out hover:scale-110 hover:rotate-90">
-          <img src="images/blue-circle-highlight.svg" class="w-72 min-h-72" alt="Blue Circle">
+          <img src="images/blue-circle-highlight.svg" class="w-80 min-h-80" alt="Blue Circle">
         </div>
-        <h2 class="inset-0 top-[-175px] left-0 bottom-0 relative flex items-center justify-center text-blue text-4xl text-center">
+        <h2 class="inset-0 top-[-200px] left-0 bottom-0 relative flex items-center justify-center text-blue text-4xl text-center">
          <p>Search By <br>Filter</p> 
         </h2>
       </a>
@@ -202,7 +202,7 @@
         <h2>Latest News & Events</h2>
       </div>
 
-      <div class="news-carousel mt-5" data-flickity='{ "contain": true, "wrapAround": true, "pageDots": true }'>
+      <div class="news-carousel mt-5" data-flickity='{ "contain": true, "wrapAround": true, "pageDots": true, "prevNextButtons": false }'>
       <div class="news-carousel-cell">
         <div class="news-card border-red-500">
         <div class="card-image"><img src="images/news-5.jpg" alt=""></div>  
@@ -293,7 +293,7 @@
       <div class="acreditation-headline">
         <h2 class="px-4">School Accreditation</h2>
       </div>
-      <div id="accreditationCarousel" class="accreditation-carousel relative" data-flickity='{"wrapAround": true, "prevNextButtons": true}'>
+      <div id="accreditationCarousel" class="accreditation-carousel relative" data-flickity='{"wrapAround": true, "prevNextButtons": true,  "prevNextButtons": false}'>
         <div class="accreditation-carousel-cell">
           <img src="images/accreditation-2.jpg" alt="Accreditation">
         </div>

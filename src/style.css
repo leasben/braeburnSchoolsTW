@@ -137,11 +137,6 @@ h6 {
   
 }
 
- .flickity-prev-next-button {
-  @apply hidden;
-}
-
-
 /* MOBILE MENU ITEMS */
 .mobile-menu-items {
   @apply w-[350px] mx-auto text-blue shadow-button font-freeway-demi-regular text-2xl pl-5 xm:py-2 lg:py-1;
@@ -283,7 +278,7 @@ background: var(--blue);
 
 /* NEWS */
 .news-carousel-cell {
-  @apply min-h-[600px] mr-[10px] xm:px-6 xm:w-[100%] md:w-[50%] lg:w-[33.33%] pb-5;
+  @apply mr-[10px] xm:px-6 xm:w-[100%] md:w-[50%] lg:w-[33.33%] pb-5;
  }
 
   .flickity-page-dots {
@@ -632,6 +627,12 @@ background: var(--blue);
 .content-carousel-cell img {
   @apply h-full border-4 border-orange;
 }
+#contentCarousel .flickity-prev-next-button.previous {
+  left: -51px;
+}
+#contentCarousel .flickity-prev-next-button.next {
+  right: -51px;
+} 
 
 /* DROP DOWN FILTER */
 .choose-school select {
