@@ -608,31 +608,53 @@ background: var(--blue);
 .sub-heading-items ul li {
   @apply text-xl text-blue font-ubuntu-regular;
 }
-
-/* CONTENT IMAGE GALLERY */
-
-.content-carousel {
-  @apply w-[1200px] mx-auto my-4
+ 
+/* CONTENT HEADING SECTION */
+.bge-content-items ul li {
+  @apply flex items-center space-x-4;
+}
+.bge-content-items li img {
+  @apply w-4 h-4;
+}
+.bge-content-items p {
+  @apply text-blue text-base;
 }
 
+/* CONTENT SECTION CAROUSEL */
+
 .content-carousel-cell {
-  width: 33.33%;
-  height: 380px;
-  padding: 0 8px;
-  margin-right: 10px;
-  background-position: center center;
-  background-size: cover;
+  @apply px-3 xm:w-full md:w-1/2 lg:w-1/3;
 }
 
 .content-carousel-cell img {
-  @apply h-full border-4 border-orange;
+  @apply w-full h-auto object-contain border-4 border-blue;
 }
+
 #contentCarousel .flickity-prev-next-button.previous {
-  left: -51px;
+  left: -45px;
+  outline: none;
 }
+
 #contentCarousel .flickity-prev-next-button.next {
-  right: -51px;
-} 
+  right: -45px;
+  outline: none;
+}
+
+#contentCarousel .flickity-prev-next-button {
+  @apply outline-none; /* Remove blue outline */
+}
+
+#contentCarousel .flickity-prev-next-button:focus {
+  outline: none; /* Ensure the focus outline is removed */
+  box-shadow: none; /* Remove any additional focus styling */
+}
+
+
+
+
+
+
+
 
 /* DROP DOWN FILTER */
 .choose-school select {
