@@ -24,6 +24,7 @@ export default defineConfig({
         bbGardensContact: resolve(__dirname, 'garden-estate-contact.html'),
         bbGardensExperience: resolve(__dirname, 'braeburn-experience.html'),
         contentPage: resolve(__dirname, 'content-page.html'),
+        bgeContentPage: resolve(__dirname, 'bge-content-page.html'),
       },
       output: {
         dir: 'dist', // Output directory for the build

@@ -649,13 +649,6 @@ background: var(--blue);
   box-shadow: none; /* Remove any additional focus styling */
 }
 
-
-
-
-
-
-
-
 /* DROP DOWN FILTER */
 .choose-school select {
   -webkit-appearance: none;
