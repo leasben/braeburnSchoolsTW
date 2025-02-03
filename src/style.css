@@ -455,7 +455,7 @@ ul {
   
   /* RIGHT CARD */
   .history-carousel {
-    @apply bg-blue py-4 my-0 lg:my-8 absolute sm:left-0 lg:-left-3 right-0 top-0;
+    @apply bg-blue py-4 my-0 absolute lg:my-8 sm:left-0 lg:-left-3 right-0 top-0;
   }
   
   .history-carousel-cell {
@@ -674,6 +674,8 @@ background: var(--blue);
   background-position: right 20px center; 
   background-size: 18px;
 }
+
+
 
 
 
